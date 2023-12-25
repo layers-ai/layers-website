@@ -1,6 +1,7 @@
 import Features from "./components/features";
 import Hero from "./components/hero";
 import Header from "./components/header";
+import HowStart from "./components/how_start";
 
 export default function Home() {
   return (
@@ -10,6 +11,9 @@ export default function Home() {
         <Header />
         <main>
           <Hero />
+          <div className="bg-gradient-to-b from-white/0 via-white/50 to-white/100">
+            <HowStart />
+          </div>
         </main>
       </div>
     </div>
