@@ -15,6 +15,15 @@ module.exports = {
       fontFamily: {
         sans: ["var(--font-circular)"],
       },
+      letterSpacing: {
+        tightest: "-.05em",
+        tighter: "-.025em",
+        tight: "0",
+        normal: ".025em",
+        wide: ".05em",
+        wider: ".1em",
+        widest: ".25em",
+      },
       colors: {
         savory: {
           100: "#DCDDFA",

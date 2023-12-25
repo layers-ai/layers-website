@@ -23,10 +23,10 @@ export default function Hero() {
               </a> */}
             </div>
           </div>
-          <h1 className="mt-10 max-w-lg text-4xl font-bold tracking-tight text-gray-950 sm:text-6xl">
+          <h1 className="mt-10 max-w-lg text-4xl font-bold tracking-tight text-savory-700 sm:text-6xl">
             Your companion for well-being.
           </h1>
-          <p className="mt-6 text-2xl leading-8 text-gold-900">
+          <p className="mt-6 text-2xl leading-8 text-gray-950">
             Gain deep insights into your mind and embark on a journey towards a
             happier life. All with just 5 minutes a day using the layers journal
             app.
