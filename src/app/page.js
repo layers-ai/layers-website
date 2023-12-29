@@ -3,6 +3,7 @@ import Hero from "./components/hero";
 import Header from "./components/header";
 import HowStart from "./components/how_start";
 import Testimonials from "./components/testimonials";
+import JoinWaitlist from "./components/join_waitlist";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
             <HowStart />
           </div>
           <Testimonials />
+          <JoinWaitlist />
         </main>
       </div>
     </div>

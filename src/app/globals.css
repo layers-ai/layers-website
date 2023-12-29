@@ -30,9 +30,3 @@ html {
   --scroll-behavior: smooth !important;
   scroll-behavior: smooth !important;
 }
-
-.join-waitlist-background {
-  background-image: url("/images/backgrounds/woman-in-field-of-flowers.png");
-  background-position: center;
-  background-size: cover;
-}
