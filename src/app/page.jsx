@@ -1,9 +1,10 @@
-import Features from "./components/features";
-import Hero from "./components/hero";
-import Header from "./components/header";
-import HowStart from "./components/how_start";
-import Testimonials from "./components/testimonials";
-import JoinWaitlist from "./components/join_waitlist";
+// import Features from "./components/features";
+import Hero from "../components/Hero";
+import Header from "../components/Header";
+import HowStart from "../components/HowStart";
+import Testimonials from "../components/Testimonials";
+import JoinWaitlist from "../components/JoinWaitlist";
+// import { PrimaryFeatures } from "../components/PrimaryFeatures";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
             <HowStart />
           </div>
           <Testimonials />
+          {/* <PrimaryFeatures /> */}
           <JoinWaitlist />
         </main>
       </div>
