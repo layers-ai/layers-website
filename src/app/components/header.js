@@ -5,8 +5,8 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: "Product", href: "#" },
-  { name: "Testimonials", href: "#" },
+  { name: "Product", href: "#hero" },
+  { name: "Testimonials", href: "#testimonials" },
   { name: "Features", href: "#" },
   { name: "Benefits", href: "#" },
 ];
@@ -21,8 +21,8 @@ export default function Header() {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
+          <a href="/" className="-m-1.5 p-1.5">
+            <span className="sr-only">layers journal app</span>
             <img className="h-8 w-auto" src="/images/layers-logo.svg" alt="" />
           </a>
         </div>
