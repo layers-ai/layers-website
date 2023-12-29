@@ -1,6 +1,7 @@
 "use client";
 
-import { ChevronRightIcon } from "@heroicons/react/20/solid";
+// import { ChevronRightIcon } from "@heroicons/react/20/solid";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -90,7 +91,12 @@ export default function Hero() {
               transform="translate(24 24)"
               clipPath="url(#2ade4387-9c63-4fc4-b754-10e687a0d332)"
             >
-              <img src="/images/screenshots/home-screen-filled.png" alt="" />
+              <Image
+                src="/images/screenshots/home-screen-filled.png"
+                alt=""
+                width={316}
+                height={684}
+              />
             </foreignObject>
           </svg>
         </div>
