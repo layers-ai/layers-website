@@ -14,7 +14,7 @@ const steps = [
   {
     id: "step-3",
     title: "Create your own narrative",
-    text: "Capture treasured moments and thoughts. Enhance self-awareness, nurture well-being, and strengthen your relationships to others by truly understanding yourself.",
+    text: "Capture treasured moments and thoughts. Nurture your well-being, and strengthen your relationships to others by truly understanding yourself.",
     emoji: "🪄",
   },
   // More people...
