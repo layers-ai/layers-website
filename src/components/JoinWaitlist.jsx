@@ -4,11 +4,11 @@ export default function JoinWaitlist() {
   return (
     <div className="bg-white w-full h-screen relative relative">
       <Image
-        className="absolute w-full h-full"
+        className="absolute w-full h-full object-cover"
         src="/images/backgrounds/woman-in-field-of-flowers_large_square.png"
         alt=""
-        layout="fill"
-        objectFit="cover"
+        fill
+        sizes="100vw"
       />
       <div className="mx-auto w-full sm:px-6 lg:px-8 absolute inset-x-0 top-0">
         <div className="relative isolate overflow-hidden px-6 pt-28 xl:pt-28 sm:px-24">

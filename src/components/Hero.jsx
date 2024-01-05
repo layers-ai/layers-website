@@ -1,6 +1,7 @@
 "use client";
 
-import { ChevronRightIcon } from "@heroicons/react/20/solid";
+// import { ChevronRightIcon } from "@heroicons/react/20/solid";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -24,7 +25,7 @@ export default function Hero() {
             </div>
           </div>
           <h1 className="mt-10 max-w-lg text-4xl font-bold tracking-tight text-savory-700 sm:text-6xl">
-            Your companion for well-being.
+            Your Companion for Well-Being
           </h1>
           <p className="mt-6 text-2xl leading-8 text-gray-950">
             Gain deep insights into your mind and embark on a journey towards a
@@ -90,7 +91,13 @@ export default function Hero() {
               transform="translate(24 24)"
               clipPath="url(#2ade4387-9c63-4fc4-b754-10e687a0d332)"
             >
-              <img src="/images/screenshots/home-screen-filled.png" alt="" />
+              <Image
+                src="/images/screenshots/home-screen-filled.png"
+                alt=""
+                width={316}
+                height={684}
+                priority
+              />
             </foreignObject>
           </svg>
         </div>

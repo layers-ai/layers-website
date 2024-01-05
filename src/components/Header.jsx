@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+
 "use client";
 
 import { useState } from "react";
@@ -5,9 +7,9 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: "Product", href: "#hero" },
+  { name: "Product", href: "#product" },
   { name: "Testimonials", href: "#testimonials" },
-  { name: "Features", href: "#" },
+  { name: "Features", href: "#features" },
   { name: "Benefits", href: "#" },
 ];
 
