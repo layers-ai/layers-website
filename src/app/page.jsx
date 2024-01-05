@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import HowStart from "../components/HowStart";
 import Testimonials from "../components/Testimonials";
 import JoinWaitlist from "../components/JoinWaitlist";
+import { PrimaryFeatures } from "../components/PrimaryFeatures";
 import TheWhy from "@/components/TheWhy";
 
 // bg-gradient-to-b from-gold-100 via-gold-400 to-gold-700
@@ -21,6 +22,7 @@ export default function Home() {
           </div>
         </div>
         <Testimonials />
+        <PrimaryFeatures />
         <JoinWaitlist />
       </main>
     </div>
