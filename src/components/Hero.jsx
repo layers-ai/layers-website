@@ -25,7 +25,7 @@ export default function Hero() {
             </div>
           </div>
           <h1 className="mt-10 max-w-lg text-4xl font-bold tracking-tight text-savory-700 sm:text-6xl">
-            Your Companion for Well-Being
+            Your companion for well-being
           </h1>
           <p className="mt-6 text-2xl leading-8 text-gray-950">
             Gain deep insights into your mind and embark on a journey towards a
