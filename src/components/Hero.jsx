@@ -96,6 +96,7 @@ export default function Hero() {
                 alt=""
                 width={316}
                 height={684}
+                priority
               />
             </foreignObject>
           </svg>
