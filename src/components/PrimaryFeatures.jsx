@@ -11,19 +11,12 @@ import { useDebouncedCallback } from "use-debounce";
 import { AppScreen } from "@/components/AppScreen";
 import { Container } from "@/components/Container";
 import { PhoneFrame } from "@/components/PhoneFrame";
-import {
-  DiageoLogo,
-  LaravelLogo,
-  MirageLogo,
-  ReversableLogo,
-  StatamicLogo,
-  StaticKitLogo,
-  TransistorLogo,
-  TupleLogo,
-} from "@/components/StockLogos";
 
-const MotionAppScreenHeader = motion(AppScreen.Header);
-const MotionAppScreenBody = motion(AppScreen.Body);
+import {
+  LightBulbIcon,
+  MicrophoneIcon,
+  SpeakerWaveIcon,
+} from "@heroicons/react/24/outline";
 
 const features = [
   {
@@ -31,83 +24,39 @@ const features = [
     description:
       "People don't talk the way they write. Layers' advanced speech-to-text not only eliminates disfluencies like 'uh' and 'hm' but also cuts out repetitions and incomplete sentences, all while keeping your unique choice of words and style intact.",
     icon: MicrophoneIcon,
-    screen: InvestScreen,
+    screen: VoiceScreen,
   },
   {
     name: "Discover yourself",
     description:
       "Imagine a magical journal that listens to the stories of your days, then mirrors them back with insights and truths you hadn't seen before. Layers is that journal, revealing the unseen layers of your life every week.",
-    icon: BulbIcon,
-    screen: InviteScreen,
+    icon: LightBulbIcon,
+    screen: InsightScreen,
   },
   {
-    name: "Your Life in a Podcast",
+    name: "Your life in a podcast",
     description:
       "Receive a weekly podcast of your life's highlights and reflections. Sit back, listen, and uncover key moments, challenges, and joys, unraveling not just how you feel but why.",
-    icon: SpeakerIcon,
-    screen: StocksScreen,
+    icon: SpeakerWaveIcon,
+    screen: PodcastScreen,
   },
 ];
 
-function BulbIcon(props) {
+function VoiceScreen(props) {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      strokeWidth={1.5}
-      stroke="#DCDDFA"
-      className="w-6 h-6"
-      {...props}
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"
+    <AppScreen className="w-full">
+      <Image
+        src="/images/screenshots/check-in-voice.png"
+        alt="podcast screen"
+        width={318}
+        height={686}
+        priority
       />
-    </svg>
+    </AppScreen>
   );
 }
 
-function MicrophoneIcon(props) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      strokeWidth={1.5}
-      stroke="#DCDDFA"
-      className="w-6 h-6"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        d="M12 18.75a6 6 0 0 0 6-6v-1.5m-6 7.5a6 6 0 0 1-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 0 1-3-3V4.5a3 3 0 1 1 6 0v8.25a3 3 0 0 1-3 3Z"
-      />
-    </svg>
-  );
-}
-
-function SpeakerIcon(props) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      strokeWidth={1.5}
-      stroke="#DCDDFA"
-      className="w-6 h-6"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        d="M19.114 5.636a9 9 0 0 1 0 12.728M16.463 8.288a5.25 5.25 0 0 1 0 7.424M6.75 8.25l4.72-4.72a.75.75 0 0 1 1.28.53v15.88a.75.75 0 0 1-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.009 9.009 0 0 1 2.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75Z"
-      />
-    </svg>
-  );
-}
-
-function InviteScreen(props) {
+function InsightScreen(props) {
   return (
     <AppScreen className="w-full">
       <Image
@@ -121,25 +70,11 @@ function InviteScreen(props) {
   );
 }
 
-function StocksScreen(props) {
+function PodcastScreen(props) {
   return (
     <AppScreen className="w-full">
       <Image
         src="/images/screenshots/play-podcast-no-status-bar.png"
-        alt="podcast screen"
-        width={318}
-        height={686}
-        priority
-      />
-    </AppScreen>
-  );
-}
-
-function InvestScreen(props) {
-  return (
-    <AppScreen className="w-full">
-      <Image
-        src="/images/screenshots/check-in-voice.png"
         alt="podcast screen"
         width={318}
         height={686}
@@ -196,7 +131,7 @@ function FeaturesDesktop() {
               />
             )}
             <div className="relative z-10 p-8">
-              <feature.icon className="h-8 w-8" />
+              <feature.icon className="h-6 w-6 text-savory-100" />
               <h3 className="mt-6 text-lg font-semibold text-white">
                 <Tab className="text-left focus:outline-none focus-visible:outline-none ui-not-focus-visible:outline-none">
                   <span className="absolute inset-0 rounded-2xl" />
@@ -336,6 +271,7 @@ export function PrimaryFeatures() {
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-3xl">
           <h2 className="text-3xl font-medium tracking-tight text-white">
             More than a journal. Your companion for well-being.
+            {/* A life coach. In your pocket. */}
           </h2>
           <p className="mt-2 text-lg text-gray-400">
             Imagine a book that writes itself. Not with fictional stories, but
