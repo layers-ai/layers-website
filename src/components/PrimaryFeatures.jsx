@@ -11,19 +11,6 @@ import { useDebouncedCallback } from "use-debounce";
 import { AppScreen } from "@/components/AppScreen";
 import { Container } from "@/components/Container";
 import { PhoneFrame } from "@/components/PhoneFrame";
-import {
-  DiageoLogo,
-  LaravelLogo,
-  MirageLogo,
-  ReversableLogo,
-  StatamicLogo,
-  StaticKitLogo,
-  TransistorLogo,
-  TupleLogo,
-} from "@/components/StockLogos";
-
-const MotionAppScreenHeader = motion(AppScreen.Header);
-const MotionAppScreenBody = motion(AppScreen.Body);
 
 const features = [
   {
@@ -41,7 +28,7 @@ const features = [
     screen: InviteScreen,
   },
   {
-    name: "Your Life in a Podcast",
+    name: "Your life in a podcast",
     description:
       "Receive a weekly podcast of your life's highlights and reflections. Sit back, listen, and uncover key moments, challenges, and joys, unraveling not just how you feel but why.",
     icon: SpeakerIcon,
@@ -336,6 +323,7 @@ export function PrimaryFeatures() {
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-3xl">
           <h2 className="text-3xl font-medium tracking-tight text-white">
             More than a journal. Your companion for well-being.
+            {/* A life coach. In your pocket. */}
           </h2>
           <p className="mt-2 text-lg text-gray-400">
             Imagine a book that writes itself. Not with fictional stories, but
