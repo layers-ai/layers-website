@@ -7,6 +7,7 @@ import TheWhy from "@/components/TheWhy";
 import TalkToJournal from "@/components/TalkToJournal";
 import Benefits from "@/components/Benefits";
 import Faq from "@/components/Faq";
+import BlogPreviews from "@/components/BlogPreviews";
 
 // bg-gradient-to-b from-gold-100 via-gold-400 to-gold-700
 
@@ -28,6 +29,7 @@ export default function Home() {
         <JoinWaitlist />
         <Benefits />
         <Faq />
+        <BlogPreviews />
       </main>
     </div>
   );
