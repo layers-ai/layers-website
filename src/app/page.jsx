@@ -6,6 +6,7 @@ import { PrimaryFeatures } from "../components/PrimaryFeatures";
 import TheWhy from "@/components/TheWhy";
 import TalkToJournal from "@/components/TalkToJournal";
 import Benefits from "@/components/Benefits";
+import Faq from "@/components/Faq";
 
 // bg-gradient-to-b from-gold-100 via-gold-400 to-gold-700
 
@@ -26,6 +27,7 @@ export default function Home() {
         <TalkToJournal />
         <JoinWaitlist />
         <Benefits />
+        <Faq />
       </main>
     </div>
   );
