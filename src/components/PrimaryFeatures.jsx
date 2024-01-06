@@ -121,12 +121,12 @@ function FeaturesDesktop() {
         {features.map((feature, featureIndex) => (
           <div
             key={feature.name}
-            className="relative rounded-2xl transition-colors hover:bg-[#282948]/30"
+            className="relative rounded-2xl transition-colors hover:bg-savory-superdark-lighter/30"
           >
             {featureIndex === selectedIndex && (
               <motion.div
                 layoutId="activeBackground"
-                className="absolute inset-0 bg-[#282948]"
+                className="absolute inset-0 bg-savory-superdark-lighter"
                 initial={{ borderRadius: 16 }}
               />
             )}
@@ -218,11 +218,11 @@ function FeaturesMobile() {
             ref={(ref) => ref && (slideRefs.current[featureIndex] = ref)}
             className="w-full flex-none snap-center px-4 sm:px-6"
           >
-            <div className="relative transform overflow-hidden rounded-2xl bg-[#282948] px-5 py-6">
+            <div className="relative transform overflow-hidden rounded-2xl bg-savory-superdark-lighter px-5 py-6">
               <PhoneFrame className="relative mx-auto w-full max-w-[366px]">
                 <feature.screen />
               </PhoneFrame>
-              <div className="absolute inset-x-0 bottom-0 bg-[#282948]/95 p-6 backdrop-blur sm:p-10">
+              <div className="absolute inset-x-0 bottom-0 bg-savory-superdark-lighter/95 p-6 backdrop-blur sm:p-10">
                 <feature.icon className="h-8 w-8" />
                 <h3 className="mt-6 text-sm font-semibold text-white sm:text-lg">
                   {feature.name}
@@ -265,7 +265,7 @@ export function PrimaryFeatures() {
     <section
       id="features"
       aria-label="Features for investing all your money"
-      className="bg-[#171835] py-20 sm:py-32"
+      className="bg-savory-superdark py-20 sm:py-32"
     >
       <Container>
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-3xl">

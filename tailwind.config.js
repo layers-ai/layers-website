@@ -58,6 +58,8 @@ module.exports = {
           800: "#A68949",
           900: "#8A723D",
         },
+        "savory-superdark": "#171835",
+        "savory-superdark-lighter": "#282948",
       },
     },
   },
