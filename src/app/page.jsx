@@ -1,12 +1,11 @@
-// import Features from "./components/features";
 import Hero from "../components/Hero";
 import Header from "../components/Header";
-import HowStart from "../components/HowStart";
 import Testimonials from "../components/Testimonials";
 import JoinWaitlist from "../components/JoinWaitlist";
 import { PrimaryFeatures } from "../components/PrimaryFeatures";
 import TheWhy from "@/components/TheWhy";
 import TalkToJournal from "@/components/TalkToJournal";
+import Benefits from "@/components/Benefits";
 
 // bg-gradient-to-b from-gold-100 via-gold-400 to-gold-700
 
@@ -26,6 +25,7 @@ export default function Home() {
         <PrimaryFeatures />
         <TalkToJournal />
         <JoinWaitlist />
+        <Benefits />
       </main>
     </div>
   );
