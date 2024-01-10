@@ -16,7 +16,7 @@ const features = [
   {
     name: "Partner for Self-Reflection",
     description:
-      "Layers provides you with bespoke follow-up questions that help you take on new perspectives and gain a deeper understanding of yourself.",
+      "Layers provides you with questions tailored to you that help you take on new perspectives and gain a deeper understanding of yourself.",
     href: "#",
     emoji: "🪄",
     illustration: BespokePrompts,
@@ -24,7 +24,7 @@ const features = [
   {
     name: "Weekly insights",
     description:
-      "Layers automatically distills your daily check-ins into a weekly report about your mental state, essential thoughts and insights and what happened in your life.",
+      "Layers automatically distills your daily check-ins into a weekly report about your mental state, essential thoughts and insights, and important moments.",
     href: "#",
     emoji: "🔮",
     illustration: WeeklyInsights,
@@ -42,11 +42,12 @@ export default function TheWhy() {
             Effortless Self-Discovery
           </h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            A coach at your fingertips
+            {/* A coach at your fingertips */}A companion you can always talk to
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            A companion you can always talk to. Who helps you reflect on your
-            life and thoughts. And who supports you in nurturing a happy life.
+            A companion that helps with your personal development. Who helps you
+            reflect on your life and thoughts. And who supports you in nurturing
+            a happy life.
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
