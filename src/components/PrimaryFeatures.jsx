@@ -20,23 +20,23 @@ import {
 
 const features = [
   {
-    name: "Talk to your journal",
+    name: "Powerful Voice Recognition",
     description:
-      "People don't talk the way they write. Layers' advanced speech-to-text not only eliminates disfluencies like 'uh' and 'hm' but also cuts out repetitions and incomplete sentences, all while keeping your unique choice of words and style intact.",
+      "Layers' advanced speech-to-text not only eliminates disfluencies like 'uh' and 'hm' but also cuts out repetitions and incomplete sentences, all while keeping your unique choice of words and style intact.",
     icon: MicrophoneIcon,
     screen: VoiceScreen,
   },
   {
-    name: "Discover yourself",
+    name: "Unmatched Insights",
     description:
-      "Imagine a magical journal that listens to the stories of your days, then mirrors them back with insights and truths you hadn't seen before. Layers is that journal, revealing the unseen layers of your life every week.",
+      "Layers automatically creates weekly insights for you on your mood, stress levels and emotional landscape. It highlights important thoughts and patterns in your life. Understand your personal journey like never before.",
     icon: LightBulbIcon,
     screen: InsightScreen,
   },
   {
     name: "Your life in a podcast",
     description:
-      "Receive a weekly podcast of your life's highlights and reflections. Sit back, listen, and uncover key moments, challenges, and joys, unraveling not just how you feel but why.",
+      "You can even listen to your weekly insights as a personal podcast. Sit back and relax, take stock and review key moments, challenges and joys. Understand not just how you felt but why.",
     icon: SpeakerWaveIcon,
     screen: PodcastScreen,
   },
@@ -274,9 +274,12 @@ export function PrimaryFeatures() {
             {/* A life coach. In your pocket. */}
           </h2>
           <p className="mt-2 text-lg text-gray-400">
-            Imagine a book that writes itself. Not with fictional stories, but
+            {/* Imagine a book that writes itself. Not with fictional stories, but
             with chapters of your own life, offering new perspectives and
-            opportunities to grow each time you speak. Pure magic.
+            opportunities to grow each time you speak. Pure magic. */}
+            Imagine a coach that appears anytime anywhere on the press of a
+            button. Who you can reflect on your life, your thoughts and
+            challenges with. And who delivers a detailed report every week.
           </p>
         </div>
       </Container>
