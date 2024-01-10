@@ -1,24 +1,33 @@
+import Image from "next/image";
+
+import VoiceAssistant from "@/images/voice-assistant.svg";
+import BespokePrompts from "@/images/bespoke-prompts.svg";
+import WeeklyInsights from "@/images/weekly-insights.svg";
+
 const features = [
   {
-    name: "Voice-Enabled Daily Check-In",
+    name: "Daily Check-In",
     description:
-      "Journaling can be time consuming and requires discipline. Layers makes journaling so easy that it can fit in any schedule, anywhere. Simply speak and the app creates beautiful journal entries for you.",
+      "Reflect on what’s important each day. Layers asks you three simple questions. Answer via voice or text and start your journey towards a happier life.",
     href: "#",
     emoji: "🎙️",
+    illustration: VoiceAssistant,
   },
   {
-    name: "Bespoke prompts",
+    name: "Partner for Self-Reflection",
     description:
-      "Facing a blank page can be intimidating. Journaling with Layers is more like having a conversation. The app provides tailored questions, aiding you in self-understanding and adopting new perspectives.",
+      "Layers provides you with bespoke follow-up questions that help you take on new perspectives and gain a deeper understanding of yourself.",
     href: "#",
     emoji: "🪄",
+    illustration: BespokePrompts,
   },
   {
     name: "Weekly insights",
     description:
-      "Nobody has time to read old journal entries, yet they hold valuable insights, thoughts, and ideas. Layers condenses these into weekly insights, which you can even enjoy as a mini podcast.",
+      "Layers automatically distills your daily check-ins into a weekly report about your mental state, essential thoughts and insights and what happened in your life.",
     href: "#",
     emoji: "🔮",
+    illustration: WeeklyInsights,
   },
 ];
 
@@ -33,18 +42,25 @@ export default function TheWhy() {
             Effortless Self-Discovery
           </h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Journaling has never been easier
+            A coach at your fingertips
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Meet Layers, your AI-assisted journal. We make journaling
-            effortless, so you can delve into self-understanding and nurture a
-            happy life.
+            A companion you can always talk to. Who helps you reflect on your
+            life and thoughts. And who supports you in nurturing a happy life.
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
           <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
             {features.map((feature) => (
               <div key={feature.name} className="flex flex-col">
+                {/* <div className="w-full mb-8">
+                  <Image
+                    src={feature.illustration}
+                    alt="illustration"
+                    width="300"
+                    height="300"
+                  />
+                </div> */}
                 <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
                   <div className="text-2xl">{feature.emoji}</div>
                   {feature.name}
