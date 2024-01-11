@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-import VoiceAssistant from "@/images/voice-assistant.svg";
-import BespokePrompts from "@/images/bespoke-prompts.svg";
-import WeeklyInsights from "@/images/weekly-insights.svg";
+// import VoiceAssistant from "@/images/voice-assistant.svg";
+// import BespokePrompts from "@/images/bespoke-prompts.svg";
+// import WeeklyInsights from "@/images/weekly-insights.svg";
 
 const features = [
   {
@@ -11,7 +11,7 @@ const features = [
       "Reflect on what’s important each day. Layers asks you three simple questions. Answer via voice or text and start your journey towards a happier life.",
     href: "#",
     emoji: "🎙️",
-    illustration: VoiceAssistant,
+    // illustration: VoiceAssistant,
   },
   {
     name: "Partner for Self-Reflection",
@@ -19,7 +19,7 @@ const features = [
       "Layers provides you with questions tailored to you that help you take on new perspectives and gain a deeper understanding of yourself.",
     href: "#",
     emoji: "🪄",
-    illustration: BespokePrompts,
+    // illustration: BespokePrompts,
   },
   {
     name: "Weekly insights",
@@ -27,7 +27,7 @@ const features = [
       "Layers automatically distills your daily check-ins into a weekly report about your mental state, essential thoughts and insights, and important moments.",
     href: "#",
     emoji: "🔮",
-    illustration: WeeklyInsights,
+    // illustration: WeeklyInsights,
   },
 ];
 
