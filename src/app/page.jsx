@@ -7,7 +7,7 @@ import TheWhy from "@/components/TheWhy";
 import TalkToJournal from "@/components/TalkToJournal";
 import Benefits from "@/components/Benefits";
 import Faq from "@/components/Faq";
-import BlogPreviews from "@/components/BlogPreviews";
+// import BlogPreviews from "@/components/BlogPreviews";
 import Footer from "@/components/Footer";
 import PersonalPodcast from "@/components/PersonalPodcast";
 
@@ -32,7 +32,7 @@ export default function Home() {
         <JoinWaitlist />
         <Benefits />
         <Faq />
-        <BlogPreviews />
+        {/* <BlogPreviews /> */}
       </main>
       <Footer />
     </div>
