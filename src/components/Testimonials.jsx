@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const featuredTestimonial = {
-  body: "I love the weekly mini-podcast. It is a great way to look back at my week. Listening to it on the subway is a perfect time for some thoughtful self-reflection.",
+  body: "I love the weekly mini-podcast. It is a great way to look back at my week. Listening to it in the car is a perfect time for some thoughtful self-reflection.",
   author: {
     name: "Niclas Rohrwacher",
     handle: "Founder & Podcast Host",
@@ -14,20 +14,21 @@ const testimonials = [
       // Left column
       // left 1
       {
-        body: "Journaling was always a challenge for me, but Layers has been a revelation. It's intuitive and effective, making it the first app I've consistently used for journaling.",
+        body: "Creating a self-reflection habit with layers was a breeze. It's so quick and user-friendly, it slips right into my hectic schedule without a hitch.",
         author: {
-          name: "Taneshia Jones",
+          name: "Giselle Babtiste",
           handle: "Teacher",
-          imageUrl: "/images/testimonials/taneshia-jones.jpg",
+          imageUrl: "/images/testimonials/giselle-babtiste.jpg",
         },
       },
       // left 2
+
       {
-        body: "I'm impressed with how Layers removes any disfluencies from my voice notes and creates coherent journal entries. It's like having a personal editor for my thoughts.",
+        body: "Layers is like an external hard drive for my memory. Being able to ask questions and chat with my journal is incredibly convenient and insightful.",
         author: {
-          name: "Tabea Wolf",
-          handle: "Artist & Author",
-          imageUrl: "/images/testimonials/tabea-wolf.jpg",
+          name: "Vicky Etherington",
+          handle: "CPO & Coach",
+          imageUrl: "/images/testimonials/vicky-etherington.jpg",
         },
       },
       // More testimonials...
@@ -35,11 +36,11 @@ const testimonials = [
     [
       // bottom left
       {
-        body: "Layers stands out in its simplicity and efficiency. A quick daily check-in suffices for maintaining a meaningful journal. It's refreshingly uncomplicated.",
+        body: "I really enjoy the weekly insights. They help me uncover themes in my life and give me a clearer picture of my personal growth.",
         author: {
-          name: "Livia Heins",
+          name: "Yuna Lee",
           handle: "Photographer",
-          imageUrl: "/images/testimonials/livia-heins.jpg",
+          imageUrl: "/images/testimonials/yuna-lee.jpg",
         },
       },
       // More testimonials...
@@ -49,11 +50,11 @@ const testimonials = [
     [
       // bottom right
       {
-        body: "Layers opened my eyes to the real impact of journaling. Each week, I get a clear picture of what was going on in my life and mind. It's insightful and easy to understand.",
+        body: "It's remarkable how the app automatically understands my mood and stress levels. It's like having a Fitbit, but for my mind.",
         author: {
-          name: "Rimbert Richter",
-          handle: "Breathwork Coach & Founder",
-          imageUrl: "/images/testimonials/rimbert-richter.jpg",
+          name: "Lars Andersen",
+          handle: "Yoga Instructor",
+          imageUrl: "/images/testimonials/lars-andersen.jpg",
         },
       },
       // More testimonials...
@@ -62,7 +63,7 @@ const testimonials = [
       // Right column
       // right 1
       {
-        body: "The personalized follow-up questions in Layers are incredibly effective. They offer new perspectives and allow me to delve deeper into topics. It's been transformative for my journaling experience.",
+        body: "Reflecting with layers is great. It feels like chatting with a buddy who knows exactly what to ask, helping me get a clearer picture of my personal life and the challenges I face.",
         author: {
           name: "Michael Bohmeyer",
           handle: "Entrepreneur & Activist",
@@ -71,11 +72,11 @@ const testimonials = [
       },
       // right 2
       {
-        body: "I never read old journal entries. But with layers, I can just ask my journal questions. A journal I can talk to is straight out of a fantasy film.",
+        body: "I never liked using voice recognition. With layers, it’s different. It just works. It's like having a personal editor for my thoughts.",
         author: {
-          name: "Vicky Etherington",
-          handle: "CPO & Transformation Coach",
-          imageUrl: "/images/testimonials/vicky-etherington.jpg",
+          name: "Tabea Wolf",
+          handle: "Artist & Author",
+          imageUrl: "/images/testimonials/tabea-wolf.jpg",
         },
       },
       // More testimonials...
