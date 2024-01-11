@@ -31,14 +31,14 @@ const features = [
     description:
       "Have a personal thought partner in your pocket. The app provides questions tailored to you that encourage deep introspection and offer new perspectives on your life.",
     icon: LightBulbIcon,
-    screen: InsightScreen,
+    screen: InsightfulQueriesScreen,
   },
   {
     name: "Profound Insights",
     description:
       "Receive weekly insights into important topics, learnings, and patterns in your life and automatically track your mood and stress levels.",
     icon: ChartBarIcon,
-    screen: PodcastScreen,
+    screen: InsightScreen,
   },
 ];
 
@@ -47,7 +47,21 @@ function VoiceScreen(props) {
     <AppScreen className="w-full">
       <Image
         src="/images/screenshots/check-in-voice.png"
-        alt="podcast screen"
+        alt="accurate voice recognition"
+        width={318}
+        height={686}
+        priority
+      />
+    </AppScreen>
+  );
+}
+
+function InsightfulQueriesScreen(props) {
+  return (
+    <AppScreen className="w-full">
+      <Image
+        src="/images/screenshots/insightful-queries.png"
+        alt="insightful queries"
         width={318}
         height={686}
         priority
@@ -60,22 +74,8 @@ function InsightScreen(props) {
   return (
     <AppScreen className="w-full">
       <Image
-        src="/images/screenshots/home-screen-filled-no-status-bar.png"
-        alt="home screen"
-        width={318}
-        height={686}
-        priority
-      />
-    </AppScreen>
-  );
-}
-
-function PodcastScreen(props) {
-  return (
-    <AppScreen className="w-full">
-      <Image
-        src="/images/screenshots/play-podcast-no-status-bar.png"
-        alt="podcast screen"
+        src="/images/screenshots/weekly-insights.png"
+        alt="weekly insights"
         width={318}
         height={686}
         priority
