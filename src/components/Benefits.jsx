@@ -2,37 +2,37 @@ const features = [
   {
     name: "Ease Stress & Anxiety",
     description:
-      "Writing about your emotions in a journal helps to manage stress and anxiety by acting as a cognitive release, freeing your mind from persistent worries.",
+      "Verbalizing your emotions helps to manage stress and anxiety by acting as a cognitive release, freeing your mind from persistent worries.",
     emoji: "🍀",
   },
   {
     name: "Sharpen Your Memory",
     description:
-      "Journaling acts as an external hard drive, improving memory retention. It aids in revisiting and reflecting on past events, sharpening memory and comprehension.",
+      "Revisiting and reflecting on past events sharpens your memory and comprehension.",
     emoji: "🧠",
   },
   {
     name: "Smarter Decisions",
     description:
-      "Journaling aids decision-making by providing a platform to clarify and organize thoughts, much like solving complex equations more effectively on paper.",
+      "A regular self-reflection practice clarifies and organizes your thoughts and helps you make better decisions.",
     emoji: "🔮",
   },
   {
     name: "Goal Achievement",
     description:
-      "Keeping a gratitude journal not only fosters a positive mindset but also aids in achieving personal goals by maintaining focus and enhancing motivation.",
+      "Keeping a gratitude journal fosters a positive mindset and enhances your motivation and goal achievement.",
     emoji: "🎯",
   },
   {
-    name: "Emotional Balance & Stronger Relationships",
+    name: "Stronger Relationships",
     description:
-      "Journaling about emotions and relationships allows for better emotional management and understanding, leading to stronger, healthier connections and improved personal interactions.",
+      "Reflecting relationships allows for better understanding, leading to stronger, healthier connections and improved personal interactions.",
     emoji: "❤️",
   },
   {
     name: "Narrative Building",
     description:
-      "Regular journaling helps construct a coherent personal narrative, making sense of emotions and experiences and fostering a stronger, more grounded sense of identity and purpose.",
+      "Building a coherent narrative and making sense of emotions and experiences fosters a stronger, more grounded sense of identity and purpose.",
     emoji: "🖋️",
   },
 ];
