@@ -15,29 +15,29 @@ import { PhoneFrame } from "@/components/PhoneFrame";
 import {
   LightBulbIcon,
   MicrophoneIcon,
-  SpeakerWaveIcon,
+  ChartBarIcon,
 } from "@heroicons/react/24/outline";
 
 const features = [
   {
     name: "Powerful Voice Recognition",
     description:
-      "Layers' advanced speech-to-text not only eliminates disfluencies like 'uh' and 'hm' but also cuts out repetitions and incomplete sentences, all while keeping your unique choice of words and style intact.",
+      "A highly accurate voice recognition that eliminates disfluencies like 'uh' and 'hm' and cuts out repetitions and incomplete sentences, all while keeping your unique style intact.",
     icon: MicrophoneIcon,
     screen: VoiceScreen,
   },
   {
-    name: "Unmatched Insights",
+    name: "Insightful Queries",
     description:
-      "Layers automatically creates weekly insights for you on your mood, stress levels and emotional landscape. It highlights important thoughts and patterns in your life. Understand your personal journey like never before.",
+      "Have a personal thought partner in your pocket. The app provides questions tailored to you that encourage deep introspection and offer new perspectives on your life.",
     icon: LightBulbIcon,
     screen: InsightScreen,
   },
   {
-    name: "Your life in a podcast",
+    name: "Profound Insights",
     description:
-      "You can even listen to your weekly insights as a personal podcast. Sit back and relax, take stock and review key moments, challenges and joys. Understand not just how you felt but why.",
-    icon: SpeakerWaveIcon,
+      "Receive weekly insights into important topics, learnings, and patterns in your life and automatically track your mood and stress levels.",
+    icon: ChartBarIcon,
     screen: PodcastScreen,
   },
 ];
