@@ -38,9 +38,9 @@ const testimonials = [
       {
         body: "I really enjoy the weekly insights. They help me uncover themes in my life and give me a clearer picture of my personal growth.",
         author: {
-          name: "Yuna Lee",
-          handle: "Photographer",
-          imageUrl: "/images/testimonials/yuna-lee.jpg",
+          name: "Burcu Gürbüz",
+          handle: "MD",
+          imageUrl: "/images/testimonials/burcu-guerbuez.jpeg",
         },
       },
       // More testimonials...
