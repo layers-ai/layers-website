@@ -49,7 +49,7 @@ const circular = localFont({
 import "./globals.css";
 
 export const metadata = {
-  title: "Layers Journal App",
+  title: "layers app - your companion for well-being",
   description: "Your companion for well-being.",
 };
 

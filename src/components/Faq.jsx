@@ -5,19 +5,9 @@ import { MinusSmallIcon, PlusSmallIcon } from "@heroicons/react/24/outline";
 
 const faqs = [
   {
-    question: "Is my data safe?",
+    question: "What's the method behind layers?",
     answer:
-      "Absolutely. We enforce rock solid data security and follow leading industry standards for medical data. All data in our databases is encrypted at rest. Layers is built to keep your information private, safe and secure. ",
-  },
-  {
-    question: "Is the journal end-to-end encrypted?",
-    answer:
-      "Currently, no. End-to-end encryption isn't possible yet as our AI models can't operate on mobile devices. However, we're committed to evolving our architecture with technological advancements.",
-  },
-  {
-    question: "How is my data handled?",
-    answer:
-      "We process your data exclusively in our cloud infrastructure and with our data processing partners to deliver our service. We guarantee your data is never sold or shared with others. Ever.",
+      "Layers is grounded in Positive Psychology principles, a psychology field that studies positive human functioning and flourishing, focusing on strengths, well-being, and happiness.",
   },
   {
     question: "How much will layers cost?",
@@ -25,14 +15,20 @@ const faqs = [
       "We're still finalizing pricing, but we're aiming for approximately $13 monthly or $100 annually.",
   },
   {
-    question: "What's the method behind layers?",
+    question: "Is my data safe?",
     answer:
-      "Layers is grounded in Positive Psychology principles, a psychology field that studies positive human functioning and flourishing, focusing on strengths, well-being, and happiness.",
+      "Absolutely. We enforce rock solid data security and follow leading industry standards for medical data. All data in our databases is encrypted at rest. Layers is built to keep your information private, safe and secure. ",
   },
+  {
+    question: "How is my data handled?",
+    answer:
+      "We process your data exclusively in our cloud infrastructure in Germany and with our data processing partners to deliver our service. We guarantee your data is never sold or shared with others.",
+  },
+
   {
     question: "I want to work with you. Where can I apply?",
     answer:
-      "While we're keeping our team compact during Layers' initial development, we're always open to collaborating with talented individuals. Reach out to us at hello@layersjournal.app for opportunities.",
+      "While we're keeping our team compact during layers' initial development, we're always open to collaborating with talented individuals. Reach out to us at hello@layersjournal.app for opportunities.",
   },
 ];
 

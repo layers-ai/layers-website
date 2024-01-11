@@ -15,30 +15,30 @@ import { PhoneFrame } from "@/components/PhoneFrame";
 import {
   LightBulbIcon,
   MicrophoneIcon,
-  SpeakerWaveIcon,
+  ChartBarIcon,
 } from "@heroicons/react/24/outline";
 
 const features = [
   {
-    name: "Talk to your journal",
+    name: "Powerful Voice Recognition",
     description:
-      "People don't talk the way they write. Layers' advanced speech-to-text not only eliminates disfluencies like 'uh' and 'hm' but also cuts out repetitions and incomplete sentences, all while keeping your unique choice of words and style intact.",
+      "A highly accurate voice recognition that eliminates disfluencies like 'uh' and 'hm' and cuts out repetitions and incomplete sentences, all while keeping your unique style intact.",
     icon: MicrophoneIcon,
     screen: VoiceScreen,
   },
   {
-    name: "Discover yourself",
+    name: "Insightful Queries",
     description:
-      "Imagine a magical journal that listens to the stories of your days, then mirrors them back with insights and truths you hadn't seen before. Layers is that journal, revealing the unseen layers of your life every week.",
+      "Have a personal thought partner in your pocket. The app provides questions tailored to you that encourage deep introspection and offer new perspectives on your life.",
     icon: LightBulbIcon,
-    screen: InsightScreen,
+    screen: InsightfulQueriesScreen,
   },
   {
-    name: "Your life in a podcast",
+    name: "Profound Insights",
     description:
-      "Receive a weekly podcast of your life's highlights and reflections. Sit back, listen, and uncover key moments, challenges, and joys, unraveling not just how you feel but why.",
-    icon: SpeakerWaveIcon,
-    screen: PodcastScreen,
+      "Receive weekly insights into important topics, learnings, and patterns in your life and automatically track your mood and stress levels.",
+    icon: ChartBarIcon,
+    screen: InsightScreen,
   },
 ];
 
@@ -47,7 +47,21 @@ function VoiceScreen(props) {
     <AppScreen className="w-full">
       <Image
         src="/images/screenshots/check-in-voice.png"
-        alt="podcast screen"
+        alt="accurate voice recognition"
+        width={318}
+        height={686}
+        priority
+      />
+    </AppScreen>
+  );
+}
+
+function InsightfulQueriesScreen(props) {
+  return (
+    <AppScreen className="w-full">
+      <Image
+        src="/images/screenshots/insightful-queries.png"
+        alt="insightful queries"
         width={318}
         height={686}
         priority
@@ -60,22 +74,8 @@ function InsightScreen(props) {
   return (
     <AppScreen className="w-full">
       <Image
-        src="/images/screenshots/home-screen-filled-no-status-bar.png"
-        alt="home screen"
-        width={318}
-        height={686}
-        priority
-      />
-    </AppScreen>
-  );
-}
-
-function PodcastScreen(props) {
-  return (
-    <AppScreen className="w-full">
-      <Image
-        src="/images/screenshots/play-podcast-no-status-bar.png"
-        alt="podcast screen"
+        src="/images/screenshots/weekly-insights.png"
+        alt="weekly insights"
         width={318}
         height={686}
         priority
@@ -274,9 +274,12 @@ export function PrimaryFeatures() {
             {/* A life coach. In your pocket. */}
           </h2>
           <p className="mt-2 text-lg text-gray-400">
-            Imagine a book that writes itself. Not with fictional stories, but
+            {/* Imagine a book that writes itself. Not with fictional stories, but
             with chapters of your own life, offering new perspectives and
-            opportunities to grow each time you speak. Pure magic.
+            opportunities to grow each time you speak. Pure magic. */}
+            Imagine a coach that appears anytime anywhere on the press of a
+            button. Who you can reflect on your life, your thoughts and
+            challenges with. And who delivers a detailed report every week.
           </p>
         </div>
       </Container>

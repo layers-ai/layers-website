@@ -25,12 +25,15 @@ export default function Hero() {
             </div>
           </div>
           <h1 className="mt-10 max-w-lg text-4xl font-bold tracking-tight text-savory-700 sm:text-6xl">
+            {/* A companion for well-being you can always talk to */}
+            {/* AI coaching for personal growth */}
+            {/* Your daily mental hygiene */}
             Your companion for well-being
           </h1>
           <p className="mt-6 text-2xl leading-8 text-gray-950">
-            Gain deep insights into your mind and embark on a journey towards a
-            happier life. All with just 5 minutes a day using the layers journal
-            app.
+            Gain deep insights into your mind with <strong>layers</strong> and
+            embark on a journey towards a happier life. All with just 5 minutes
+            a day.
           </p>
           <form className="w-full mt-8 max-w-md lg:col-span-5 lg:pt-2">
             <div className="flex gap-x-2">
