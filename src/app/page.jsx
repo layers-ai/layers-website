@@ -11,7 +11,35 @@ import Faq from "@/components/Faq";
 import Footer from "@/components/Footer";
 import PersonalPodcast from "@/components/PersonalPodcast";
 
-// bg-gradient-to-b from-gold-100 via-gold-400 to-gold-700
+// Start Amplify
+import { generateServerClientUsingCookies } from "@aws-amplify/adapter-nextjs/api";
+import { cookies } from "next/headers";
+import { revalidatePath } from "next/cache";
+import * as mutations from "@/graphql/mutations";
+
+import config from "@/amplifyconfiguration.json";
+
+const cookiesClient = generateServerClientUsingCookies({
+  config,
+  cookies,
+});
+
+async function createWaitlist(formData) {
+  "use server";
+  const { data } = await cookiesClient.graphql({
+    query: mutations.createWaitlist,
+    variables: {
+      input: {
+        name: formData.get("email")?.toString() ?? "",
+      },
+    },
+  });
+
+  console.log("Created Todo: ", data?.createTodo);
+
+  revalidatePath("/");
+}
+// End Amplify
 
 export default function Home() {
   return (
