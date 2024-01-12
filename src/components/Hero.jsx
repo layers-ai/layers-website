@@ -3,7 +3,7 @@
 // import { ChevronRightIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
 
-export default function Hero() {
+export default function Hero({ handleWaitlist }) {
   return (
     <div className="relative isolate pt-14">
       <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-40">
@@ -35,7 +35,10 @@ export default function Hero() {
             embark on a journey towards a happier life. All with just 5 minutes
             a day.
           </p>
-          <form className="w-full mt-8 max-w-md lg:col-span-5 lg:pt-2">
+          <form
+            className="w-full mt-8 max-w-md lg:col-span-5 lg:pt-2"
+            action={handleWaitlist}
+          >
             <div className="flex gap-x-2">
               <label htmlFor="email-address" className="sr-only">
                 Email address

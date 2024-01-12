@@ -16,6 +16,7 @@ import { generateServerClientUsingCookies } from "@aws-amplify/adapter-nextjs/ap
 import { cookies } from "next/headers";
 import { revalidatePath } from "next/cache";
 import * as mutations from "@/graphql/mutations";
+import * as queries from "@/graphql/queries";
 
 import config from "@/amplifyconfiguration.json";
 
@@ -24,31 +25,46 @@ const cookiesClient = generateServerClientUsingCookies({
   cookies,
 });
 
+async function countWaitlist() {
+  "use server";
+  // Fetch count
+  const { data, errors } = await cookiesClient.graphql({
+    query: queries.listWaitlists,
+  });
+
+  const users = data.listWaitlists.items;
+
+  return users && users.length > 0 && !errors ? users.length : 0;
+}
+
 async function createWaitlist(formData) {
   "use server";
   const { data } = await cookiesClient.graphql({
     query: mutations.createWaitlist,
     variables: {
       input: {
-        name: formData.get("email")?.toString() ?? "",
+        email: formData.get("email")?.toString() ?? "",
       },
     },
   });
 
-  console.log("Created Todo: ", data?.createTodo);
+  console.log("Created Waitlist: ", data?.createWaitlist);
+
+  let userCount = await countWaitlist();
+  console.log(`You are number ${5400 + userCount} on the waitlist!`);
 
   revalidatePath("/");
 }
 // End Amplify
 
-export default function Home() {
+export default async function Home() {
   return (
     <div className="bg-white">
       {/* <div className="bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-savory-800 via-savory-400 to-phlox-500"> */}
       <Header />
       <main>
         <div className="bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-gray-100 via-gold-200 to-savory-600">
-          <Hero id="hero" />
+          <Hero id="hero" handleWaitlist={createWaitlist} />
           <div className="bg-gradient-to-b from-white/0 via-white/70 to-white/100">
             <TheWhy />
           </div>
