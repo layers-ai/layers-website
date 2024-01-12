@@ -10,6 +10,11 @@
       "StackName": "amplify-layerswebsite-dev-112556",
       "StackId": "arn:aws:cloudformation:us-east-1:533267386424:stack/amplify-layerswebsite-dev-112556/fa67b3a0-b134-11ee-b7d8-0e5fef07e549",
       "AmplifyAppId": "d228xm5uf5myqa"
+    },
+    "categories": {
+      "api": {
+        "layerswebsite": {}
+      }
     }
   }
 }
