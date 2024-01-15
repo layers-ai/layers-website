@@ -14,6 +14,22 @@
     "categories": {
       "api": {
         "layerswebsite": {}
+      },
+      "storage": {
+        "WaitlistCountg4feljozefgonijsw6ijdcdugydev": {
+          "tableName": "WaitlistCount-g4feljozefgonijsw6ijdcdugy-dev",
+          "region": "us-east-1",
+          "arn": "arn:aws:dynamodb:us-east-1:533267386424:table/WaitlistCount-g4feljozefgonijsw6ijdcdugy-dev",
+          "streamArn": "arn:aws:dynamodb:us-east-1:533267386424:table/WaitlistCount-g4feljozefgonijsw6ijdcdugy-dev/stream/2024-01-12T15:51:00.898",
+          "partitionKeyName": "id",
+          "partitionKeyType": "S"
+        }
+      },
+      "function": {
+        "updateWaitlistCount": {
+          "deploymentBucketName": "amplify-layerswebsite-dev-112556-deployment",
+          "s3Key": "amplify-builds/updateWaitlistCount-4374614d3975435a7232-build.zip"
+        }
       }
     }
   }

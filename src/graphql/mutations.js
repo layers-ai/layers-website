@@ -43,3 +43,45 @@ export const deleteWaitlist = /* GraphQL */ `
     }
   }
 `;
+export const createWaitlistCount = /* GraphQL */ `
+  mutation CreateWaitlistCount(
+    $input: CreateWaitlistCountInput!
+    $condition: ModelWaitlistCountConditionInput
+  ) {
+    createWaitlistCount(input: $input, condition: $condition) {
+      id
+      count
+      createdAt
+      updatedAt
+      __typename
+    }
+  }
+`;
+export const updateWaitlistCount = /* GraphQL */ `
+  mutation UpdateWaitlistCount(
+    $input: UpdateWaitlistCountInput!
+    $condition: ModelWaitlistCountConditionInput
+  ) {
+    updateWaitlistCount(input: $input, condition: $condition) {
+      id
+      count
+      createdAt
+      updatedAt
+      __typename
+    }
+  }
+`;
+export const deleteWaitlistCount = /* GraphQL */ `
+  mutation DeleteWaitlistCount(
+    $input: DeleteWaitlistCountInput!
+    $condition: ModelWaitlistCountConditionInput
+  ) {
+    deleteWaitlistCount(input: $input, condition: $condition) {
+      id
+      count
+      createdAt
+      updatedAt
+      __typename
+    }
+  }
+`;

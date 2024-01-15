@@ -31,3 +31,33 @@ export const listWaitlists = /* GraphQL */ `
     }
   }
 `;
+export const getWaitlistCount = /* GraphQL */ `
+  query GetWaitlistCount($id: ID!) {
+    getWaitlistCount(id: $id) {
+      id
+      count
+      createdAt
+      updatedAt
+      __typename
+    }
+  }
+`;
+export const listWaitlistCounts = /* GraphQL */ `
+  query ListWaitlistCounts(
+    $filter: ModelWaitlistCountFilterInput
+    $limit: Int
+    $nextToken: String
+  ) {
+    listWaitlistCounts(filter: $filter, limit: $limit, nextToken: $nextToken) {
+      items {
+        id
+        count
+        createdAt
+        updatedAt
+        __typename
+      }
+      nextToken
+      __typename
+    }
+  }
+`;

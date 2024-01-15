@@ -34,3 +34,42 @@ export const onDeleteWaitlist = /* GraphQL */ `
     }
   }
 `;
+export const onCreateWaitlistCount = /* GraphQL */ `
+  subscription OnCreateWaitlistCount(
+    $filter: ModelSubscriptionWaitlistCountFilterInput
+  ) {
+    onCreateWaitlistCount(filter: $filter) {
+      id
+      count
+      createdAt
+      updatedAt
+      __typename
+    }
+  }
+`;
+export const onUpdateWaitlistCount = /* GraphQL */ `
+  subscription OnUpdateWaitlistCount(
+    $filter: ModelSubscriptionWaitlistCountFilterInput
+  ) {
+    onUpdateWaitlistCount(filter: $filter) {
+      id
+      count
+      createdAt
+      updatedAt
+      __typename
+    }
+  }
+`;
+export const onDeleteWaitlistCount = /* GraphQL */ `
+  subscription OnDeleteWaitlistCount(
+    $filter: ModelSubscriptionWaitlistCountFilterInput
+  ) {
+    onDeleteWaitlistCount(filter: $filter) {
+      id
+      count
+      createdAt
+      updatedAt
+      __typename
+    }
+  }
+`;
