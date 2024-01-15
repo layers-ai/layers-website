@@ -6,6 +6,8 @@ or in the "license" file accompanying this file. This file is distributed on an 
 See the License for the specific language governing permissions and limitations under the License.
 */
 
+const { v4: uuidv4 } = require("uuid");
+
 const { DynamoDBClient } = require("@aws-sdk/client-dynamodb");
 const {
   DeleteCommand,
@@ -60,22 +62,58 @@ const convertUrlType = (param, type) => {
   }
 };
 
-/************************************
- * HTTP Get method to list objects *
- ************************************/
+/****************************************
+ * HTTP Get method fetch & update count *
+ ****************************************/
 
 app.get(path, async function (req, res) {
-  var params = {
-    TableName: tableName,
-    Select: "ALL_ATTRIBUTES",
-  };
-
   try {
-    const data = await ddbDocClient.send(new ScanCommand(params));
-    res.json(data.Items);
+    // Fetch all items
+    const scanParams = {
+      TableName: tableName,
+      Select: "ALL_ATTRIBUTES",
+    };
+    const scanResult = await ddbDocClient.send(new ScanCommand(scanParams));
+    const items = scanResult.Items;
+
+    // Find the record with the highest count
+    let highestCount = 0;
+    if (items.length === 0) {
+      highestCount = 5400;
+    } else {
+      highestCount = items.reduce(
+        (max, item) => (item.count > max ? item.count : max),
+        0
+      );
+    }
+
+    // Delete all records
+    for (const item of items) {
+      const deleteParams = {
+        TableName: tableName,
+        Key: {
+          id: item.id,
+        },
+      };
+      await ddbDocClient.send(new DeleteCommand(deleteParams));
+    }
+
+    // Create a new record with highest count + 1
+    const newCount = highestCount + 1;
+    const putParams = {
+      TableName: tableName,
+      Item: {
+        id: uuidv4(),
+        count: newCount,
+      },
+    };
+    await ddbDocClient.send(new PutCommand(putParams));
+
+    // Return the new count
+    res.json({ count: newCount });
   } catch (err) {
     res.statusCode = 500;
-    res.json({ error: "Could not load items: " + err.message });
+    res.json({ error: "Error processing request: " + err.message });
   }
 });
 
