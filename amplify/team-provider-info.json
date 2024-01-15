@@ -13,7 +13,8 @@
     },
     "categories": {
       "api": {
-        "layerswebsite": {}
+        "layerswebsite": {},
+        "waitlistcount": {}
       },
       "storage": {
         "WaitlistCountg4feljozefgonijsw6ijdcdugydev": {
@@ -28,7 +29,7 @@
       "function": {
         "updateWaitlistCount": {
           "deploymentBucketName": "amplify-layerswebsite-dev-112556-deployment",
-          "s3Key": "amplify-builds/updateWaitlistCount-4374614d3975435a7232-build.zip"
+          "s3Key": "amplify-builds/updateWaitlistCount-6a656d47696633474266-build.zip"
         }
       }
     }
