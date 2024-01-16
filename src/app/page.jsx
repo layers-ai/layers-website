@@ -11,9 +11,7 @@ import Faq from "@/components/Faq";
 import Footer from "@/components/Footer";
 import PersonalPodcast from "@/components/PersonalPodcast";
 
-// bg-gradient-to-b from-gold-100 via-gold-400 to-gold-700
-
-export default function Home() {
+export default async function Home() {
   return (
     <div className="bg-white">
       {/* <div className="bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-savory-800 via-savory-400 to-phlox-500"> */}

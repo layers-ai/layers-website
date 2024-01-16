@@ -1,0 +1,37 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-layerswebsite-dev-112556-authRole",
+      "UnauthRoleArn": "arn:aws:iam::533267386424:role/amplify-layerswebsite-dev-112556-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::533267386424:role/amplify-layerswebsite-dev-112556-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-layerswebsite-dev-112556-deployment",
+      "UnauthRoleName": "amplify-layerswebsite-dev-112556-unauthRole",
+      "StackName": "amplify-layerswebsite-dev-112556",
+      "StackId": "arn:aws:cloudformation:us-east-1:533267386424:stack/amplify-layerswebsite-dev-112556/fa67b3a0-b134-11ee-b7d8-0e5fef07e549",
+      "AmplifyAppId": "d228xm5uf5myqa"
+    },
+    "categories": {
+      "api": {
+        "layerswebsite": {},
+        "waitlistcount": {}
+      },
+      "storage": {
+        "WaitlistCountg4feljozefgonijsw6ijdcdugydev": {
+          "tableName": "WaitlistCount-g4feljozefgonijsw6ijdcdugy-dev",
+          "region": "us-east-1",
+          "arn": "arn:aws:dynamodb:us-east-1:533267386424:table/WaitlistCount-g4feljozefgonijsw6ijdcdugy-dev",
+          "streamArn": "arn:aws:dynamodb:us-east-1:533267386424:table/WaitlistCount-g4feljozefgonijsw6ijdcdugy-dev/stream/2024-01-12T15:51:00.898",
+          "partitionKeyName": "id",
+          "partitionKeyType": "S"
+        }
+      },
+      "function": {
+        "updateWaitlistCount": {
+          "deploymentBucketName": "amplify-layerswebsite-dev-112556-deployment",
+          "s3Key": "amplify-builds/updateWaitlistCount-4c4b387a414c4b306730-build.zip"
+        }
+      }
+    }
+  }
+}
