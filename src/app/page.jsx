@@ -11,59 +11,6 @@ import Faq from "@/components/Faq";
 import Footer from "@/components/Footer";
 import PersonalPodcast from "@/components/PersonalPodcast";
 
-// Start Amplify
-import { generateServerClientUsingCookies } from "@aws-amplify/adapter-nextjs/api";
-import { cookies } from "next/headers";
-import { revalidatePath } from "next/cache";
-import * as mutations from "@/graphql/mutations";
-import * as queries from "@/graphql/queries";
-
-import config from "@/amplifyconfiguration.json";
-
-const cookiesClient = generateServerClientUsingCookies({
-  config,
-  cookies,
-});
-
-async function countWaitlist() {
-  "use server";
-  const currentStage = process.env.AWS_AMPLIFY_ENV || "dev";
-
-  try {
-    const response = await fetch(
-      `https://d5qp6v9we5.execute-api.us-east-1.amazonaws.com/${currentStage}/waitlistcount`
-    );
-    const data = await response.json();
-    console.log(data);
-    return data.count;
-  } catch (error) {
-    console.error(error);
-    return 0;
-  }
-}
-
-async function createWaitlist(formData) {
-  "use server";
-  console.log("Creating Waitlist: ", formData.get("email"));
-
-  const { data } = await cookiesClient.graphql({
-    query: mutations.createWaitlist,
-    variables: {
-      input: {
-        email: formData.get("email")?.toString() ?? "",
-      },
-    },
-  });
-
-  console.log("Created Waitlist: ", data?.createWaitlist);
-
-  let userCount = await countWaitlist();
-  console.log(`You are number ${userCount} on the waitlist!`);
-
-  revalidatePath("/");
-}
-// End Amplify
-
 export default async function Home() {
   return (
     <div className="bg-white">
@@ -71,7 +18,7 @@ export default async function Home() {
       <Header />
       <main>
         <div className="bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-gray-100 via-gold-200 to-savory-600">
-          <Hero id="hero" handleWaitlist={createWaitlist} />
+          <Hero id="hero" />
           <div className="bg-gradient-to-b from-white/0 via-white/70 to-white/100">
             <TheWhy />
           </div>
