@@ -17,10 +17,13 @@ const cookiesClient = generateServerClientUsingCookies({
 async function countWaitlist() {
   const currentStage = process.env.AWS_AMPLIFY_ENV || "dev";
 
+  const apiUrl =
+    currentStage == "dev"
+      ? "https://d5qp6v9we5.execute-api.us-east-1.amazonaws.com/dev/waitlistcount"
+      : "https://p2omyt80lk.execute-api.us-east-1.amazonaws.com/prod/waitlistcount";
+
   try {
-    const response = await fetch(
-      `https://d5qp6v9we5.execute-api.us-east-1.amazonaws.com/${currentStage}/waitlistcount`
-    );
+    const response = await fetch(apiUrl);
     const data = await response.json();
     return data.count;
   } catch (error) {
