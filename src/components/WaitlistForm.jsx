@@ -31,7 +31,7 @@ export default function WaitlistForm({ className, inHero = false }) {
   return (
     <>
       {inHero && (
-        <form className={className} action={handleSubmit}>
+        <form className={className} action={handleSubmit} id="HeroWaitlistForm">
           {!formState.success && (
             <div className="flex gap-x-2">
               <label htmlFor="email-address" className="sr-only">
@@ -78,7 +78,11 @@ export default function WaitlistForm({ className, inHero = false }) {
       )}
       {/* Form for large section */}
       {!inHero && (
-        <form className={className} action={handleSubmit}>
+        <form
+          className={className}
+          action={handleSubmit}
+          id="SectionWaitlistForm"
+        >
           {!formState.success && (
             <>
               <label htmlFor="email-address" className="sr-only">

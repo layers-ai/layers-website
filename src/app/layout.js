@@ -1,4 +1,5 @@
 import localFont from "next/font/local";
+import Script from "next/script";
 
 const circular = localFont({
   src: [
@@ -56,6 +57,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Script
+        strategy="afterInteractive"
+        src="https://www.googletagmanager.com/gtag/js?id=G-BF2M6XH0XD"
+      ></Script>
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+        window.dataLayer = window.dataLayer || []; function gtag()
+        {dataLayer.push(arguments);}
+        gtag('js', new Date()); gtag('config', 'G-BF2M6XH0XD');
+        `}
+      </Script>
       <body className={`${circular.variable} font-sans`}>{children}</body>
     </html>
   );
