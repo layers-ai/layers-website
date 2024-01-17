@@ -24,7 +24,7 @@ const express = require("express");
 const ddbClient = new DynamoDBClient({ region: process.env.TABLE_REGION });
 const ddbDocClient = DynamoDBDocumentClient.from(ddbClient);
 
-let tableName = "WaitlistCount-g4feljozefgonijsw6ijdcdugy";
+let tableName = process.env.WAITLIST_TABLE_NAME;
 if (process.env.ENV && process.env.ENV !== "NONE") {
   tableName = tableName + "-" + process.env.ENV;
 }
