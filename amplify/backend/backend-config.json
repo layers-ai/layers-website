@@ -69,6 +69,14 @@
         }
       ]
     },
+    "AMPLIFY_function_updateWaitlistCount_waitlistTableName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "updateWaitlistCount"
+        }
+      ]
+    },
     "AMPLIFY_storage_WaitlistCountg4feljozefgonijsw6ijdcdugydev_arn": {
       "usedBy": [
         {
@@ -116,10 +124,64 @@
           "resourceName": "WaitlistCountg4feljozefgonijsw6ijdcdugydev"
         }
       ]
+    },
+    "AMPLIFY_storage_WaitlistCountkksjifc3mvafha3skymd6aqltyprod_arn": {
+      "usedBy": [
+        {
+          "category": "storage",
+          "resourceName": "WaitlistCountkksjifc3mvafha3skymd6aqltyprod"
+        }
+      ]
+    },
+    "AMPLIFY_storage_WaitlistCountkksjifc3mvafha3skymd6aqltyprod_partitionKeyName": {
+      "usedBy": [
+        {
+          "category": "storage",
+          "resourceName": "WaitlistCountkksjifc3mvafha3skymd6aqltyprod"
+        }
+      ]
+    },
+    "AMPLIFY_storage_WaitlistCountkksjifc3mvafha3skymd6aqltyprod_partitionKeyType": {
+      "usedBy": [
+        {
+          "category": "storage",
+          "resourceName": "WaitlistCountkksjifc3mvafha3skymd6aqltyprod"
+        }
+      ]
+    },
+    "AMPLIFY_storage_WaitlistCountkksjifc3mvafha3skymd6aqltyprod_region": {
+      "usedBy": [
+        {
+          "category": "storage",
+          "resourceName": "WaitlistCountkksjifc3mvafha3skymd6aqltyprod"
+        }
+      ]
+    },
+    "AMPLIFY_storage_WaitlistCountkksjifc3mvafha3skymd6aqltyprod_streamArn": {
+      "usedBy": [
+        {
+          "category": "storage",
+          "resourceName": "WaitlistCountkksjifc3mvafha3skymd6aqltyprod"
+        }
+      ]
+    },
+    "AMPLIFY_storage_WaitlistCountkksjifc3mvafha3skymd6aqltyprod_tableName": {
+      "usedBy": [
+        {
+          "category": "storage",
+          "resourceName": "WaitlistCountkksjifc3mvafha3skymd6aqltyprod"
+        }
+      ]
     }
   },
   "storage": {
     "WaitlistCountg4feljozefgonijsw6ijdcdugydev": {
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "DynamoDB",
+      "serviceType": "imported"
+    },
+    "WaitlistCountkksjifc3mvafha3skymd6aqltyprod": {
       "dependsOn": [],
       "providerPlugin": "awscloudformation",
       "service": "DynamoDB",
