@@ -180,12 +180,6 @@
       "providerPlugin": "awscloudformation",
       "service": "DynamoDB",
       "serviceType": "imported"
-    },
-    "WaitlistCountkksjifc3mvafha3skymd6aqltyprod": {
-      "dependsOn": [],
-      "providerPlugin": "awscloudformation",
-      "service": "DynamoDB",
-      "serviceType": "imported"
     }
   }
 }
