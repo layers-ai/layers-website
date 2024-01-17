@@ -50,7 +50,8 @@
       "function": {
         "updateWaitlistCount": {
           "deploymentBucketName": "amplify-layerswebsite-prod-162300-deployment",
-          "s3Key": "amplify-builds/updateWaitlistCount-4c4b387a414c4b306730-build.zip"
+          "s3Key": "amplify-builds/updateWaitlistCount-4e307176564974744567-build.zip",
+          "waitlistTableName": "WaitlistCount-kksjifc3mvafha3skymd6aqlty"
         }
       },
       "storage": {
@@ -59,6 +60,14 @@
           "region": "us-east-1",
           "arn": "arn:aws:dynamodb:us-east-1:533267386424:table/WaitlistCount-g4feljozefgonijsw6ijdcdugy-dev",
           "streamArn": "arn:aws:dynamodb:us-east-1:533267386424:table/WaitlistCount-g4feljozefgonijsw6ijdcdugy-dev/stream/2024-01-12T15:51:00.898",
+          "partitionKeyName": "id",
+          "partitionKeyType": "S"
+        },
+        "WaitlistCountkksjifc3mvafha3skymd6aqltyprod": {
+          "tableName": "WaitlistCount-kksjifc3mvafha3skymd6aqlty-prod",
+          "region": "us-east-1",
+          "arn": "arn:aws:dynamodb:us-east-1:533267386424:table/WaitlistCount-kksjifc3mvafha3skymd6aqlty-prod",
+          "streamArn": "arn:aws:dynamodb:us-east-1:533267386424:table/WaitlistCount-kksjifc3mvafha3skymd6aqlty-prod/stream/2024-01-16T15:30:51.975",
           "partitionKeyName": "id",
           "partitionKeyType": "S"
         }

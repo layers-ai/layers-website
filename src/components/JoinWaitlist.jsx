@@ -6,7 +6,7 @@ export default function JoinWaitlist() {
     <div className="bg-white w-full h-screen relative relative">
       <Image
         className="absolute w-full h-full object-cover"
-        src="/images/backgrounds/woman-in-field-of-flowers_large_square.png"
+        src="/images/backgrounds/woman-in-field-of-flowers_large_square.jpg"
         alt=""
         fill
         sizes="100vw"
