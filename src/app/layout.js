@@ -65,6 +65,11 @@ export const metadata = {
         width: 1200,
         height: 630,
       },
+      {
+        url: "https://layersjournal.app/images/layers-ai-journaling-app-500x500.jpg",
+        width: 500,
+        height: 500,
+      },
     ],
     locale: "en_US",
     type: "website",
