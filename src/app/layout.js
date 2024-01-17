@@ -1,5 +1,4 @@
 import localFont from "next/font/local";
-import Script from "next/script";
 
 const circular = localFont({
   src: [
@@ -53,6 +52,7 @@ export const metadata = {
   title: "layers - AI Journaling App - Effortless Self-Discovery",
   description:
     "Don't think of layers as a conventional journaling app—think of it as your personal AI journaling companion. Gain deep insights into your mind with 5 minutes a day.",
+  metadataBase: new URL("https://layersjournal.app"),
   openGraph: {
     title: "layers - AI Journaling App - Effortless Self-Discovery",
     description:
@@ -61,7 +61,7 @@ export const metadata = {
     siteName: "layers - AI Journaling App - Effortless Self-Discovery",
     images: [
       {
-        url: "https://7c31-2a02-8109-9705-3100-3dae-d9ef-ccc8-ce92.ngrok-free.app/images/layers-ai-journaling-app-1200x630.png",
+        url: "https://layersjournal.app/images/layers-ai-journaling-app-1200x630.png",
         width: 1200,
         height: 630,
       },
@@ -74,17 +74,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Script
-        strategy="afterInteractive"
-        src="https://www.googletagmanager.com/gtag/js?id=G-BF2M6XH0XD"
-      ></Script>
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-        window.dataLayer = window.dataLayer || []; function gtag()
-        {dataLayer.push(arguments);}
-        gtag('js', new Date()); gtag('config', 'G-BF2M6XH0XD');
-        `}
-      </Script>
       <body className={`${circular.variable} font-sans`}>{children}</body>
     </html>
   );

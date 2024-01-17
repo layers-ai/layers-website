@@ -10,10 +10,12 @@ import Faq from "@/components/Faq";
 // import BlogPreviews from "@/components/BlogPreviews";
 import Footer from "@/components/Footer";
 import PersonalPodcast from "@/components/PersonalPodcast";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 export default async function Home() {
   return (
     <div className="bg-white">
+      <GoogleAnalytics />
       {/* <div className="bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-savory-800 via-savory-400 to-phlox-500"> */}
       <Header />
       <main>
