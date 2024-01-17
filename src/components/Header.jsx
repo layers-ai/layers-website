@@ -30,6 +30,8 @@ export default function Header() {
               className="h-8 w-auto"
               src="/images/layers-logo-icon-only.svg"
               alt=""
+              width={34}
+              height={32}
             />
           </a>
         </div>
