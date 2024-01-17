@@ -37,7 +37,7 @@
       "function": {
         "updateWaitlistCount": {
           "deploymentBucketName": "amplify-layerswebsite-dev-112556-deployment",
-          "s3Key": "amplify-builds/updateWaitlistCount-4c4b387a414c4b306730-build.zip",
+          "s3Key": "amplify-builds/updateWaitlistCount-6630754f4870396d442f-build.zip",
           "waitlistTableName": "WaitlistCount-g4feljozefgonijsw6ijdcdugy"
         }
       }
