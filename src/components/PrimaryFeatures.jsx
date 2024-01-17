@@ -304,7 +304,7 @@ export function PrimaryFeatures() {
             {/* Imagine a book that writes itself. Not with fictional stories, but
             with chapters of your own life, offering new perspectives and
             opportunities to grow each time you speak. Pure magic. */}
-            Imagine a coach that appears anytime anywhere on the press of a
+            Imagine a coach that appears anytime, anywhere on the press of a
             button. Who you can reflect on your life, your thoughts and
             challenges with. And who delivers a detailed report every week.
           </p>
