@@ -12,6 +12,8 @@ import { AppScreen } from "@/components/AppScreen";
 import { Container } from "@/components/Container";
 import { PhoneFrame } from "@/components/PhoneFrame";
 
+import { trackGAEvent } from "@/utils/GoogleAnalytics";
+
 import {
   LightBulbIcon,
   MicrophoneIcon,
@@ -100,8 +102,18 @@ function FeaturesDesktop() {
   let prevIndex = usePrevious(selectedIndex);
   let isForwards = prevIndex === undefined ? true : selectedIndex > prevIndex;
 
+  const GaEventMapping = [
+    "Voice Recognition",
+    "Insightful Queries",
+    "Profound Insights",
+  ];
+
   let onChange = useDebouncedCallback(
     (selectedIndex) => {
+      // Start GA Tracking
+      let gaLabel = GaEventMapping[selectedIndex];
+      trackGAEvent("Desktop Primary Features", "Select Feature Slide", gaLabel);
+      // End GA Tracking
       setSelectedIndex(selectedIndex);
       setChangeCount((changeCount) => changeCount + 1);
     },
@@ -179,11 +191,26 @@ function FeaturesMobile() {
   let slideContainerRef = useRef(null);
   let slideRefs = useRef([]);
 
+  const GaEventMapping = [
+    "Voice Recognition",
+    "Insightful Queries",
+    "Profound Insights",
+  ];
+
   useEffect(() => {
     let observer = new window.IntersectionObserver(
       (entries) => {
         for (let entry of entries) {
           if (entry.isIntersecting && entry.target instanceof HTMLDivElement) {
+            // Start GA Tracking
+            let gaLabel =
+              GaEventMapping[slideRefs.current.indexOf(entry.target)];
+            trackGAEvent(
+              "Mobile Primary Features",
+              "Select Feature Slide",
+              gaLabel
+            );
+            // End GA Tracking
             setActiveIndex(slideRefs.current.indexOf(entry.target));
             break;
           }
