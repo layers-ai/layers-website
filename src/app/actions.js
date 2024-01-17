@@ -15,12 +15,9 @@ const cookiesClient = generateServerClientUsingCookies({
 });
 
 async function countWaitlist() {
-  const currentStage = process.env.AWS_AMPLIFY_ENV || "dev";
+  // const currentStage = process.env.AWS_AMPLIFY_ENV || "dev";
 
-  const apiUrl =
-    currentStage == "dev"
-      ? "https://d5qp6v9we5.execute-api.us-east-1.amazonaws.com/dev/waitlistcount"
-      : "https://p2omyt80lk.execute-api.us-east-1.amazonaws.com/prod/waitlistcount";
+  const apiUrl = process.env.API_COUNT_LAMBDA_URL || "";
 
   try {
     const response = await fetch(apiUrl);
