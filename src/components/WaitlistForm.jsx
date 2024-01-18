@@ -24,8 +24,8 @@ export default function WaitlistForm({ className, inHero = false }) {
   );
 
   function handleSubmit(event) {
-    let gaLabel = inHero ? "Hero" : "Section";
-    trackGAEvent("Waitlist", "Join Waitlist", gaLabel);
+    let gaLabel = inHero ? "hero" : "section";
+    trackGAEvent("waitlist", `join_waitlist`, gaLabel);
     startTransition(() => {
       formAction(event);
       setInputValue("");
