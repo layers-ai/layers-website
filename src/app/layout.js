@@ -49,19 +49,19 @@ const circular = localFont({
 import "./globals.css";
 
 export const metadata = {
-  title: "layers - AI Journaling App - Effortless Self-Discovery",
+  title: "Layers - AI Journaling App - Effortless Self-Discovery",
   description:
     "Don't think of layers as a conventional journaling app—think of it as your personal AI journaling companion. Gain deep insights into your mind with 5 minutes a day.",
   metadataBase: new URL("https://layersjournal.app"),
   openGraph: {
-    title: "layers - AI Journaling App - Effortless Self-Discovery",
+    title: "Layers - AI Journaling App - Effortless Self-Discovery",
     description:
       "Don't think of layers as a conventional journaling app—think of it as your personal AI journaling companion. Gain deep insights into your mind with 5 minutes a day.",
     url: "https://layersjournal.app",
-    siteName: "layers - AI Journaling App - Effortless Self-Discovery",
+    siteName: "Layers - AI Journaling App - Effortless Self-Discovery",
     images: [
       {
-        url: "https://layersjournal.app/images/layers-ai-journaling-app-1200x630.png",
+        url: "https://layersjournal.app/images/layers-ai-journaling-app-1200x630.jpg",
         width: 1200,
         height: 630,
       },
