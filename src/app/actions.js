@@ -43,9 +43,12 @@ export async function createWaitlist(prevState, formData) {
 
   revalidatePath("/");
 
+  let shareID = v4();
+  let shortShareID = shareID.substring(0, 8);
+
   return {
     success: true,
-    shareId: v4(),
+    shareId: shortShareID,
     waitlistCount: userCount,
   };
 }
