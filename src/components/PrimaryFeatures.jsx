@@ -103,16 +103,16 @@ function FeaturesDesktop() {
   let isForwards = prevIndex === undefined ? true : selectedIndex > prevIndex;
 
   const GaEventMapping = [
-    "Voice Recognition",
-    "Insightful Queries",
-    "Profound Insights",
+    "voice_recognition",
+    "insightful_queries",
+    "profound_insights",
   ];
 
   let onChange = useDebouncedCallback(
     (selectedIndex) => {
       // Start GA Tracking
       let gaLabel = GaEventMapping[selectedIndex];
-      trackGAEvent("Desktop Primary Features", "Select Feature Slide", gaLabel);
+      trackGAEvent("primary_features", "select_desktop_feature", gaLabel);
       // End GA Tracking
       setSelectedIndex(selectedIndex);
       setChangeCount((changeCount) => changeCount + 1);
@@ -192,9 +192,9 @@ function FeaturesMobile() {
   let slideRefs = useRef([]);
 
   const GaEventMapping = [
-    "Voice Recognition",
-    "Insightful Queries",
-    "Profound Insights",
+    "voice_recognition",
+    "insightful_queries",
+    "profound_insights",
   ];
 
   useEffect(() => {
@@ -205,11 +205,7 @@ function FeaturesMobile() {
             // Start GA Tracking
             let gaLabel =
               GaEventMapping[slideRefs.current.indexOf(entry.target)];
-            trackGAEvent(
-              "Mobile Primary Features",
-              "Select Feature Slide",
-              gaLabel
-            );
+            trackGAEvent("primary_features", "select_mobile_feature", gaLabel);
             // End GA Tracking
             setActiveIndex(slideRefs.current.indexOf(entry.target));
             break;
