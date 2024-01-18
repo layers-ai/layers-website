@@ -61,7 +61,7 @@ export default function WaitlistForm({ className, inHero = false }) {
               </button>
             </div>
           )}
-          {formState.success && (
+          {formState && formState.success && (
             <WaitlistSuccess
               waitlistCount={formState.waitlistCount}
               shareId={formState.shareId}
@@ -112,7 +112,7 @@ export default function WaitlistForm({ className, inHero = false }) {
               </button>
             </>
           )}
-          {formState.success && (
+          {formState && formState.success && (
             <WaitlistSuccess
               waitlistCount={formState.waitlistCount}
               shareId={formState.shareId}
