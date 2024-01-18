@@ -10,6 +10,7 @@ export default function JoinWaitlist() {
         alt=""
         fill
         sizes="100vw"
+        priority
       />
       <div className="mx-auto w-full sm:px-6 lg:px-8 absolute inset-x-0 top-0">
         <div className="relative isolate overflow-hidden px-6 pt-28 xl:pt-28 sm:px-24">
