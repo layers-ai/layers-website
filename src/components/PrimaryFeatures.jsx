@@ -12,7 +12,7 @@ import { AppScreen } from "@/components/AppScreen";
 import { Container } from "@/components/Container";
 import { PhoneFrame } from "@/components/PhoneFrame";
 
-import { trackGAEvent } from "@/utils/GoogleAnalytics";
+import { sendGAEvent } from "@next/third-parties/google";
 
 import {
   LightBulbIcon,
@@ -111,8 +111,12 @@ function FeaturesDesktop() {
   let onChange = useDebouncedCallback(
     (selectedIndex) => {
       // Start GA Tracking
-      let gaLabel = GaEventMapping[selectedIndex];
-      trackGAEvent("primary_features", "select_desktop_feature", gaLabel);
+      let slide = GaEventMapping[selectedIndex];
+      sendGAEvent({
+        event: "select_primary_feature",
+        slide: slide,
+        plattform: "desktop",
+      });
       // End GA Tracking
       setSelectedIndex(selectedIndex);
       setChangeCount((changeCount) => changeCount + 1);
@@ -203,9 +207,12 @@ function FeaturesMobile() {
         for (let entry of entries) {
           if (entry.isIntersecting && entry.target instanceof HTMLDivElement) {
             // Start GA Tracking
-            let gaLabel =
-              GaEventMapping[slideRefs.current.indexOf(entry.target)];
-            trackGAEvent("primary_features", "select_mobile_feature", gaLabel);
+            let slide = GaEventMapping[slideRefs.current.indexOf(entry.target)];
+            sendGAEvent({
+              event: "select_primary_feature",
+              slide: slide,
+              plattform: "mobile",
+            });
             // End GA Tracking
             setActiveIndex(slideRefs.current.indexOf(entry.target));
             break;

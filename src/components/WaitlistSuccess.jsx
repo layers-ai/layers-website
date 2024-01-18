@@ -40,7 +40,7 @@ export default function WaitlistSuccess({ shareId, waitlistCount }) {
               src="/images/copy-text.svg"
               alt=""
               className="h-[16px] w-[16px] inline mr-1"
-              unoptimized
+              unoptimized="true"
             />{" "}
             {buttonText}
           </span>

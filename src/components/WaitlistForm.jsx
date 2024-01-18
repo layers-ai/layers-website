@@ -6,7 +6,7 @@ import { createWaitlist } from "@/app/actions";
 
 import WaitlistSuccess from "@/components/WaitlistSuccess";
 
-import { trackGAEvent } from "@/utils/GoogleAnalytics";
+import { sendGAEvent } from "@next/third-parties/google";
 
 const initialFormState = {
   success: false,
@@ -24,8 +24,8 @@ export default function WaitlistForm({ className, inHero = false }) {
   );
 
   function handleSubmit(event) {
-    let gaLabel = inHero ? "hero" : "section";
-    trackGAEvent("waitlist", `join_waitlist`, gaLabel);
+    let section = inHero ? "hero" : "waitlist_section";
+    sendGAEvent({ event: "join_waitlist", section: section });
     startTransition(() => {
       formAction(event);
       setInputValue("");
