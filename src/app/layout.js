@@ -1,3 +1,4 @@
+import { GoogleAnalytics } from "@next/third-parties/google";
 import localFont from "next/font/local";
 
 const circular = localFont({
@@ -75,6 +76,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${circular.variable} font-sans`}>{children}</body>
+      <GoogleAnalytics gaId="G-BF2M6XH0XD" />
     </html>
   );
 }
