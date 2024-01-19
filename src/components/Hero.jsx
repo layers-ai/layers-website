@@ -28,7 +28,8 @@ export default function Hero() {
             {/* A companion for well-being you can always talk to */}
             {/* AI coaching for personal growth */}
             {/* Your daily mental hygiene */}
-            Your companion for well-being
+            {/* AI Journaling App for Effortless Self-Discovery */}
+            The World's First AI Journaling App
           </h1>
           <p className="mt-6 text-2xl leading-8 text-gray-950">
             Gain deep insights into your mind with <strong>layers</strong> and
