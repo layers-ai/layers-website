@@ -2,11 +2,13 @@
 
 import { sql } from "@vercel/postgres";
 
+import { revalidatePath } from "next/cache";
+
 import { v4 } from "uuid";
 
 async function countWaitlist() {
-  const { rows, fields } = await sql`SELECT COUNT(email) from waitlist`;
-  return parseInt(rows[0].count);
+  const { rows, fields } = await sql`SELECT COUNT(id) as counter from waitlist`;
+  return parseInt(rows[0].counter);
 }
 
 export async function createWaitlist(prevState, formData) {
@@ -23,6 +25,10 @@ export async function createWaitlist(prevState, formData) {
     };
   }
   await sql`INSERT INTO WAITLIST (email, share_id) VALUES (${email}, ${shortShareID})`;
+  // clean cache for updated count
+  revalidatePath("/");
+
+  // Get the count of the waitlist
   let count = await countWaitlist();
 
   return {
