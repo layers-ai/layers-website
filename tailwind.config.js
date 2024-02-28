@@ -60,6 +60,7 @@ module.exports = {
         },
         "savory-superdark": "#171835",
         "savory-superdark-lighter": "#282948",
+        "off-white": "#F9F9F9",
       },
     },
   },
