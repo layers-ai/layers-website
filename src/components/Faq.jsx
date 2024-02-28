@@ -1,34 +1,41 @@
 "use client";
 
 import { Disclosure } from "@headlessui/react";
-import { MinusSmallIcon, PlusSmallIcon } from "@heroicons/react/24/outline";
+import { Minus, Plus } from "lucide-react";
 
 const faqs = [
   {
-    question: "What's the method behind layers?",
+    question: "How does layers help me discover more about myself?",
     answer:
-      "Layers is grounded in Positive Psychology principles, a psychology field that studies positive human functioning and flourishing, focusing on strengths, well-being, and happiness.",
-  },
-  {
-    question: "How much will layers cost?",
-    answer:
-      "We're still finalizing pricing, but we're aiming for approximately $13 monthly or $100 annually.",
+      "layers transforms your reflections into a powerful tool for self-understanding. It users AI to analyze your entries to uncover patterns, identify key themes, and highlight important insights. Plus, our insightful prompts guide you deeper, fostering a rich understanding of your thoughts, emotions, and goals.",
   },
   {
     question: "Is my data safe?",
     answer:
-      "Absolutely. We enforce rock solid data security and follow leading industry standards for medical data. All data in our databases is encrypted at rest. Layers is built to keep your information private, safe and secure. ",
+      "Absolutely. Your privacy is our priority. We strict security protocols to ensure your reflections remain completely confidential. Rest assured, your data will never be shared or sold.",
   },
   {
-    question: "How is my data handled?",
+    question: "What sets layers apart from other journaling apps?",
     answer:
-      "We process your data exclusively in our cloud infrastructure in Germany and with our data processing partners to deliver our service. We guarantee your data is never sold or shared with others.",
+      "layers is more than just a journal. layers transforms journaling from a blank page into a guided conversation with yourself. Effortlessly record your reflections using voice-to-text, unlock deeper insights with personalized prompts, and uncover patterns in your life with AI-powered analysis. Plus, our approach is rooted in positive psychology, ensuring a focus on self-understanding, growth, and well-being.",
   },
 
   {
-    question: "I want to work with you. Where can I apply?",
+    question: "How much will layers cost?",
     answer:
-      "While we're keeping our team compact during layers' initial development, we're always open to collaborating with talented individuals. Reach out to us at hello@layersjournal.app for opportunities.",
+      "We're committed to making self-reflection accessible to everyone. Our pricing will be approximately $13 monthly or $100 annually. You can try layers free to see if it's right for you!",
+  },
+
+  {
+    question: "Can I try layers before subscribing?",
+    answer:
+      "Absolutely! We will offer a free trial so you can experience the transformative power of layers for yourself.",
+  },
+
+  {
+    question: "I’m new to journaling. Will layers help me get started?",
+    answer:
+      "Definitely! layers makes journaling incredibly easy. Forget about blank pages – our voice-to-text feature and guided prompts help you get your thoughts flowing. You'll be amazed at how quickly it becomes a natural part of your routine.",
   },
 ];
 
@@ -52,15 +59,9 @@ export default function Faq() {
                         </span>
                         <span className="ml-6 flex h-7 items-center">
                           {open ? (
-                            <MinusSmallIcon
-                              className="h-6 w-6"
-                              aria-hidden="true"
-                            />
+                            <Minus className="h-6 w-6" aria-hidden="true" />
                           ) : (
-                            <PlusSmallIcon
-                              className="h-6 w-6"
-                              aria-hidden="true"
-                            />
+                            <Plus className="h-6 w-6" aria-hidden="true" />
                           )}
                         </span>
                       </Disclosure.Button>

@@ -4,12 +4,11 @@ import Testimonials from "../components/Testimonials";
 import JoinWaitlist from "../components/JoinWaitlist";
 import { PrimaryFeatures } from "../components/PrimaryFeatures";
 import TheWhy from "@/components/TheWhy";
-import TalkToJournal from "@/components/TalkToJournal";
-import Benefits from "@/components/Benefits";
 import Faq from "@/components/Faq";
-// import BlogPreviews from "@/components/BlogPreviews";
 import Footer from "@/components/Footer";
 import PersonalPodcast from "@/components/PersonalPodcast";
+import Story from "@/components/Story";
+import PodcastHeadline from "@/components/PodcastHeadline";
 
 export default async function Home() {
   return (
@@ -24,13 +23,12 @@ export default async function Home() {
           </div>
         </div>
         <Testimonials />
+        <Story />
         <PrimaryFeatures />
-        <TalkToJournal />
+        <PodcastHeadline />
         <PersonalPodcast />
         <JoinWaitlist />
-        <Benefits />
         <Faq />
-        {/* <BlogPreviews /> */}
       </main>
       <Footer />
     </div>

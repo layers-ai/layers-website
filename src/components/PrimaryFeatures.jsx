@@ -14,33 +14,29 @@ import { PhoneFrame } from "@/components/PhoneFrame";
 
 import { sendGAEvent } from "@next/third-parties/google";
 
-import {
-  LightBulbIcon,
-  MicrophoneIcon,
-  ChartBarIcon,
-} from "@heroicons/react/24/outline";
+import { BarChart2, AudioLines, Heart } from "lucide-react";
 
 const features = [
   {
-    name: "Powerful Voice Recognition",
+    name: "Journal effortlessly and go deeper.",
     description:
-      "A highly accurate voice recognition that eliminates disfluencies like 'uh' and 'hm' and cuts out repetitions and incomplete sentences, all while keeping your unique style intact.",
-    icon: MicrophoneIcon,
+      "Talk it out using voice-to-text, then dive into your thoughts with tailored prompts that spark meaningful reflection.",
+    icon: AudioLines,
     screen: VoiceScreen,
   },
   {
-    name: "Insightful Queries",
+    name: "Discover the patterns shaping your mood.",
     description:
-      "Have a personal thought partner in your pocket. The app provides questions tailored to you that encourage deep introspection and offer new perspectives on your life.",
-    icon: LightBulbIcon,
-    screen: InsightfulQueriesScreen,
+      "Track your emotional ups and downs, and get data-driven insights into what drives your best and most challenging days.",
+    icon: BarChart2,
+    screen: MoodChartScreen,
   },
   {
-    name: "Profound Insights",
+    name: "Understand your emotional landscape.",
     description:
-      "Receive weekly insights into important topics, learnings, and patterns in your life and automatically track your mood and stress levels.",
-    icon: ChartBarIcon,
-    screen: InsightScreen,
+      "Go beyond surface-level feelings. Explore the 'why' behind your emotions for greater self-awareness and personal growth.",
+    icon: Heart,
+    screen: EmotionChartScreen,
   },
 ];
 
@@ -48,7 +44,7 @@ function VoiceScreen(props) {
   return (
     <AppScreen className="w-full">
       <Image
-        src="/images/screenshots/check-in-voice.png"
+        src="/images/screenshots/follow-up-prompt.png"
         alt="accurate voice recognition"
         width={318}
         height={686}
@@ -58,11 +54,11 @@ function VoiceScreen(props) {
   );
 }
 
-function InsightfulQueriesScreen(props) {
+function EmotionChartScreen(props) {
   return (
     <AppScreen className="w-full">
       <Image
-        src="/images/screenshots/insightful-queries.png"
+        src="/images/screenshots/weekly-emotion-chart.png"
         alt="insightful queries"
         width={318}
         height={686}
@@ -72,11 +68,11 @@ function InsightfulQueriesScreen(props) {
   );
 }
 
-function InsightScreen(props) {
+function MoodChartScreen(props) {
   return (
     <AppScreen className="w-full">
       <Image
-        src="/images/screenshots/weekly-insights.png"
+        src="/images/screenshots/weekly-mood-chart.png"
         alt="weekly insights"
         width={318}
         height={686}
@@ -154,7 +150,7 @@ function FeaturesDesktop() {
                   {feature.name}
                 </Tab>
               </h3>
-              <p className="mt-2 text-sm text-gray-400">
+              <p className="mt-2 text-base text-gray-400">
                 {feature.description}
               </p>
             </div>
@@ -234,7 +230,7 @@ function FeaturesMobile() {
     return () => {
       observer.disconnect();
     };
-  }, [slideContainerRef, slideRefs]);
+  });
 
   return (
     <>
@@ -300,16 +296,22 @@ export function PrimaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-3xl">
           <h2 className="text-3xl font-medium tracking-tight text-white">
-            More than a journal. Your companion for well-being.
+            {/* Discover the layers within you. */}
+            {/* Discover the transformative power of self-understanding. */}
+            Discover the power of self-understanding.
+            {/* More than a journal. Your assistant for well-being. */}
             {/* A life coach. In your pocket. */}
           </h2>
           <p className="mt-2 text-lg text-gray-400">
             {/* Imagine a book that writes itself. Not with fictional stories, but
             with chapters of your own life, offering new perspectives and
             opportunities to grow each time you speak. Pure magic. */}
-            Imagine a coach that appears anytime, anywhere on the press of a
+            {/* Imagine a coach that appears anytime, anywhere on the press of a
             button. Who you can reflect on your life, your thoughts and
-            challenges with. And who delivers a detailed report every week.
+            challenges with. And who delivers a detailed report every week. */}
+            Imagine a coach at your fingertips – a companion for reflection,
+            anytime, anywhere. Effortless journaling, life-changing insights.
+            That&apos;s the magicx of layers.
           </p>
         </div>
       </Container>

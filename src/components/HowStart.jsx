@@ -2,7 +2,7 @@ const steps = [
   {
     id: "step-1",
     title: "Daily check-in",
-    text: "Layers asks you a few bespoke questions each day. Respond with ease via voice or text, wherever life takes you. Journaling has never been this effortless.",
+    text: "layers asks you a few bespoke questions each day. Respond with ease via voice or text, wherever life takes you. Journaling has never been this effortless.",
     emoji: "🎙️",
   },
   {
