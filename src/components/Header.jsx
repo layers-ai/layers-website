@@ -30,7 +30,7 @@ export default function Header() {
           <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">layers journal app</span>
             <img
-              className="h-10 w-auto"
+              className="h-8 w-auto"
               src="/images/layers-logo.png"
               alt=""
               width="auto"
@@ -77,7 +77,7 @@ export default function Header() {
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">layers</span>
               <img
-                className="h-10 w-auto"
+                className="h-8 w-auto"
                 src="/images/layers-logo.png"
                 alt=""
               />
