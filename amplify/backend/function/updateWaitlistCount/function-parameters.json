@@ -1,9 +1,0 @@
-{
-  "lambdaLayers": [],
-  "environmentVariableList": [
-    {
-      "cloudFormationParameterName": "waitlistTableName",
-      "environmentVariableName": "WAITLIST_TABLE_NAME"
-    }
-  ]
-}

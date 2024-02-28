@@ -1,54 +1,19 @@
 "use server";
 
-import { generateServerClientUsingCookies } from "@aws-amplify/adapter-nextjs/api";
 import { cookies } from "next/headers";
-import { revalidatePath } from "next/cache";
-import * as mutations from "@/graphql/mutations";
-
-import config from "@/amplifyconfiguration.json";
 
 import { v4 } from "uuid";
 
-const cookiesClient = generateServerClientUsingCookies({
-  config,
-  cookies,
-});
-
 async function countWaitlist() {
-  // const currentStage = process.env.AWS_AMPLIFY_ENV || "dev";
-
-  const apiUrl = process.env.API_COUNT_LAMBDA_URL || "";
-
-  try {
-    const response = await fetch(apiUrl);
-    const data = await response.json();
-    return data.count;
-  } catch (error) {
-    console.error(error);
-    return 0;
-  }
+  return 0;
 }
 
 export async function createWaitlist(prevState, formData) {
-  const { data } = await cookiesClient.graphql({
-    query: mutations.createWaitlist,
-    variables: {
-      input: {
-        email: formData.get("email")?.toString() ?? "",
-      },
-    },
-  });
-
-  let userCount = await countWaitlist();
-
-  revalidatePath("/");
-
   let shareID = v4();
   let shortShareID = shareID.substring(0, 8);
-
   return {
     success: true,
     shareId: shortShareID,
-    waitlistCount: userCount,
+    waitlistCount: 5432,
   };
 }
