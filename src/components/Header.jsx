@@ -77,7 +77,7 @@ export default function Header() {
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">layers</span>
               <img
-                className="h-8 w-auto"
+                className="h-8 w-auto outline-none"
                 src="/images/layers-logo.png"
                 alt=""
               />
@@ -101,7 +101,7 @@ export default function Header() {
                       router.push(item.href);
                       setMobileMenuOpen(false);
                     }}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-xl font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     {item.name}
                   </a>
