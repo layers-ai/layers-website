@@ -24,8 +24,9 @@ export default function WaitlistForm({ className, inHero = false }) {
   );
 
   function handleSubmit(event) {
-    // let section = inHero ? "hero" : "waitlist_section";
+    let section = inHero ? "hero" : "waitlist_section";
     sendGAEvent("event", "generate_lead", { currency: "USD", value: 100 });
+    sendGAEvent("event", "join_waitlist", { section: section });
     startTransition(() => {
       formAction(event);
       setInputValue("");
