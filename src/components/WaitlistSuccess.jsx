@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import copy from "copy-to-clipboard";
+import { sendGAEvent } from "@next/third-parties/google";
 
 export default function WaitlistSuccess({ shareId, waitlistCount }) {
   const [buttonText, setButtonText] = useState("Copy");
@@ -9,6 +10,12 @@ export default function WaitlistSuccess({ shareId, waitlistCount }) {
   function handleCopy(url) {
     copy(url);
     setButtonText("Copied!");
+    let id = url.split("=")[1];
+    sendGAEvent("event", "share", {
+      method: "copy_waitlist_url",
+      content_type: "website",
+      item_id: id,
+    });
   }
 
   return (

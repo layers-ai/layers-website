@@ -98,20 +98,15 @@ function FeaturesDesktop() {
   let prevIndex = usePrevious(selectedIndex);
   let isForwards = prevIndex === undefined ? true : selectedIndex > prevIndex;
 
-  const GaEventMapping = [
-    "voice_recognition",
-    "insightful_queries",
-    "profound_insights",
-  ];
+  const GaEventMapping = ["checkin", "mood_chart", "emotional_landscape"];
 
   let onChange = useDebouncedCallback(
     (selectedIndex) => {
       // Start GA Tracking
       let slide = GaEventMapping[selectedIndex];
-      sendGAEvent({
-        event: "select_primary_feature",
-        slide: slide,
-        plattform: "desktop",
+      sendGAEvent("event", "select_content", {
+        content_id: slide,
+        content_type: "primary_feature",
       });
       // End GA Tracking
       setSelectedIndex(selectedIndex);
@@ -191,11 +186,7 @@ function FeaturesMobile() {
   let slideContainerRef = useRef(null);
   let slideRefs = useRef([]);
 
-  const GaEventMapping = [
-    "voice_recognition",
-    "insightful_queries",
-    "profound_insights",
-  ];
+  const GaEventMapping = ["checkin", "mood_chart", "emotional_landscape"];
 
   useEffect(() => {
     let observer = new window.IntersectionObserver(
@@ -204,10 +195,9 @@ function FeaturesMobile() {
           if (entry.isIntersecting && entry.target instanceof HTMLDivElement) {
             // Start GA Tracking
             let slide = GaEventMapping[slideRefs.current.indexOf(entry.target)];
-            sendGAEvent({
-              event: "select_primary_feature",
-              slide: slide,
-              plattform: "mobile",
+            sendGAEvent("event", "select_content", {
+              content_id: slide,
+              content_type: "primary_feature",
             });
             // End GA Tracking
             setActiveIndex(slideRefs.current.indexOf(entry.target));
