@@ -5,17 +5,20 @@
 import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { useRouter } from "next/navigation";
 
 const navigation = [
-  { name: "Product", href: "#product" },
+  { name: "How it works", href: "#product" },
   { name: "Testimonials", href: "#testimonials" },
+  { name: "Idea", href: "#story" },
   { name: "Features", href: "#features" },
-  { name: "Benefits", href: "#benefits" },
   { name: "FAQ", href: "#faq" },
 ];
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const router = useRouter();
 
   return (
     <header className="absolute inset-x-0 top-0 z-50">
@@ -27,11 +30,11 @@ export default function Header() {
           <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">layers journal app</span>
             <img
-              className="h-8 w-auto"
-              src="/images/layers-logo-icon-only.svg"
+              className="h-10 w-auto"
+              src="/images/layers-logo.png"
               alt=""
-              width={34}
-              height={32}
+              width="auto"
+              height="40"
             />
           </a>
         </div>
@@ -74,8 +77,8 @@ export default function Header() {
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">layers</span>
               <img
-                className="h-8 w-auto"
-                src="/images/layers-logo-icon-only.svg"
+                className="h-10 w-auto"
+                src="/images/layers-logo.png"
                 alt=""
               />
             </a>
@@ -94,7 +97,10 @@ export default function Header() {
                 {navigation.map((item) => (
                   <a
                     key={item.name}
-                    href={item.href}
+                    onClick={() => {
+                      router.push(item.href);
+                      setMobileMenuOpen(false);
+                    }}
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     {item.name}

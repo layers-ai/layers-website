@@ -15,10 +15,15 @@ export default function JoinWaitlist() {
       <div className="mx-auto w-full sm:px-6 lg:px-8 absolute inset-x-0 top-0">
         <div className="relative isolate overflow-hidden px-6 pt-28 xl:pt-28 sm:px-24">
           <h2 className="mx-auto max-w-2xl text-center text-3xl font-bold tracking-tight text-savory-800 sm:text-4xl">
-            Take care of your mind.
+            {/* Take care of your mind. */}
+            Start your journey now.
+            {/* Find balance, understand your emotions, and create the life you
+            desire. */}
           </h2>
           <p className="mx-auto mt-2 max-w-xl text-center text-lg leading-8 text-gray-700">
-            Join our waitlist and get notified when we accept new beta testers.
+            {/* Join our waitlist and get notified when we accept new beta testers. */}
+            Find balance, understand your emotions, and create the life you
+            desire.
           </p>
           <WaitlistForm className="mx-auto mt-10 flex max-w-md gap-x-4" />
         </div>

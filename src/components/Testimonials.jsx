@@ -1,11 +1,11 @@
 import Image from "next/image";
 
 const featuredTestimonial = {
-  body: "I love the weekly mini-podcast. It is a great way to look back at my week. Listening to it in the car is a perfect time for some thoughtful self-reflection.",
+  body: "layers has helped me build a deeper, more trusting relationship with myself. And with others.",
   author: {
-    name: "Niclas Rohrwacher",
-    handle: "Founder & Podcast Host",
-    imageUrl: "/images/testimonials/niclas-rohrwacher.jpg",
+    name: "Michael Bohmeyer",
+    handle: "Entrepreneur & Activist",
+    imageUrl: "/images/testimonials/michael-bohmeyer.jpg",
   },
 };
 const testimonials = [
@@ -14,7 +14,7 @@ const testimonials = [
       // Left column
       // left 1
       {
-        body: "Creating a self-reflection habit with layers was a breeze. It's so quick and user-friendly, it slips right into my hectic schedule without a hitch.",
+        body: "layers helps me gain the clarity and self-awareness I need to make better choices. It's a proactive tool for building the life I want.",
         author: {
           name: "Giselle Babtiste",
           handle: "Teacher",
@@ -24,7 +24,7 @@ const testimonials = [
       // left 2
 
       {
-        body: "Layers is like an external hard drive for my memory. Being able to ask questions and chat with my journal is incredibly convenient and insightful.",
+        body: "It's like having a wise friend who remembers everything for you - the good, the bad, and the lessons.",
         author: {
           name: "Vicky Etherington",
           handle: "CPO & Coach",
@@ -36,7 +36,7 @@ const testimonials = [
     [
       // bottom left
       {
-        body: "I really enjoy the weekly insights. They help me uncover themes in my life and give me a clearer picture of my personal growth.",
+        body: "layers helps me connect with myself amidst life changes. It's like quick, insightful therapy sessions tailored to my day.",
         author: {
           name: "Burcu Gürbüz",
           handle: "MD",
@@ -50,7 +50,7 @@ const testimonials = [
     [
       // bottom right
       {
-        body: "It's remarkable how the app automatically understands my mood and stress levels. It's like having a Fitbit, but for my mind.",
+        body: "Like a personal growth tracker - I see changes in my mood, mindset, and behaviors. Super motivating!",
         author: {
           name: "Lars Andersen",
           handle: "Yoga Instructor",
@@ -63,16 +63,17 @@ const testimonials = [
       // Right column
       // right 1
       {
-        body: "Reflecting with layers is great. It feels like chatting with a buddy who knows exactly what to ask, helping me get a clearer picture of my personal life and the challenges I face.",
+        body: "I love the personalized podcast! It highlights my strengths and blind spots - powerful fuel for my Monday mornings.",
         author: {
-          name: "Michael Bohmeyer",
-          handle: "Entrepreneur & Activist",
-          imageUrl: "/images/testimonials/michael-bohmeyer.jpg",
+          name: "Niclas Rohrwacher",
+          handle: "Founder & Podcast Host",
+          imageUrl: "/images/testimonials/niclas-rohrwacher.jpg",
         },
       },
+
       // right 2
       {
-        body: "I never liked using voice recognition. With layers, it’s different. It just works. It's like having a personal editor for my thoughts.",
+        body: "No more vague self-help! layers offers data-driven insights tailored to my life - that's what makes the difference.",
         author: {
           name: "Tabea Wolf",
           handle: "Artist & Author",

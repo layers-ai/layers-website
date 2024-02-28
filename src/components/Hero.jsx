@@ -5,7 +5,7 @@ import WaitlistForm from "@/components/WaitlistForm";
 
 export default function Hero() {
   return (
-    <div className="relative isolate pt-14">
+    <div id="hero" className="relative isolate pt-14">
       <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-40">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
           <div className="flex">
@@ -24,17 +24,26 @@ export default function Hero() {
               </a> */}
             </div>
           </div>
-          <h1 className="mt-10 max-w-lg text-4xl font-bold tracking-tight text-savory-700 sm:text-6xl">
+          <h1 className="mt-10 max-w-lg text-4xl font-bold tracking-tight text-savory-600 sm:text-6xl">
             {/* A companion for well-being you can always talk to */}
             {/* AI coaching for personal growth */}
             {/* Your daily mental hygiene */}
             {/* AI Journaling App for Effortless Self-Discovery */}
-            The World's First AI Journaling App
+            {/* The new way of journaling */}
+            Your assistant for personal growth
+            {/* Reflect. Understand. Grow. With Layers */}
+            {/* Layers: Discover Yourself. Live a Deeper Life. */}
+            {/* Effortless Journaling, Life-Changing Insights. */}
           </h1>
           <p className="mt-6 text-2xl leading-8 text-gray-950">
-            Gain deep insights into your mind with <strong>layers</strong> and
-            embark on a journey towards a happier life. All with just 5 minutes
-            a day.
+            {/* Journal effortlessly, gain insights like never before, and create a
+            life full of purpose and connection. */}
+            {/* <strong>Layers</strong> is an AI-powered journaling assistant that
+            automatically turns your entries into actionable insights */}
+            Your AI companion to journal effortlessly, gain insights like never
+            before, and create a life full of purpose and connection.
+            {/* Layers is your AI companion for self-discovery. Effortless
+            Journaling, Life-Changing Insights. */}
           </p>
           <WaitlistForm
             inHero={true}
