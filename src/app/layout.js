@@ -1,4 +1,5 @@
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import localFont from "next/font/local";
 
 const circular = localFont({
@@ -75,7 +76,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${circular.variable} font-sans`}>{children}</body>
+      <body className={`${circular.variable} font-sans`}>
+        {children}
+        <SpeedInsights />
+      </body>
       <GoogleAnalytics gaId="G-BF2M6XH0XD" />
     </html>
   );
