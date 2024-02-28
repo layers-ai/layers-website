@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const featuredTestimonial = {
-  body: "layers has helped me build a deeper, more trusting relationship with myself. That's priceless.",
+  body: "layers has helped me build a deeper, more trusting relationship with myself. And with others.",
   author: {
     name: "Michael Bohmeyer",
     handle: "Entrepreneur & Activist",
@@ -14,7 +14,7 @@ const testimonials = [
       // Left column
       // left 1
       {
-        body: "I never felt like a 'journal person.' layers helps me understand my emotions without feeling overwhelmed.",
+        body: "layers helps me gain the clarity and self-awareness I need to make better choices. It's a proactive tool for building the life I want.",
         author: {
           name: "Giselle Babtiste",
           handle: "Teacher",

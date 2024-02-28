@@ -17,9 +17,9 @@ const features = [
     // illustration: BespokePrompts,
   },
   {
-    name: "Weekly insights",
+    name: "Weekly Insights",
     description:
-      "Receive a weekly report, highlighting mental trends, key thoughts, and decisive moments to empower your choices and and create positive change.",
+      "Receive a weekly report, highlighting mental trends, key thoughts, and decisive moments to empower your choices and create positive change.",
     href: "#",
     emoji: "🔮",
     // illustration: WeeklyInsights,
@@ -30,17 +30,17 @@ export default function TheWhy() {
   return (
     <div id="product" className="py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className="text-base font-semibold leading-7 text-savory-600">
+        <div className="mx-auto max-w-3xl lg:text-center">
+          <h2 className="text-lg font-semibold leading-7 text-savory-600">
             {/* Focus on what matters */}
             {/* Space for your thoughts */}
             How it works
           </h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <p className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             layers reveals the patterns in your life to help you become your
             best self.
           </p>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
+          <p className="mt-6 text-xl leading-7 text-gray-600">
             {/* A companion that helps with your personal development. Who helps you
             reflect on your life and thoughts. And who supports you in nurturing
             a happy life. */}
@@ -64,11 +64,11 @@ export default function TheWhy() {
                     height="300"
                   />
                 </div> */}
-                <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
-                  <div className="text-2xl">{feature.emoji}</div>
+                <dt className="flex items-center gap-x-3 text-lg font-semibold leading-7 text-gray-900">
+                  <div className="text-3xl">{feature.emoji}</div>
                   {feature.name}
                 </dt>
-                <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
+                <dd className="mt-4 flex flex-auto flex-col text-lg leading-7 text-gray-600">
                   <p className="flex-auto">{feature.description}</p>
                   {/* <p className="mt-6">
                     <a

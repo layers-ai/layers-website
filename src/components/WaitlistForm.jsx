@@ -55,7 +55,7 @@ export default function WaitlistForm({ className, inHero = false }) {
               <button
                 type="submit"
                 disabled={isPending}
-                className="flex-none rounded-md bg-savory-900 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-savory-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-savory-600 tracking-wider"
+                className="flex-none rounded-md bg-savory-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-savory-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-savory-600 tracking-wider"
               >
                 {isPending ? "Joining..." : "Join Waitlist"}
               </button>
@@ -106,7 +106,7 @@ export default function WaitlistForm({ className, inHero = false }) {
               <button
                 type="submit"
                 disabled={isPending}
-                className="flex-none rounded-md bg-savory-900 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-savory-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-savory-600 tracking-wider"
+                className="flex-none rounded-md bg-savory-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-savory-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-savory-600 tracking-wider"
               >
                 {isPending ? "Joining..." : "Join Waitlist"}
               </button>

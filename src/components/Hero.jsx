@@ -24,7 +24,7 @@ export default function Hero() {
               </a> */}
             </div>
           </div>
-          <h1 className="mt-10 max-w-lg text-4xl font-bold tracking-tight text-savory-700 sm:text-6xl">
+          <h1 className="mt-10 max-w-lg text-4xl font-bold tracking-tight text-savory-600 sm:text-6xl">
             {/* A companion for well-being you can always talk to */}
             {/* AI coaching for personal growth */}
             {/* Your daily mental hygiene */}

@@ -2,9 +2,9 @@ import Image from "next/image";
 
 const features = [
   {
-    name: "Voices that engage",
+    name: "Listen Anywhere",
     description:
-      "Experience your stories brought to life by captivating voices, making every memory feel present and vivid.",
+      "Experience your stories brought to life by captivating voices, whether you're at home, at work, or on the go.",
     emoji: "🎧",
   },
   {

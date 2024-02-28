@@ -7,29 +7,23 @@ const faqs = [
   {
     question: "How does layers help me discover more about myself?",
     answer:
-      "layers transforms your reflections into a powerful tool for self-understanding. It users AI to analyze your entries to uncover patterns, identify key themes, and highlight important insights. Plus, our insightful prompts guide you deeper, fostering a rich understanding of your thoughts, emotions, and goals.",
+      "layers transforms your reflections into a powerful tool for self-understanding. It uses AI to analyze your entries to uncover patterns, identify key themes, and highlight important insights. Plus, our insightful prompts guide you deeper, fostering a rich understanding of your thoughts, emotions, and goals.",
   },
   {
     question: "Is my data safe?",
     answer:
-      "Absolutely. Your privacy is our priority. We strict security protocols to ensure your reflections remain completely confidential. Rest assured, your data will never be shared or sold.",
+      "Absolutely. Your privacy is paramount to us. We encrypt your data at rest and implement strict security protocols to ensure your reflections remain completely confidential. Rest assured, your data will never be shared or sold.",
   },
   {
     question: "What sets layers apart from other journaling apps?",
     answer:
-      "layers is more than just a journal. layers transforms journaling from a blank page into a guided conversation with yourself. Effortlessly record your reflections using voice-to-text, unlock deeper insights with personalized prompts, and uncover patterns in your life with AI-powered analysis. Plus, our approach is rooted in positive psychology, ensuring a focus on self-understanding, growth, and well-being.",
-  },
-
-  {
-    question: "How much will layers cost?",
-    answer:
-      "We're committed to making self-reflection accessible to everyone. Our pricing will be approximately $13 monthly or $100 annually. You can try layers free to see if it's right for you!",
+      "layers is more than just a journal. layers transforms journaling from a blank page into a guided conversation with your reflection companion. Effortlessly record your reflections using voice-to-text, unlock deeper insights with personalized prompts, and uncover patterns in your life with AI-powered analysis. Plus, our approach is rooted in positive psychology, ensuring a focus on self-understanding, growth, and well-being.",
   },
 
   {
     question: "Can I try layers before subscribing?",
     answer:
-      "Absolutely! We will offer a free trial so you can experience the transformative power of layers for yourself.",
+      "Of course! We will offer a free trial so you can experience the transformative power of layers for yourself.",
   },
 
   {

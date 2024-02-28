@@ -21,9 +21,10 @@ export default function Story() {
               </p>
               <p className="mt-6 text-lg leading-8 text-gray-600">
                 Effortlessly capture those fleeting thoughts, get insightful
-                prompts for greater self-awareness, and rediscover the forgotten
-                wisdom within your own words. Transform your journaling into a
-                journey of self-discovery, powered by the magic of AI.
+                prompts for greater self-awareness, and discover the hidden
+                patterns and connections within your own words. Transform your
+                journaling into a journey of self-discovery, powered by the
+                magic of AI.
               </p>
             </div>
           </div>
