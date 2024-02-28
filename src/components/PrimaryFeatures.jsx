@@ -311,7 +311,7 @@ export function PrimaryFeatures() {
             challenges with. And who delivers a detailed report every week. */}
             Imagine a coach at your fingertips – a companion for reflection,
             anytime, anywhere. Effortless journaling, life-changing insights.
-            That&apos;s the magicx of layers.
+            That&apos;s the magic of layers.
           </p>
         </div>
       </Container>
