@@ -10,7 +10,7 @@ export default function PodcastHeadline() {
           Your week is more than a series of events. It&apos;s part of your
           unique and ever-evolving story. Imagine you could listen to that story
           unfold, revealing hidden insights and patterns, in a personalized
-          podcast?
+          podcast.
         </p>
       </div>
     </div>

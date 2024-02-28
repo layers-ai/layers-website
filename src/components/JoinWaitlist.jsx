@@ -16,7 +16,7 @@ export default function JoinWaitlist() {
         <div className="relative isolate overflow-hidden px-6 pt-28 xl:pt-28 sm:px-24">
           <h2 className="mx-auto max-w-2xl text-center text-3xl font-bold tracking-tight text-savory-800 sm:text-4xl">
             {/* Take care of your mind. */}
-            Start your journey now.
+            Start Your Journey Now.
             {/* Find balance, understand your emotions, and create the life you
             desire. */}
           </h2>
