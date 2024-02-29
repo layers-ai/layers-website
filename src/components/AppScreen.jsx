@@ -3,7 +3,7 @@ import clsx from "clsx";
 
 export function AppScreen({ children, className, ...props }) {
   return (
-    <div className={clsx("flex flex-col bg-off-white", className)} {...props}>
+    <div className={clsx("flex flex-col", className)} {...props}>
       {children}
     </div>
   );
@@ -40,7 +40,7 @@ AppScreen.Body = forwardRef(function AppScreenBody(
   return (
     <div
       ref={ref}
-      className={clsx("mt-6 flex-auto rounded-t-2xl bg-white", className)}
+      className={clsx("mt-6 flex-auto rounded-t-2xl bg-off-white", className)}
     >
       {children}
     </div>
