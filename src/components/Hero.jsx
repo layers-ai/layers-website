@@ -30,7 +30,8 @@ export default function Hero() {
             {/* Your daily mental hygiene */}
             {/* AI Journaling App for Effortless Self-Discovery */}
             {/* The new way of journaling */}
-            Your assistant for personal growth
+            {/* Your assistant for personal growth */}A journal that understands
+            you
             {/* Reflect. Understand. Grow. With Layers */}
             {/* Layers: Discover Yourself. Live a Deeper Life. */}
             {/* Effortless Journaling, Life-Changing Insights. */}
