@@ -37,8 +37,8 @@ export default function TheWhy() {
             How it works
           </h2>
           <p className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            layers reveals the patterns in your life to help you become your
-            best self.
+            <u>layers</u> reveals the patterns in your life to help you become
+            your best self.
           </p>
           <p className="mt-6 text-xl leading-7 text-gray-600">
             {/* A companion that helps with your personal development. Who helps you
