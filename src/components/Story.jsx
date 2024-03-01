@@ -15,16 +15,16 @@ export default function Story() {
               </p>
               <p className="mt-6 text-lg leading-8 text-gray-600">
                 Ever have a moment of profound clarity, only to lose it in the
-                chaos of everyday life? Those forgotten insights, buried within
-                old notebooks, hold the potential for growth and change. With
-                layers, your reflections become an ongoing conversation.
+                chaos of everyday life? Journaling could help with that. But it
+                often feels like a chore. And so many valuable insights and
+                thoughts get buried in old notebooks nobody reads.
               </p>
               <p className="mt-6 text-lg leading-8 text-gray-600">
-                Effortlessly capture those fleeting thoughts, get insightful
-                prompts for greater self-awareness, and discover the hidden
-                patterns and connections within your own words. Transform your
-                journaling into a journey of self-discovery, powered by the
-                magic of AI.
+                What if your journal could understand you? What if journaling
+                was as easy as sending a voice? What if your journal would ask
+                thought-provoking questions and automatically turned your
+                entries into actionable insights? Meet layers. And transform
+                your journaling into a powerful tool for self-discovery with AI.
               </p>
             </div>
           </div>
