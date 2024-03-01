@@ -15,7 +15,7 @@ export default function Story() {
               </p>
               <p className="mt-6 text-lg leading-8 text-gray-600">
                 Ever have a moment of profound clarity, only to lose it in the
-                chaos of everyday life? Journaling could help with that. But it
+                chaos of everyday life? Journaling could help with that, but
                 often feels like a chore. And so many valuable insights and
                 thoughts get buried in old notebooks nobody reads.
               </p>
