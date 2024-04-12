@@ -60,8 +60,17 @@ export default function Header() {
           ))}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-lg font-semibold leading-6 text-gray-900">
-            {/* Blog <span aria-hidden="true">&rarr;</span> */}
+          <a
+            href="#join-waitlist"
+            className="text-lg font-semibold leading-6 text-gray-900"
+          >
+            Join Beta <span aria-hidden="true">&rarr;</span>
+            {/* <button
+              type="button"
+              className="flex-none rounded-md bg-savory-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-savory-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-savory-600 tracking-wider"
+            >
+              Join Beta
+            </button> */}
           </a>
         </div>
       </nav>
@@ -107,14 +116,23 @@ export default function Header() {
                   </a>
                 ))}
               </div>
-              {/* <div className="py-6">
+              <div className="py-6">
                 <a
-                  href="#"
+                  onClick={() => {
+                    router.push("#join-waitlist");
+                    setMobileMenuOpen(false);
+                  }}
+                  href="#join-waitlist"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Log in
+                  <button
+                    type="button"
+                    className="flex-none rounded-md bg-savory-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-savory-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-savory-600 tracking-wider"
+                  >
+                    Join Beta
+                  </button>
                 </a>
-              </div> */}
+              </div>
             </div>
           </div>
         </Dialog.Panel>

@@ -13,7 +13,8 @@ async function countWaitlist() {
 
 export async function createWaitlist(prevState, formData) {
   // Insert the email into the waitlist table
-  let existingCount = 4870;
+  // let existingCount = 4870;
+  let existingCount = 100;
   let email = formData.get("email")?.toString() ?? "";
   let shareID = v4();
   let shortShareID = shareID.substring(0, 8);
