@@ -8,11 +8,11 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useRouter } from "next/navigation";
 
 const navigation = [
-  { name: "How it works", href: "#product" },
-  { name: "Testimonials", href: "#testimonials" },
-  { name: "Idea", href: "#story" },
-  { name: "Features", href: "#features" },
-  { name: "FAQ", href: "#faq" },
+  { name: "How it works", href: "/#product" },
+  { name: "Testimonials", href: "/#testimonials" },
+  { name: "Idea", href: "/#story" },
+  { name: "Features", href: "/#features" },
+  { name: "FAQ", href: "/#faq" },
 ];
 
 export default function Header() {
@@ -61,7 +61,7 @@ export default function Header() {
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a
-            href="#join-waitlist"
+            href="/#join-waitlist"
             className="text-lg font-semibold leading-6 text-gray-900"
           >
             Join Beta <span aria-hidden="true">&rarr;</span>
@@ -119,10 +119,10 @@ export default function Header() {
               <div className="py-6">
                 <a
                   onClick={() => {
-                    router.push("#join-waitlist");
+                    router.push("/#join-waitlist");
                     setMobileMenuOpen(false);
                   }}
-                  href="#join-waitlist"
+                  href="/#join-waitlist"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   <button
