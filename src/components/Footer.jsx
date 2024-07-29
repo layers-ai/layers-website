@@ -1,11 +1,33 @@
+/*
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/forms'),
+    ],
+  }
+  ```
+*/
 const navigation = {
-  main: [
-    { name: "Top", href: "#hero" },
-    { name: "How it works", href: "#product" },
-    { name: "Testimonials", href: "#testimonials" },
-    { name: "Idea", href: "#story" },
-    { name: "Features", href: "#features" },
-    { name: "FAQ", href: "#faq" },
+  app: [
+    { name: "How it works", href: "/#product" },
+    { name: "Testimonials", href: "/#testimonials" },
+    { name: "Idea", href: "/#story" },
+    { name: "Features", href: "/#features" },
+  ],
+  support: [
+    { name: "Contact", href: "/imprint" },
+    { name: "FAQ", href: "/#faq" },
+  ],
+  company: [{ name: "About", href: "/imprint" }],
+  legal: [
+    { name: "Imprint", href: "/imprint" },
+    { name: "Privacy", href: "/legal/privacy" },
+    { name: "Terms", href: "/legal/terms-of-service" },
   ],
   social: [
     {
@@ -35,61 +57,141 @@ const navigation = {
         </svg>
       ),
     },
-    {
-      name: "Bluesky",
-      href: "https://bsky.app/profile/layersjournalapp.bsky.social",
-      icon: (props) => (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 360 320"
-          fill="currentColor"
-          {...props}
-        >
-          <path
-            fill="currentColor"
-            d="M180 142c-16.3-31.7-60.7-90.8-102-120C38.5-5.9 23.4-1 13.5 3.4 2.1 8.6 0 26.2 0 36.5c0 10.4 5.7 84.8 9.4 97.2 12.2 41 55.7 55 95.7 50.5-58.7 8.6-110.8 30-42.4 106.1 75.1 77.9 103-16.7 117.3-64.6 14.3 48 30.8 139 116 64.6 64-64.6 17.6-97.5-41.1-106.1 40 4.4 83.5-9.5 95.7-50.5 3.7-12.4 9.4-86.8 9.4-97.2 0-10.3-2-27.9-13.5-33C336.5-1 321.5-6 282 22c-41.3 29.2-85.7 88.3-102 120Z"
-          />
-        </svg>
-      ),
-    },
   ],
 };
 
 export default function Footer() {
   return (
-    <footer className="bg-savory-superdark">
-      <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
-        <nav
-          className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12"
-          aria-label="Footer"
-        >
-          {navigation.main.map((item) => (
-            <div key={item.name} className="pb-6">
-              <a
-                href={item.href}
-                className="text-sm leading-6 text-savory-100 hover:text-zinc-100"
-              >
-                {item.name}
-              </a>
+    <footer aria-labelledby="footer-heading" className="bg-gray-900">
+      <h2 id="footer-heading" className="sr-only">
+        Footer
+      </h2>
+      <div className="mx-auto max-w-7xl px-6 pb-8 pt-20 sm:pt-24 lg:px-8 lg:pt-32">
+        <div className="xl:grid xl:grid-cols-3 xl:gap-8">
+          <div className="grid grid-cols-2 gap-8 xl:col-span-2">
+            <div className="md:grid md:grid-cols-2 md:gap-8">
+              <div>
+                <h3 className="text-base font-semibold leading-6 text-white">
+                  App
+                </h3>
+                <ul role="list" className="mt-6 space-y-4">
+                  {navigation.app.map((item) => (
+                    <li key={item.name}>
+                      <a
+                        href={item.href}
+                        className="text-base leading-6 text-gray-300 hover:text-white"
+                      >
+                        {item.name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="mt-10 md:mt-0">
+                <h3 className="text-base font-semibold leading-6 text-white">
+                  Support
+                </h3>
+                <ul role="list" className="mt-6 space-y-4">
+                  {navigation.support.map((item) => (
+                    <li key={item.name}>
+                      <a
+                        href={item.href}
+                        className="text-base leading-6 text-gray-300 hover:text-white"
+                      >
+                        {item.name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
-          ))}
-        </nav>
-        <div className="mt-10 flex justify-center space-x-10">
-          {navigation.social.map((item) => (
-            <a
-              key={item.name}
-              href={item.href}
-              target="_blank"
-              className="text-savory-100 hover:text-zinc-100"
-            >
-              <span className="sr-only">{item.name}</span>
-              <item.icon className="h-6 w-6" aria-hidden="true" />
-            </a>
-          ))}
+            <div className="md:grid md:grid-cols-2 md:gap-8">
+              <div>
+                <h3 className="text-base font-semibold leading-6 text-white">
+                  Company
+                </h3>
+                <ul role="list" className="mt-6 space-y-4">
+                  {navigation.company.map((item) => (
+                    <li key={item.name}>
+                      <a
+                        href={item.href}
+                        className="text-base leading-6 text-gray-300 hover:text-white"
+                      >
+                        {item.name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="mt-10 md:mt-0">
+                <h3 className="text-base font-semibold leading-6 text-white">
+                  Legal
+                </h3>
+                <ul role="list" className="mt-6 space-y-4">
+                  {navigation.legal.map((item) => (
+                    <li key={item.name}>
+                      <a
+                        href={item.href}
+                        className="text-base leading-6 text-gray-300 hover:text-white"
+                      >
+                        {item.name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="mt-10 xl:mt-0">
+            <h3 className="text-base font-semibold leading-6 text-white">
+              Subscribe to our newsletter
+            </h3>
+            <p className="mt-2 text-base leading-6 text-gray-300">
+              The latest news, articles, and resources, sent to your inbox.
+            </p>
+            <form className="mt-6 sm:flex sm:max-w-md">
+              <label htmlFor="email-address" className="sr-only">
+                Email address
+              </label>
+              <input
+                id="email-address"
+                name="email-address"
+                type="email"
+                required
+                placeholder="Enter your email"
+                autoComplete="email"
+                className="w-full min-w-0 appearance-none rounded-md border-0 bg-white/5 px-3 py-1.5 text-base text-white shadow-sm ring-1 ring-inset ring-white/10 placeholder:text-gray-500 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:w-64 sm:text-base sm:leading-6 xl:w-full"
+              />
+              <div className="mt-4 sm:ml-4 sm:mt-0 sm:flex-shrink-0">
+                <button
+                  type="submit"
+                  className="flex w-full items-center justify-center rounded-md bg-savory-600 px-3 py-2 text-base font-semibold text-white shadow-sm hover:bg-savory-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-savory-600"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
-        <p className="mt-10 text-center text-xs leading-5 text-savory-100">
-          &copy; 2024 layers, All rights reserved.
-        </p>
+        <div className="mt-16 border-t border-white/10 pt-8 sm:mt-20 md:flex md:items-center md:justify-between lg:mt-24">
+          <div className="flex space-x-6 md:order-2">
+            {navigation.social.map((item) => (
+              <a
+                key={item.name}
+                href={item.href}
+                className="text-gray-500 hover:text-gray-400"
+                target="_blank"
+              >
+                <span className="sr-only">{item.name}</span>
+                <item.icon aria-hidden="true" className="h-6 w-6" />
+              </a>
+            ))}
+          </div>
+          <p className="mt-8 text-xs leading-5 text-gray-400 md:order-1 md:mt-0">
+            &copy; 2024 layers software UG (haftungsbeschränkt) All rights
+            reserved.
+          </p>
+        </div>
       </div>
     </footer>
   );
