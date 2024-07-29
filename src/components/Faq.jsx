@@ -1,7 +1,7 @@
 "use client";
 
 import { Disclosure } from "@headlessui/react";
-import { sendGAEvent } from "@next/third-parties/google";
+import { sendGTMEvent } from "@next/third-parties/google";
 import { Minus, Plus } from "lucide-react";
 
 const faqs = [
@@ -41,7 +41,7 @@ const faqs = [
 
 export default function Faq() {
   const handleOpen = (ga_key) => {
-    sendGAEvent("event", "select_content", {
+    sendGTMEvent("event", "select_content", {
       content_type: "faq",
       content_id: ga_key,
     });

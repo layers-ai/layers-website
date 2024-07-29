@@ -1,4 +1,4 @@
-import { GoogleAnalytics } from "@next/third-parties/google";
+import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import localFont from "next/font/local";
 
@@ -76,11 +76,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="h-full">
+      <GoogleTagManager gtmId="GTM-MCSMM8Q9" />
       <body className={`${circular.variable} h-full font-sans`}>
         {children}
         <SpeedInsights />
       </body>
-      <GoogleAnalytics gaId="G-BF2M6XH0XD" />
     </html>
   );
 }
