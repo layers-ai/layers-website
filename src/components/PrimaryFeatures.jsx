@@ -104,7 +104,8 @@ function FeaturesDesktop() {
     (selectedIndex) => {
       // Start GA Tracking
       let slide = GaEventMapping[selectedIndex];
-      sendGTMEvent("event", "select_content", {
+      sendGTMEvent({
+        event: "select_content",
         content_id: slide,
         content_type: "primary_feature",
       });
@@ -195,7 +196,8 @@ function FeaturesMobile() {
           if (entry.isIntersecting && entry.target instanceof HTMLDivElement) {
             // Start GA Tracking
             let slide = GaEventMapping[slideRefs.current.indexOf(entry.target)];
-            sendGTMEvent("event", "select_content", {
+            sendGTMEvent({
+              event: "select_content",
               content_id: slide,
               content_type: "primary_feature",
             });

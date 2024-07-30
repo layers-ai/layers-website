@@ -41,7 +41,8 @@ const faqs = [
 
 export default function Faq() {
   const handleOpen = (ga_key) => {
-    sendGTMEvent("event", "select_content", {
+    sendGTMEvent({
+      event: "select_content",
       content_type: "faq",
       content_id: ga_key,
     });

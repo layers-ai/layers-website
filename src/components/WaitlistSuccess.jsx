@@ -11,7 +11,8 @@ export default function WaitlistSuccess({ shareId, waitlistCount }) {
     copy(url);
     setButtonText("Copied!");
     let id = url.split("=")[1];
-    sendGTMEvent("event", "share", {
+    sendGTMEvent({
+      event: "share",
       method: "copy_waitlist_url",
       content_type: "website",
       item_id: id,
