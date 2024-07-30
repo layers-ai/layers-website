@@ -203,9 +203,10 @@ export default function PrivacyPolicy() {
                 </p>
                 <p className="mt-4 font-light">
                   <strong>AWS S3:</strong> layers uses AWS S3 to store your
-                  audio recordings on secure servers. We only use AWS data
-                  centers in the European Union. All data stored with AWS S3 is
-                  encrypted by layers.
+                  audio recordings on secure servers. We automatically delete
+                  the recordings after 30 day. We only use AWS data centers in
+                  the European Union. All data stored with AWS S3 is encrypted
+                  by layers.
                 </p>
                 <p className="mt-4 font-light">
                   <strong>Mailerlite:</strong> layers uses services operated by{" "}
@@ -322,9 +323,7 @@ export default function PrivacyPolicy() {
                   >
                     layersjournal.app
                   </a>{" "}
-                  website. In order to subscribe to our newsletter and waiting
-                  list, we might store your email address on a Vercel server.
-                  Vercel stores the data on EU servers.
+                  website.
                 </p>
 
                 <h3 className="text-xl font-semibold mt-4">
@@ -642,10 +641,7 @@ export default function PrivacyPolicy() {
                 </h3>
                 <p className="mt-4 font-light">
                   When you create an account with layers, your personal profile
-                  data is stored separately from your journal data and your
-                  service settings. Doing this means your journal data has an
-                  even higher level of protection. layers uses servers located
-                  in the European Union to process and store your personal data.
+                  data is stored on servers located in the European Union.
                 </p>
                 <p className="mt-4 font-light">
                   When you create your layers password, it’s stored using
