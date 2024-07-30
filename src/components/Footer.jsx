@@ -1,17 +1,18 @@
-/*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
+"use client";
+
+import { useState, useTransition } from "react";
+import { useFormState } from "react-dom";
+import { createWaitlist } from "@/app/actions";
+
+import WaitlistSuccess from "@/components/WaitlistSuccess";
+
+import { sendGTMEvent } from "@next/third-parties/google";
+
+const initialFormState = {
+  success: false,
+  shareId: "e478da84",
+};
+
 const navigation = {
   app: [
     { name: "How it works", href: "/#product" },
@@ -61,6 +62,23 @@ const navigation = {
 };
 
 export default function Footer() {
+  const [isPending, startTransition] = useTransition();
+  const [inputValue, setInputValue] = useState("");
+
+  const [formState, formAction] = useFormState(
+    createWaitlist,
+    initialFormState
+  );
+
+  function handleSubmit(event) {
+    startTransition(() => {
+      formAction(event);
+      setInputValue("");
+      sendGTMEvent({ event: "generate_lead", currency: "USD", value: 100 });
+      sendGTMEvent({ event: "join_waitlist", section: "footer" });
+    });
+  }
+
   return (
     <footer aria-labelledby="footer-heading" className="bg-gray-900">
       <h2 id="footer-heading" className="sr-only">
@@ -144,32 +162,46 @@ export default function Footer() {
           </div>
           <div className="mt-10 xl:mt-0">
             <h3 className="text-base font-semibold leading-6 text-white">
-              Subscribe to our newsletter
+              Join our private beta
             </h3>
             <p className="mt-2 text-base leading-6 text-gray-300">
-              The latest news, articles, and resources, sent to your inbox.
+              Be one of the first people to use layers.
             </p>
-            <form className="mt-6 sm:flex sm:max-w-md">
-              <label htmlFor="email-address" className="sr-only">
-                Email address
-              </label>
-              <input
-                id="email-address"
-                name="email-address"
-                type="email"
-                required
-                placeholder="Enter your email"
-                autoComplete="email"
-                className="w-full min-w-0 appearance-none rounded-md border-0 bg-white/5 px-3 py-1.5 text-base text-white shadow-sm ring-1 ring-inset ring-white/10 placeholder:text-gray-500 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:w-64 sm:text-base sm:leading-6 xl:w-full"
-              />
-              <div className="mt-4 sm:ml-4 sm:mt-0 sm:flex-shrink-0">
-                <button
-                  type="submit"
-                  className="flex w-full items-center justify-center rounded-md bg-savory-600 px-3 py-2 text-base font-semibold text-white shadow-sm hover:bg-savory-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-savory-600"
-                >
-                  Subscribe
-                </button>
-              </div>
+            <form
+              className="mt-6 sm:flex sm:max-w-md"
+              action={handleSubmit}
+              id="FooterWaitlistForm"
+            >
+              {formState && !formState.success && (
+                <>
+                  <label htmlFor="email-address" className="sr-only">
+                    Email address
+                  </label>
+                  <input
+                    id="email-address"
+                    name="email"
+                    type="email"
+                    required
+                    value={inputValue}
+                    onChange={(e) => setInputValue(e.target.value)}
+                    placeholder="Enter your email"
+                    autoComplete="email"
+                    className="w-full min-w-0 appearance-none rounded-md border-0 bg-white/5 px-3 py-1.5 text-base text-white shadow-sm ring-1 ring-inset ring-white/10 placeholder:text-gray-500 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:w-64 sm:text-base sm:leading-6 xl:w-full"
+                  />
+                  <div className="mt-4 sm:ml-4 sm:mt-0 sm:flex-shrink-0">
+                    <button
+                      type="submit"
+                      disabled={isPending}
+                      className="flex w-full items-center justify-center rounded-md bg-savory-600 px-3 py-2 text-base font-semibold text-white shadow-sm hover:bg-savory-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-savory-600"
+                    >
+                      {isPending ? "Joining..." : "Join Beta"}
+                    </button>
+                  </div>
+                </>
+              )}
+              {formState && formState.success && (
+                <WaitlistSuccess shareId={formState.shareId} />
+              )}
             </form>
           </div>
         </div>
