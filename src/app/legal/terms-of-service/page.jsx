@@ -23,12 +23,12 @@ export default function TermsOfService() {
               layers: Terms of Service
             </h1>
             <p className="italic mt-2">Last updated: July 29, 2024</p>
-            <div className="mt-6 space-y-6 text-xl leading-8 text-gray-800">
+            <div className="mt-6 space-y-6 text-lg leading-8 text-gray-800">
               <div>
-                <h2 className="text-2xl font-semibold mt-4">
+                <h2 className="text-xl font-semibold mt-4">
                   § 1 General Information
                 </h2>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   1.1. These Terms of Service (hereinafter referred to as
                   &quot;Terms&quot;) govern the &quot;layers&quot; mobile
                   application (referred to as &quot;layers&quot; or the
@@ -45,7 +45,7 @@ export default function TermsOfService() {
                   at Maybachufer 11, 12047 Berlin (hereinafter referred to as
                   &quot;layers&quot; or &quot;we&quot;).
                 </p>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   1.2. In addition to these Terms, the{" "}
                   <strong>Privacy Policy</strong> available at{" "}
                   <a
@@ -62,7 +62,7 @@ export default function TermsOfService() {
                   extent applicable) is listed at the end of these Terms under §
                   13.
                 </p>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   1.3. <strong>The layers services</strong> allow people to
                   enter data easily (e.g., through voice, quizzes or text) and
                   automatically analyze the entries to provide insights and
@@ -77,7 +77,7 @@ export default function TermsOfService() {
                   of the services provided through the layers app are set out
                   under § 4 of these Terms).
                 </p>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   1.4. Notwithstanding the requirement for valid consent to
                   processing your personal data under our Privacy Policy, you
                   must be at least 18 years old (<strong>minimum age</strong>)
@@ -96,7 +96,7 @@ export default function TermsOfService() {
                     minor&apos;s use of layers’ paid services.
                   </strong>
                 </p>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   (Consent regarding the processing of data in accordance with
                   the applicable data protection laws is obtained separately,
                   see section 9 of our Privacy Policy)
@@ -104,13 +104,13 @@ export default function TermsOfService() {
               </div>
 
               <div>
-                <h2 className="text-2xl font-semibold mt-4">
+                <h2 className="text-xl font-semibold mt-4">
                   § 2 Scope of application and amendments to these Terms
                 </h2>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   2.1. By using the layers services, you agree to these Terms.
                 </p>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   2.2. We will always ask for your consent to material changes
                   to these Terms if they affect any Paid Services (see § 6).
                   Material changes are changes to the type and scope of the
@@ -119,7 +119,7 @@ export default function TermsOfService() {
                   from improving our services or including additional features
                   or services within the scope of Paid Services.
                 </p>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   2.3. We may make non-material amendments to these Terms at any
                   time. We may implement non-material changes without notice or
                   stating further reasons. There are no oral or written side
@@ -128,21 +128,21 @@ export default function TermsOfService() {
               </div>
 
               <div>
-                <h2 className="text-2xl font-semibold mt-4">§ 3 Disclaimer</h2>
-                <p className="mt-4 font-light">
+                <h2 className="text-xl font-semibold mt-4">§ 3 Disclaimer</h2>
+                <p className="mt-4 font-light text-base">
                   3.1. The layers services are not intended to provide medical
                   advice. For medical advice that addresses your specific,
                   individual needs, please always consult a qualified healthcare
                   professional.
                 </p>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   <strong>
                     When using layers services, you agree to use the respective
                     service only for the intended purposes as described in these
                     Terms.
                   </strong>
                 </p>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   3.2. layers is no substitute for a consultation with your
                   healthcare provider, and the use of the layers services is at
                   your own risk. The programs offered via the layers app are not
@@ -162,10 +162,10 @@ export default function TermsOfService() {
               </div>
 
               <div>
-                <h2 className="text-2xl font-semibold mt-4">
+                <h2 className="text-xl font-semibold mt-4">
                   § 4 General scope of services of layers features
                 </h2>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   4.1. layers is designed to allow users to enter data easily
                   (e.g. through voice, quizzes or text) and automatically
                   analyze the entries to provide insights and advice. This gives
@@ -177,16 +177,16 @@ export default function TermsOfService() {
                   videos or text) that helps you lead a happy and fulfilling
                   life.
                 </p>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   4.2. layers is a self-management app. This means that layers
                   services are based on the data that you provide, so the
                   information and analysis available in the app depends on the
                   amount and accuracy of the inputs you choose to record.
                 </p>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   4.3. layers is intended for use on iOS mobile devices.
                 </p>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   4.4. To be able to benefit from layers’ services, service
                   packages in the form of paid subscriptions (“Subscription
                   Access”) are available to you after registering. These can be
@@ -196,10 +196,10 @@ export default function TermsOfService() {
               </div>
 
               <div>
-                <h2 className="text-2xl font-semibold mt-4">
+                <h2 className="text-xl font-semibold mt-4">
                   § 5 Creating a layers account
                 </h2>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   5.1. Today, layers exists only as an online service. To use
                   layers, you need to create an account. This requires an
                   acceptance of these Terms and consent to data processing under
@@ -219,18 +219,18 @@ export default function TermsOfService() {
                   the confirmation email sent to your email address, confirming
                   your account.
                 </p>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   5.2. Alternatively, you can create an account using your Apple
                   login details, which automatically transfers your relevant
                   personal information.
                 </p>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   5.3. When you create an account, you assure that all of the
                   information you provide is correct and complete. We recommend
                   that you secure your data as permitted by your device (e.g.
                   PIN, Face ID or Touch ID).
                 </p>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   5.4. We are not obliged to confirm or accept user
                   registrations, and may, at our own discretion, refuse to
                   create an account that may interfere with the layers services.
@@ -241,10 +241,10 @@ export default function TermsOfService() {
               </div>
 
               <div>
-                <h2 className="text-2xl font-semibold mt-4">
+                <h2 className="text-xl font-semibold mt-4">
                   § 6 layers premium (&quot;Paid Services&quot;)
                 </h2>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   6.1. To be able to benefit from layers’ services, service
                   packages in the form of paid subscriptions are available to
                   you after registering. These can be purchased for different,
@@ -254,7 +254,7 @@ export default function TermsOfService() {
                   the selected subscription period. You will have access to the
                   respective services as long as your subscription is valid.
                 </p>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   6.2. The services offered in the subscription may change from
                   time to time, as we introduce new features, develop our
                   existing offering and sometimes retire features that
@@ -262,7 +262,7 @@ export default function TermsOfService() {
                   is shown in the relevant app store (Apple App Store) prior to
                   purchase.
                 </p>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   6.3. layers premium is only available via the third-party
                   platform operator Apple App Store. Therefore, when you make a
                   purchase within layers, you may additionally enter into a
@@ -274,7 +274,7 @@ export default function TermsOfService() {
                   providers (for more details about contract duration and
                   termination see § 11).
                 </p>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   6.5. The Paid Services are generally available on a
                   subscription basis. Therefore, you will be charged once in the
                   duration period of your subscription (for instance per month
@@ -288,11 +288,11 @@ export default function TermsOfService() {
                   subscription with a notice period of at least 24 hours to the
                   end of each subscription month.
                 </p>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   6.6. If payment cannot be collected, we will be entitled to
                   block access to the relevant Paid Services.
                 </p>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   6.7. You agree to provide current, complete, and accurate
                   purchase and account information for all purchases made for
                   Paid Services. You agree to promptly update your account and
@@ -300,7 +300,7 @@ export default function TermsOfService() {
                   card numbers and expiration dates, so that we can complete
                   your transactions and contact you as needed.
                 </p>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   By agreeing to these Terms, you acknowledge and agree that you
                   have the financial responsibility for all the Paid Services
                   purchased with your account.
@@ -308,10 +308,10 @@ export default function TermsOfService() {
               </div>
 
               <div>
-                <h2 className="text-2xl font-semibold mt-4">
+                <h2 className="text-xl font-semibold mt-4">
                   § 7 Trials / Testing Phases
                 </h2>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   7.1 layers occasionally offers in particular to new users free
                   or paid Subscription Access for testing purposes for a certain
                   period of time (“<strong>Trial</strong>”). layers determines,
@@ -319,7 +319,7 @@ export default function TermsOfService() {
                   case of an important reason, layers may discontinue or change
                   such Trial at any time without prior notice or notification.
                 </p>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   7.2 You can only participate in certain Trials if you enter
                   your payment details when you sign up for the Trial. In such a
                   case, we need your consent at the beginning of the Trial that
@@ -329,7 +329,7 @@ export default function TermsOfService() {
                   be terminated up to one day before the end of the respective
                   subscription period.
                 </p>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   7.3 If you do not wish to have the Subscription Access and the
                   charge associated with it, you must cancel your Subscription
                   Access given to you during the Trial before the end of the
@@ -338,20 +338,20 @@ export default function TermsOfService() {
                 </p>
               </div>
               <div>
-                <h2 className="text-2xl font-semibold mt-4">
+                <h2 className="text-xl font-semibold mt-4">
                   § 8 Your rights and duties as a user
                 </h2>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   8.1. You may not transfer your user account to third parties.
                   You may only use layers for your own private purposes or for
                   such other purposes as we explicitly agree to in writing (for
                   example, if you are an academic researcher and we enter into a
                   research collaboration agreement).
                 </p>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   8.2 Furthermore, you are not permitted to
                 </p>
-                <ul className="list-disc pl-6 mt-2 font-light">
+                <ul className="list-disc pl-6 mt-2 font-light text-base">
                   <li>
                     make the access data sent or used for authentication and
                     identification available to third parties or to pass them on
@@ -372,13 +372,13 @@ export default function TermsOfService() {
                     to third parties.
                   </li>
                 </ul>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   8.3. When using the layers app and services provided through
                   the app, you must observe your contractual obligations with
                   third parties, in particular your internet access provider and
                   the relevant app store operator.
                 </p>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   8.4. For the best experience of the layers services, you must
                   regularly update your operating systems and the version of the
                   layers app on your device. It is also possible that certain
@@ -390,7 +390,7 @@ export default function TermsOfService() {
                   that we may implement such updates as part of your use of the
                   layers services.
                 </p>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   8.5. You are only entitled to a right of set-off insofar as
                   you may have legally established a counterclaim against us, or
                   we do not dispute such counterclaim. A right of retention
@@ -400,8 +400,8 @@ export default function TermsOfService() {
               </div>
 
               <div>
-                <h2 className="text-2xl font-semibold mt-4">§ 9 Copyright</h2>
-                <p className="mt-4 font-light">
+                <h2 className="text-xl font-semibold mt-4">§ 9 Copyright</h2>
+                <p className="mt-4 font-light text-base">
                   9.1. All of the content that we make available within the
                   layers app or on our website is subject to international
                   copyright law unless otherwise indicated. The reproduction,
@@ -409,14 +409,14 @@ export default function TermsOfService() {
                   exploitation of the content, services and software requires
                   our written consent.
                 </p>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   9.2. The use of the services (and/or the provision of input
                   information) does not give you any legal rights, titles or
                   legal interests in our services or software. The service and
                   software are protected by copyright law, trademark law,
                   intellectual property rights and other applicable laws.
                 </p>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   9.3. The layers app is a copyright protected software program.
                   You as a user are granted a simple, non-exclusive,
                   non-transferable and revocable right for personal use. You are
@@ -424,12 +424,12 @@ export default function TermsOfService() {
                   extent permissible by law. You are not permitted to lease,
                   rent or otherwise transfer the app and/or its contents.
                 </p>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   9.4. The commercial use or retransmission of the layers
                   services is prohibited. In particular, you may not copy or
                   publish any part of the layers app or website.
                 </p>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   9.5. We use anonymous information from your usage of the
                   layers services so that we can continue to improve them. We
                   process personal information for these purposes also, as set
@@ -451,8 +451,8 @@ export default function TermsOfService() {
               </div>
 
               <div>
-                <h2 className="text-2xl font-semibold mt-4">§ 10 Liability</h2>
-                <p className="mt-4 font-light">
+                <h2 className="text-xl font-semibold mt-4">§ 10 Liability</h2>
+                <p className="mt-4 font-light text-base">
                   10.1. The content that we provide in the layers services has
                   been compiled with the greatest care. However, we cannot
                   accept any liability for the accuracy, completeness and
@@ -465,7 +465,7 @@ export default function TermsOfService() {
                   maintained or transmitted through the use of the layers
                   services.
                 </p>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   10.2. When you use the layers services, you do so expressly at
                   your own risk. The descriptions of our different features are
                   not subject to any guarantees. We give no guarantee that any
@@ -473,7 +473,7 @@ export default function TermsOfService() {
                   aim, such as that emotions are correctly extracted, or that
                   layers’ outputs are complete and accurate.
                 </p>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   10.3. layers app provides reflection, mindfulness, mood/energy
                   tracking, and journaling content which together with emotive
                   influences analysis serves the users to improve their
@@ -490,7 +490,7 @@ export default function TermsOfService() {
                   have any doubt as to whether this is appropriate for you,
                   please speak to your qualified healthcare provider.
                 </p>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   10.4. Practices conducted with layers app are not a
                   replacement for or a form of therapy nor are they intended to
                   cure, treat, or diagnose medical conditions. Only your
@@ -508,12 +508,12 @@ export default function TermsOfService() {
                   yourself or another person, you should seek urgent medical
                   advice or call the emergency services.
                 </p>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   10.5. Any liability in respect of contractual or other claims
                   made by you as a user depends on the merits of the case and
                   extends only to actual damage suffered:
                 </p>
-                <ul className="list-disc pl-6 mt-2 font-light">
+                <ul className="list-disc pl-6 mt-2 font-light text-base">
                   <li>
                     (a) which we, our legal representatives or vicarious agents
                     have caused intentionally or by gross negligence,
@@ -536,18 +536,18 @@ export default function TermsOfService() {
                     on (under German law, a cardinal obligation).
                   </li>
                 </ul>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   10.6. We are liable without limitation in the above-mentioned
                   cases (a), (b) and (c) of the preceding paragraph. In all
                   other cases, liability shall be limited to the reasonably
                   foreseeable damage under these terms.
                 </p>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   10.7. In cases other than those specified in 9.4. and 9.5. and
                   notwithstanding the following paragraph, liability on our part
                   is excluded irrespective of the legal grounds.
                 </p>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   10.8. The above limitations of liability apply equally to all
                   of our legal entities, employees and vicarious agents. They do
                   not alter the statutory burden of proof.
@@ -555,10 +555,10 @@ export default function TermsOfService() {
               </div>
 
               <div>
-                <h2 className="text-2xl font-semibold mt-4">
+                <h2 className="text-xl font-semibold mt-4">
                   § 11 Contract duration, termination, refunds
                 </h2>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   11.1. The Paid Services run for the agreed (initial) term. At
                   the end of the term, the contract is automatically extended
                   for an indefinite time period, unless you or we terminate it
@@ -573,7 +573,7 @@ export default function TermsOfService() {
                   subscription three months after subscribing, you can still use
                   layers premium for the remaining nine months.
                 </p>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   11.2. For technical and legal reasons, contractual
                   relationships related to the use of Paid Services that were
                   originally entered into via the Apple App Store may need to be
@@ -583,7 +583,7 @@ export default function TermsOfService() {
                   of the Paid Services. Their respective terms and conditions
                   may apply.
                 </p>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   11.3. The statutory right of both contracting parties to
                   terminate the contract for good cause remains unaffected. Good
                   cause for extraordinary termination of the contract is, for
@@ -600,10 +600,10 @@ export default function TermsOfService() {
               </div>
 
               <div>
-                <h2 className="text-2xl font-semibold mt-4">
+                <h2 className="text-xl font-semibold mt-4">
                   § 12 Other provisions
                 </h2>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   12.1. We endeavour to ensure that the layers app operates
                   without disruption and is available to the greatest extent
                   possible, but we point out that complete and uninterrupted
@@ -618,7 +618,7 @@ export default function TermsOfService() {
                   and to make new content, services and functionalities
                   available or to discontinue the layers app entirely.
                 </p>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   12.2. We are entitled to transfer the rights and obligations
                   arising under a contract to a third party. Should we wish to
                   transfer the rights and obligations under these Terms, we will
@@ -627,19 +627,19 @@ export default function TermsOfService() {
                   must be in writing and reach us within 14 days of you
                   receiving the notification of transfer.
                 </p>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   12.3. Governing law: German law applies to the exclusion of
                   the UN Convention on Contracts for the International Sale of
                   Goods (CISG).
                 </p>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   12.4. Jurisdiction: To the extent permissible by law, all
                   disputes arising under these Terms shall be heard in the
                   courts of our registered place of business in Berlin, Germany.
                   Notwithstanding the foregoing, we are also entitled to sue you
                   under these Terms in your place of domicile.
                 </p>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   12.5. In the event of a complaint against us, you can contact
                   the{" "}
                   <a
@@ -652,7 +652,7 @@ export default function TermsOfService() {
                   in dispute resolution proceedings before a consumer
                   arbitration body.
                 </p>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   12.6. If individual provisions within these Terms are or
                   become invalid or unenforceable, the validity of the remaining
                   provisions shall not be affected. Any invalid or unenforceable
@@ -666,10 +666,10 @@ export default function TermsOfService() {
               </div>
 
               <div>
-                <h2 className="text-2xl font-semibold mt-4">
+                <h2 className="text-xl font-semibold mt-4">
                   § 13 How to exercise your right of revocation
                 </h2>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   As a company headquartered in Germany, the consumer protection
                   laws of Germany apply to you as our customer no matter where
                   you live. Since the layers services are directed exclusively
@@ -678,7 +678,7 @@ export default function TermsOfService() {
                   this contract without penalty within 14 days of its
                   conclusion.
                 </p>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   If you have purchased our service via an app store (such as
                   Apple App Store) please use the procedures provided by the
                   respective app store for the revocation and reimbursement of
@@ -688,13 +688,13 @@ export default function TermsOfService() {
                     law.
                   </strong>
                 </p>
-                <h3 className="text-xl font-semibold mt-4">
+                <h3 className="text-lg font-semibold mt-4">
                   Revocation policy
                 </h3>
-                <h4 className="text-lg font-semibold mt-4">
+                <h4 className="text-sm font-semibold mt-4">
                   Right of revocation
                 </h4>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   You have the right to revoke this contract within fourteen
                   days without providing any reasons. The revocation period
                   (cancellation period) is fourteen days from the date when you
@@ -711,10 +711,10 @@ export default function TermsOfService() {
                   revocation of the contract before the end of the revocation
                   period.
                 </p>
-                <h4 className="text-lg font-semibold mt-4">
+                <h4 className="text-sm font-semibold mt-4">
                   Consequences of revocation
                 </h4>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   If you revoke this contract, we shall reimburse all payments
                   we have received from you, including delivery charges (other
                   than any additional charges resulting from your decision to
@@ -726,7 +726,7 @@ export default function TermsOfService() {
                   transaction, unless expressly agreed otherwise with you; in no
                   event will you be charged for this refund.
                 </p>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   <strong>Further information:</strong> In the case of a
                   contract for the provision of services, the following applies:
                   If you have requested that the services be commenced during
@@ -736,44 +736,48 @@ export default function TermsOfService() {
                   right of cancellation in respect of this contract compared to
                   the total scope of the services provided for in the contract.
                 </p>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   <em>End of the revocation policy</em>
                 </p>
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold mt-4">
+                <h3 className="text-lg font-semibold mt-4">
                   Sample revocation form
                 </h3>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   <em>
                     (If you want to revoke the contract, please fill out this
                     form and send it back)
                   </em>
                 </p>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   - To: layers UG (haftungsbeschränkt), Maybachufer 11, 12047
                   Berlin.{" "}
                   <span class="email">
                     hello@layers<b>layers</b>journal<b>journal</b>.app
                   </span>
                 </p>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   - I/we (...) hereby revoke the contract which I/we (...)
                   entered into for the purchase of the following goods (...)/the
                   provision of the following service(...):
                 </p>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
                   - Ordered on (...)/received on(...):
                 </p>
-                <p className="mt-4 font-light">- Name of the consumer(s):</p>
-                <p className="mt-4 font-light">- Address of the consumer(s):</p>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">
+                  - Name of the consumer(s):
+                </p>
+                <p className="mt-4 font-light text-base">
+                  - Address of the consumer(s):
+                </p>
+                <p className="mt-4 font-light text-base">
                   - Signature of the consumer(s) (only required if the
                   notification is submitted in paper form):
                 </p>
-                <p className="mt-4 font-light">- Date:</p>
-                <p className="mt-4 font-light">
+                <p className="mt-4 font-light text-base">- Date:</p>
+                <p className="mt-4 font-light text-base">
                   <em>(Delete whichever does not apply.)</em>
                 </p>
               </div>
