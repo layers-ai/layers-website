@@ -12,7 +12,7 @@ import { AppScreen } from "@/components/AppScreen";
 import { Container } from "@/components/Container";
 import { PhoneFrame } from "@/components/PhoneFrame";
 
-import { sendGAEvent } from "@next/third-parties/google";
+import { sendGTMEvent } from "@next/third-parties/google";
 
 import { BarChart2, AudioLines, Heart } from "lucide-react";
 
@@ -104,7 +104,8 @@ function FeaturesDesktop() {
     (selectedIndex) => {
       // Start GA Tracking
       let slide = GaEventMapping[selectedIndex];
-      sendGAEvent("event", "select_content", {
+      sendGTMEvent({
+        event: "select_content",
         content_id: slide,
         content_type: "primary_feature",
       });
@@ -195,7 +196,8 @@ function FeaturesMobile() {
           if (entry.isIntersecting && entry.target instanceof HTMLDivElement) {
             // Start GA Tracking
             let slide = GaEventMapping[slideRefs.current.indexOf(entry.target)];
-            sendGAEvent("event", "select_content", {
+            sendGTMEvent({
+              event: "select_content",
               content_id: slide,
               content_type: "primary_feature",
             });
