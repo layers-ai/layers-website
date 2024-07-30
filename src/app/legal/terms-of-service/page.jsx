@@ -41,9 +41,9 @@ export default function TermsOfService() {
                     layersjournal.app
                   </a>{" "}
                   (&quot;layers services&quot;). The layers services are
-                  operated by layers UG (haftungsbeschränkt), which is located
-                  at Maybachufer 11, 12047 Berlin (hereinafter referred to as
-                  &quot;layers&quot; or &quot;we&quot;).
+                  operated by layers software UG (haftungsbeschränkt), which is
+                  located at Maybachufer 11, 12047 Berlin (hereinafter referred
+                  to as &quot;layers&quot; or &quot;we&quot;).
                 </p>
                 <p className="mt-4 font-light text-base">
                   1.2. In addition to these Terms, the{" "}
@@ -699,8 +699,8 @@ export default function TermsOfService() {
                   days without providing any reasons. The revocation period
                   (cancellation period) is fourteen days from the date when you
                   entered into the contract. To exercise your right of
-                  revocation, you must inform us (layers UG, Maybachufer 11,
-                  12047 Berlin, or contact Support by email
+                  revocation, you must inform us (layers software UG,
+                  Maybachufer 11, 12047 Berlin, or contact Support by email
                   <span class="email">
                     hello@layers<b>layers</b>journal<b>journal</b>.app
                   </span>
@@ -752,8 +752,8 @@ export default function TermsOfService() {
                   </em>
                 </p>
                 <p className="mt-4 font-light text-base">
-                  - To: layers UG (haftungsbeschränkt), Maybachufer 11, 12047
-                  Berlin.{" "}
+                  - To: layers software UG (haftungsbeschränkt), Maybachufer 11,
+                  12047 Berlin.{" "}
                   <span class="email">
                     hello@layers<b>layers</b>journal<b>journal</b>.app
                   </span>
