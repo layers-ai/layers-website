@@ -4,7 +4,7 @@ import { useState } from "react";
 import copy from "copy-to-clipboard";
 import { sendGTMEvent } from "@next/third-parties/google";
 
-export default function WaitlistSuccess({ shareId, waitlistCount }) {
+export default function WaitlistSuccess({ shareId }) {
   const [buttonText, setButtonText] = useState("Copy");
 
   function handleCopy(url) {

@@ -1,20 +1,40 @@
 "use server";
 
-import { sql } from "@vercel/postgres";
+const axios = require("axios");
 
 import { revalidatePath } from "next/cache";
 
 import { v4 } from "uuid";
 
-async function countWaitlist() {
-  const { rows, fields } = await sql`SELECT COUNT(id) as counter from waitlist`;
-  return parseInt(rows[0].counter);
+const mailerliteApiKey = process.env.MAILERLITE_API_KEY;
+const mailerliteGroupId = process.env.MAILERLITE_GROUP_ID;
+
+async function addSubscriber(email, shareId) {
+  const url = "https://connect.mailerlite.com/api/subscribers";
+  const headers = {
+    Authorization: `Bearer ${mailerliteApiKey}`,
+    "Content-Type": "application/json",
+  };
+  const data = {
+    email: email,
+    groups: [mailerliteGroupId],
+    fields: {
+      share_id: shareId,
+    },
+  };
+
+  try {
+    const response = await axios.post(url, data, { headers });
+  } catch (error) {
+    console.error(
+      "Error adding subscriber:",
+      error.response ? error.response.data : error.message
+    );
+  }
 }
 
 export async function createWaitlist(prevState, formData) {
-  // Insert the email into the waitlist table
-  // let existingCount = 4870;
-  let existingCount = 100;
+  // Add the email in Mailerlite
   let email = formData.get("email")?.toString() ?? "";
   let shareID = v4();
   let shortShareID = shareID.substring(0, 8);
@@ -25,16 +45,14 @@ export async function createWaitlist(prevState, formData) {
       error: "Email is required",
     };
   }
-  await sql`INSERT INTO WAITLIST (email, share_id) VALUES (${email}, ${shortShareID})`;
+
+  await addSubscriber(email, shortShareID);
+
   // clean cache for updated count
   revalidatePath("/");
-
-  // Get the count of the waitlist
-  let count = await countWaitlist();
 
   return {
     success: true,
     shareId: shortShareID,
-    waitlistCount: existingCount + count,
   };
 }

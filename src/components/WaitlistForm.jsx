@@ -11,7 +11,6 @@ import { sendGTMEvent } from "@next/third-parties/google";
 const initialFormState = {
   success: false,
   shareId: "e478da84",
-  waitlistCount: 200,
 };
 
 export default function WaitlistForm({ className, inHero = false }) {
@@ -63,10 +62,7 @@ export default function WaitlistForm({ className, inHero = false }) {
             </div>
           )}
           {formState && formState.success && (
-            <WaitlistSuccess
-              waitlistCount={formState.waitlistCount}
-              shareId={formState.shareId}
-            />
+            <WaitlistSuccess shareId={formState.shareId} />
           )}
 
           {/* <p className="mt-4 text-sm leading-6 font-light text-gold-800">
@@ -114,10 +110,7 @@ export default function WaitlistForm({ className, inHero = false }) {
             </>
           )}
           {formState && formState.success && (
-            <WaitlistSuccess
-              waitlistCount={formState.waitlistCount}
-              shareId={formState.shareId}
-            />
+            <WaitlistSuccess shareId={formState.shareId} />
           )}
         </form>
       )}
