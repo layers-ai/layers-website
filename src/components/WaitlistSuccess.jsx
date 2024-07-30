@@ -21,10 +21,10 @@ export default function WaitlistSuccess({ shareId }) {
 
   return (
     <div className="text-base text-gray-900 bg-zinc-50 p-6 rounded-md border-0">
-      <h4 className="font-bold">You are on our waitlist.</h4>
+      <h4 className="font-bold">Check your inbox to confirm your email.</h4>
       <p className="mb-4 mt-2 text-sm">
-        Jump ahead in line! Sharing your unique invite link can speed up your
-        progress. The more you share, the quicker you climb! Grab your link
+        Jump can ahead in line! Sharing your unique invite link can speed up
+        your progress. The more you share, the quicker you climb! Grab your link
         below and start your ascent.
       </p>
       <div className="flex gap-x-2">
