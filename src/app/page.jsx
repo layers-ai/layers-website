@@ -6,9 +6,9 @@ import { PrimaryFeatures } from "../components/PrimaryFeatures";
 import TheWhy from "@/components/TheWhy";
 import Faq from "@/components/Faq";
 import Footer from "@/components/Footer";
-import PersonalPodcast from "@/components/PersonalPodcast";
-import Story from "@/components/Story";
-import PodcastHeadline from "@/components/PodcastHeadline";
+import PersonalStory from "@/components/PersonalStory";
+import About from "@/components/About";
+import StoryHeadline from "@/components/StoryHeadline";
 
 export default async function Home() {
   return (
@@ -23,10 +23,10 @@ export default async function Home() {
           </div>
         </div>
         <Testimonials />
-        <Story />
+        <About />
         <PrimaryFeatures />
-        <PodcastHeadline />
-        <PersonalPodcast />
+        <StoryHeadline />
+        <PersonalStory />
         <JoinWaitlist />
         <Faq />
       </main>

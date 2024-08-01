@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function Story() {
+export default function About() {
   return (
     <div id="story" className="overflow-hidden bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -24,7 +24,7 @@ export default function Story() {
                 was as easy as sending a voice? What if your journal would ask
                 thought-provoking questions and automatically turned your
                 entries into actionable insights? Meet layers. And transform
-                your journaling into a powerful tool for self-discovery with AI.
+                your journaling into a powerful tool for self-discovery.
               </p>
             </div>
           </div>
