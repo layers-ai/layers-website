@@ -39,12 +39,8 @@ export default function Hero() {
           <p className="mt-6 text-2xl leading-8 text-gray-950">
             {/* Journal effortlessly, gain insights like never before, and create a
             life full of purpose and connection. */}
-            {/* <strong>Layers</strong> is an AI-powered journaling assistant that
-            automatically turns your entries into actionable insights */}
-            Your AI companion to journal effortlessly, gain insights like never
-            before, and create a life full of purpose and connection.
-            {/* Layers is your AI companion for self-discovery. Effortless
-            Journaling, Life-Changing Insights. */}
+            Make self-reflection effortless and turn your thoughts into
+            meaningful insights.
           </p>
           <WaitlistForm
             inHero={true}

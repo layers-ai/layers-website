@@ -8,7 +8,7 @@ const faqs = [
   {
     question: "How does layers help me discover more about myself?",
     answer:
-      "layers transforms your reflections into a powerful tool for self-understanding. It uses AI to analyze your entries to uncover patterns, identify key themes, and highlight important insights. Plus, our insightful prompts guide you deeper, fostering a rich understanding of your thoughts, emotions, and goals.",
+      "layers transforms your reflections into a powerful tool for self-understanding. It offers smart analyzis to uncover patterns, identify key themes, and highlight important insights. Plus, our insightful prompts guide you deeper, fostering a rich understanding of your thoughts, emotions, and goals.",
     ga_key: "discover_more_about_myself",
   },
   {
@@ -20,7 +20,7 @@ const faqs = [
   {
     question: "What sets layers apart from other journaling apps?",
     answer:
-      "layers is more than just a journal. layers transforms journaling from a blank page into a guided conversation with your reflection companion. Effortlessly record your reflections using voice-to-text, unlock deeper insights with personalized prompts, and uncover patterns in your life with AI-powered analysis. Plus, our approach is rooted in positive psychology, ensuring a focus on self-understanding, growth, and well-being.",
+      "layers is more than just a journal. layers transforms journaling from a blank page into a guided conversation. Effortlessly record your reflections using voice-to-text, unlock deeper insights with personalized prompts, and uncover patterns in your life with smart analysis. Plus, our approach is rooted in positive psychology, ensuring a focus on self-understanding, growth, and well-being.",
     ga_key: "what_sets_layers_apart",
   },
 
