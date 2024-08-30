@@ -44,8 +44,8 @@ export default function TheWhy() {
             {/* A companion that helps with your personal development. Who helps you
             reflect on your life and thoughts. And who supports you in nurturing
             a happy life. */}
-            An AI-powered journaling assistant that automatically turns your
-            entries into actionable insights and helps you live a balanced and
+            A smart journaling app that automatically turns your entries into
+            actionable insights and helps you live a balanced and
             self-determined life.
             {/* An AI-powered journaling assistant that automatically turns your
             entries into actionable insights. Discover the patterns that shape

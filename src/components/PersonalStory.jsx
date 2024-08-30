@@ -38,9 +38,6 @@ export default function PersonalStory() {
                 {/* A personalized weekly podcast */}
               </p>
               <p className="mt-6 text-lg leading-8 text-gray-600">
-                {/* Our AI creates a personalized weekly podcast for you. Enjoy
-                content that captures your day-to-day activities, achievements,
-                and challenges, turning your life into an engaging story. */}
                 layers transforms your weekly reflections into a personalized
                 story. Learn about what influenced your mood, the people who
                 mattered, and the &apos;aha&apos; moment that nearly slipped

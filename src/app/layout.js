@@ -52,16 +52,16 @@ const circular = localFont({
 import "./globals.css";
 
 export const metadata = {
-  title: "layers - AI Journaling App - Effortless Self-Discovery",
+  title: "layers - Smart Voice Journaling App - Effortless Self-Reflection",
   description:
-    "Your personal AI journaling companion. Reveal your patterns and find clarity. Create a life full of purpose and connection. Discover layers today.",
+    "layers: A voice journal app that helps you understand yourself and lead a happy life. We make journaling easy and insightful. Download now and start your journey!",
   metadataBase: new URL("https://layersjournal.app"),
   openGraph: {
-    title: "layers - AI Journaling App - Effortless Self-Discovery",
+    title: "layers - Smart Voice Journaling Aapp - Effortless Self-Reflection",
     description:
-      "Your personal AI journaling companion. Reveal your patterns and find clarity. Create a life full of purpose and connection. Discover layers today.",
+      "layers: A voice journal app that helps you understand yourself and lead a happy life. We make journaling easy and insightful. Download now and start your journey!",
     url: "https://layersjournal.app",
-    siteName: "layers - AI Journaling App - Effortless Self-Discovery",
+    siteName: "layers - Smart Journaling App - Effortless Self-Discovery",
     images: [
       {
         url: "https://layersjournal.app/images/layers-ai-journaling-app-1200x630.jpg",
