@@ -39,8 +39,11 @@ export default function Hero() {
           <p className="mt-6 text-2xl leading-8 text-gray-950">
             {/* Journal effortlessly, gain insights like never before, and create a
             life full of purpose and connection. */}
-            Make self-reflection effortless and turn your thoughts into
-            meaningful insights.
+            {/* Journal effortlessly using your voice and gain insights like never
+            before. */}
+            {/* Effortless voice journaling with insights like never before. */}
+            Effortless voice journaling. <br /> Discover your patterns and find
+            clarity.
           </p>
           <WaitlistForm
             inHero={true}
