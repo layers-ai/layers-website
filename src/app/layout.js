@@ -57,7 +57,7 @@ export const metadata = {
     "layers: A voice journal app that helps you understand yourself and lead a happy life. We make journaling easy and insightful. Download now and start your journey!",
   metadataBase: new URL("https://layersjournal.app"),
   openGraph: {
-    title: "layers - Smart Voice Journaling Aapp - Effortless Self-Reflection",
+    title: "layers - Smart Voice Journaling App - Effortless Self-Reflection",
     description:
       "layers: A voice journal app that helps you understand yourself and lead a happy life. We make journaling easy and insightful. Download now and start your journey!",
     url: "https://layersjournal.app",
