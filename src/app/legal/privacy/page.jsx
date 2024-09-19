@@ -771,7 +771,7 @@ export default function PrivacyPolicy() {
                 <p className="mt-4 font-light text-base">
                   layers is made in Berlin, Germany, and the way we handle data
                   meets the high standards set by German and European Union
-                  legal requirements. layers is made by layers software UG
+                  legal requirements. layers is made by layers labs UG
                   (haftungsbeschränkt), Maybachufer 11, 12047 Berlin. Please do
                   not hesitate to reach out to{" "}
                   <span class="email">

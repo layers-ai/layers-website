@@ -21,7 +21,7 @@ export default function Example() {
             </h1>
             <div className="mt-10 max-w-2xl">
               <p>
-                layers software UG (i.G.)
+                layers labs UG (haftungsbeschränkt)
                 <br />
                 Maybachufer 11
                 <br />
@@ -62,9 +62,7 @@ export default function Example() {
                 <br />
                 Entry in the commercial register.
                 <br />
-                Register court: Berlin-Charlottenburg
-                <br />
-                Registration number: PENDING
+                Register court: Berlin-Charlottenburg, HRB 267644 B
                 <br />
                 VAT Identification Number according to §27 a of the VAT Act:
                 PENDING
