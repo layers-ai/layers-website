@@ -65,7 +65,7 @@ export default function Example() {
                 Register court: Berlin-Charlottenburg, HRB 267644 B
                 <br />
                 VAT Identification Number according to §27 a of the VAT Act:
-                PENDING
+                DE370050076
                 <br />
               </p>
             </div>
