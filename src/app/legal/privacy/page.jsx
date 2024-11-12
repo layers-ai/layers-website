@@ -297,7 +297,7 @@ export default function PrivacyPolicy() {
                   websites.
                 </p>
                 <p className="mt-4 font-light text-base">
-                  <strong>DeepGram:</strong> layers uses DeepGram to transcribe
+                  <strong>Deepgram:</strong> layers uses Deepgram to transcribe
                   the audio files. To provide accurate transcription services,
                   we may share your audio recordings with Deepgram. The audio
                   recordings shared with Deepgram are exclusively used to
@@ -307,7 +307,7 @@ export default function PrivacyPolicy() {
                   a maximum of 30 days after processing.
                 </p>
                 <p className="mt-4 font-light text-base">
-                  DeepGram has ensured an adequate level of data protection by
+                  Deepgram has ensured an adequate level of data protection by
                   being listed under the EU-US Data Privacy Framework, and by
                   also entering into an agreement with layers based on the
                   Standard Contractual Clauses for data transfer between EU
