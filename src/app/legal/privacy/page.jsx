@@ -316,6 +316,58 @@ export default function PrivacyPolicy() {
                   websites.
                 </p>
                 <p className="mt-4 font-light text-base">
+                  <strong>Amplitude and Mixpanel:</strong> layers uses Amplitude
+                  and Mixpanel to analyze user interactions within the app.
+                  Amplitude and Mixpanel helps us understand how users engage
+                  with different features, enabling us to optimize the user
+                  experience. The data shared with Amplitude and Mixpanel is
+                  pseudonymized and does not contain any personally identifiable
+                  information.
+                </p>
+                <p className="mt-4 font-light text-base">
+                  Amplitude and Mixpanel have ensured an adequate level 
+                  of data protection by being listed under the EU-US Data 
+                  Privacy Framework, and by also entering into an agreement 
+                  with layers based on the Standard Contractual Clauses for 
+                  data transfer between EU countries and non-EU countries 
+                  (see Section 4). The privacy policy of these services can 
+                  be found on their respective websites.
+                </p>
+                <p className="mt-4 font-light text-base">
+                  <strong>Superwall:</strong> layers uses Superwall to manage 
+                  paywalls and subscription-related user experiences. 
+                  Superwall helps us optimize our subscription flows and 
+                  provide relevant prompts to users. The data shared with 
+                  Superwall is limited to interactions related to subscription 
+                  offers.
+                </p>
+                <p className="mt-4 font-light text-base">
+                  Superwall has ensured an adequate level of data protection by
+                  being listed under the EU-US Data Privacy Framework, and by
+                  also entering into an agreement with layers based on the
+                  Standard Contractual Clauses for data transfer between EU
+                  countries and non-EU countries (see Section 4). The privacy
+                  policy of this service can be found on the respective
+                  website.
+                </p>
+                <p className="mt-4 font-light text-base">
+                  <strong>Revenue Cat:</strong> layers uses Revenue Cat to handle 
+                  in-app subscriptions and purchases. RevenueCat enables us to manage 
+                  billing and subscription status across different platforms. 
+                  The data shared with RevenueCat includes transaction details 
+                  but does not include personally identifiable information 
+                  beyond what is necessary for processing payments. 
+                </p>
+                <p className="mt-4 font-light text-base">
+                  Revenue Cat has ensured an adequate level of data protection by
+                  being listed under the EU-US Data Privacy Framework, and by
+                  also entering into an agreement with layers based on the
+                  Standard Contractual Clauses for data transfer between EU
+                  countries and non-EU countries (see Section 4). The privacy
+                  policy of this service can be found on the respective
+                  website.
+                </p>
+                <p className="mt-4 font-light text-base">
                   <strong>Vercel:</strong> layers uses Vercel to host the{" "}
                   <a
                     href="http://layersjournal.app"
