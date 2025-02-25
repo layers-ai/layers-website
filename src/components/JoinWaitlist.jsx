@@ -1,12 +1,9 @@
 import Image from "next/image";
-import WaitlistForm from "@/components/WaitlistForm";
+import DownloadButton from "@/components/DownloadButton";
 
 export default function JoinWaitlist() {
   return (
-    <div
-      id="join-waitlist"
-      className="bg-white w-full h-screen relative relative"
-    >
+    <div id="join-waitlist" className="bg-white w-full h-screen relative">
       <Image
         className="absolute w-full h-full object-cover"
         src="/images/backgrounds/woman-in-field-of-flowers_large_square.jpg"
@@ -28,7 +25,9 @@ export default function JoinWaitlist() {
             Find balance, understand your emotions, and create the life you
             desire.
           </p>
-          <WaitlistForm className="mx-auto mt-10 flex max-w-md gap-x-4" />
+          <div className="mx-auto mt-10 flex justify-center">
+            <DownloadButton section="join-waitlist" />
+          </div>
         </div>
       </div>
     </div>

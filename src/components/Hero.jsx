@@ -1,8 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import WaitlistForm from "@/components/WaitlistForm";
-
+import DownloadButton from "@/components/DownloadButton";
 export default function Hero() {
   return (
     <div id="hero" className="relative isolate pt-14">
@@ -45,10 +44,9 @@ export default function Hero() {
             Effortless voice journaling. <br /> Discover your patterns and find
             clarity.
           </p>
-          <WaitlistForm
-            inHero={true}
-            className="w-full mt-8 max-w-md lg:col-span-5 lg:pt-2"
-          />
+          <div className="mt-6">
+            <DownloadButton section="hero" />
+          </div>
         </div>
         <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
           <svg
