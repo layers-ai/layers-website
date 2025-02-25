@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import DownloadButton from "@/components/DownloadButton";
 export default function About() {
   return (
     <div id="story" className="overflow-hidden bg-white py-24 sm:py-32">
@@ -27,7 +27,11 @@ export default function About() {
                 your journaling into a powerful tool for self-discovery.
               </p>
             </div>
+            <div className="mt-10">
+              <DownloadButton section="about" size="medium" />
+            </div>
           </div>
+
           <Image
             src="/images/man-sitting-contemplating-desktop.jpg"
             alt="Product screenshot"

@@ -63,7 +63,7 @@ const testimonials = [
       // Right column
       // right 1
       {
-        body: "I love the personalized podcast! It highlights my strengths and blind spots - powerful fuel for my Monday mornings.",
+        body: "layers always listens without judgment. It's my daily space for honest self-reflection.",
         author: {
           name: "Niclas Rohrwacher",
           handle: "Founder & Podcast Host",

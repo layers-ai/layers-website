@@ -7,6 +7,8 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useRouter } from "next/navigation";
 
+import DownloadButton from "@/components/DownloadButton";
+
 const navigation = [
   { name: "How it works", href: "/#product" },
   { name: "Testimonials", href: "/#testimonials" },
@@ -60,18 +62,7 @@ export default function Header() {
           ))}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a
-            href="/#join-waitlist"
-            className="text-lg font-semibold leading-6 text-gray-900"
-          >
-            Join Beta <span aria-hidden="true">&rarr;</span>
-            {/* <button
-              type="button"
-              className="flex-none rounded-md bg-savory-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-savory-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-savory-600 tracking-wider"
-            >
-              Join Beta
-            </button> */}
-          </a>
+          <DownloadButton section="header" size="small" />
         </div>
       </nav>
       <Dialog

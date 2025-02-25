@@ -9,6 +9,8 @@ import Footer from "@/components/Footer";
 import PersonalStory from "@/components/PersonalStory";
 import About from "@/components/About";
 import StoryHeadline from "@/components/StoryHeadline";
+import MemoryHeadline from "@/components/MemoryHeadline";
+import LongtermMemory from "@/components/LongtermMemory";
 
 export default async function Home() {
   return (
@@ -25,6 +27,8 @@ export default async function Home() {
         <Testimonials />
         <About />
         <PrimaryFeatures />
+        <MemoryHeadline />
+        <LongtermMemory />
         <StoryHeadline />
         <PersonalStory />
         <JoinWaitlist />
