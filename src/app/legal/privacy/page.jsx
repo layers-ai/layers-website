@@ -298,7 +298,7 @@ export default function PrivacyPolicy() {
                   <strong>AWS Bedrock Claude:</strong> layers uses AWS Bedrock Claude
                   to support certain features in the app, such as generating the
                   coaching sessions, generating summaries or populating our memory
-                  system. We share questions and  answers of user sessions with
+                  system. We share questions and answers of user sessions with
                   AWS Bedrock. We do not share any personal identifiable data such
                   as emails or names with AWS Bedrock.{" "}
                   <strong>
