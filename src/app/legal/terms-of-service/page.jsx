@@ -81,19 +81,19 @@ export default function TermsOfService() {
                   1.4. Notwithstanding the requirement for valid consent to
                   processing your personal data under our Privacy Policy, you
                   must be at least 18 years old (<strong>minimum age</strong>)
-                  to use layers’ Paid Services (see § 6 below).{" "}
+                  to use layers&apos; Paid Services (see § 6 below).{" "}
                   <strong>
                     If a minor (a person reaches majority at 18 under German
-                    law) uses layers’ Paid Services, we provide the services on
-                    the basis of the deemed consent of their parent or legal
-                    guardian, both to these Terms and to the use of the layers
-                    app.
+                    law) uses layers&apos; Paid Services, we provide the
+                    services on the basis of the deemed consent of their parent
+                    or legal guardian, both to these Terms and to the use of the
+                    layers app.
                   </strong>{" "}
                   Such consent is obtained when an account is created prior to
                   the first use of the app.{" "}
                   <strong>
                     The parent or guardian takes full responsibility for the
-                    minor&apos;s use of layers’ paid services.
+                    minor&apos;s use of layers&apos; paid services.
                   </strong>
                 </p>
                 <p className="mt-4 font-light text-base">
@@ -187,7 +187,7 @@ export default function TermsOfService() {
                   4.3. layers is intended for use on iOS mobile devices.
                 </p>
                 <p className="mt-4 font-light text-base">
-                  4.4. To be able to benefit from layers’ services, service
+                  4.4. To be able to benefit from layers&apos; services, service
                   packages in the form of paid subscriptions (“Subscription
                   Access”) are available to you after registering. These can be
                   purchased for different, and variable periods of time, which
@@ -245,14 +245,15 @@ export default function TermsOfService() {
                   § 6 layers premium (&quot;Paid Services&quot;)
                 </h2>
                 <p className="mt-4 font-light text-base">
-                  6.1. To be able to benefit from layers’ services, service
+                  6.1. To be able to benefit from layers&apos; services, service
                   packages in the form of paid subscriptions are available to
                   you after registering. These can be purchased for different,
                   and variable periods of time, which you will see in the order
-                  options. layers’ Paid Services are paid subscriptions that
-                  allow you to access all the features in the layers iOS app for
-                  the selected subscription period. You will have access to the
-                  respective services as long as your subscription is valid.
+                  options. layers&apos; Paid Services are paid subscriptions
+                  that allow you to access all the features in the layers iOS
+                  app for the selected subscription period. You will have access
+                  to the respective services as long as your subscription is
+                  valid.
                 </p>
                 <p className="mt-4 font-light text-base">
                   6.2. The services offered in the subscription may change from
@@ -482,13 +483,13 @@ export default function TermsOfService() {
                   not subject to any guarantees. We give no guarantee that any
                   of our features or services can be used to achieve a specific
                   aim, such as that emotions are correctly extracted, or that
-                  layers’ outputs are complete and accurate.
+                  layers&apos; outputs are complete and accurate.
                 </p>
                 <p className="mt-4 font-light text-base">
                   10.3. layers app provides reflections, mindfulness, mood/energy
                   tracking, and coaching content which serves the users to improve their
                   well-being. layers is not a health care or medical provider,
-                  nor should layers’ Services be considered medical or
+                  nor should layers&apos; Services be considered medical or
                   psychotherapeutic advice. We expressly point out that any
                   health-related recommendations provided in the context of the
                   layers services are general in nature, and aimed at users who

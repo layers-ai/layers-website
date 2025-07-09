@@ -33,9 +33,9 @@ export default function PrivacyPolicy() {
                   groundbreaking opportunity to empower people to take control
                   of their lives. The layers app gives people the ability to
                   enter data effortlessly through voice and helps them to
-                  understand themselves better based on the provided coaching
-                  session entries and other data, providing self-insight and
-                  self-advocacy that’s powered by data processing.
+                  understand themselves better based on the provided journal
+                  entries and other data, providing self-insight and
+                  self-advocacy that&apos;s powered by data processing.
                 </p>
                 <p className="mt-4 font-light text-base">
                   We also fully acknowledge the responsibility that comes with
@@ -144,8 +144,8 @@ export default function PrivacyPolicy() {
                 </p>
                 <p className="mt-4 font-light text-base">
                   Below are the <strong>purposes</strong> for which we process
-                  your data, and the type of data that’s processed to fulfill
-                  each purpose:
+                  your data, and the type of data that&apos;s processed to
+                  fulfill each purpose:
                 </p>
 
                 <h3 className="text-xl font-semibold mt-4">
@@ -399,20 +399,21 @@ export default function PrivacyPolicy() {
                   3.2 To help layers optimize their advertising efforts
                 </h3>
                 <p className="mt-4 font-light text-base">
-                  To help us analyze how layers’ advertising performs, we
+                  To help us analyze how layers&apos; advertising performs, we
                   process certain types of usage data (for example when you
                   install the layers app or subscribe to layers premium)
                   including your device ID and IP address. This helps us
-                  identify whether you’ve already downloaded layers or have a
-                  layers premium subscription.
+                  identify whether you&apos;ve already downloaded layers or have
+                  a layers premium subscription.
                 </p>
                 <p className="mt-4 font-light text-base">
                   By doing this, we can optimize our advertising efforts. For
-                  example, if you’ve already downloaded the layers app, we won’t
-                  show you an ad to download layers. It also helps us understand
-                  on which platforms people find out about us, and learn what
-                  kind of layers advertising performs best. With better
-                  advertising, we can help raise awareness about the layers app.
+                  example, if you&apos;ve already downloaded the layers app, we
+                  won&apos;t show you an ad to download layers. It also helps us
+                  understand on which platforms people find out about us, and
+                  learn what kind of layers advertising performs best. With
+                  better advertising, we can help raise awareness about the
+                  layers app.
                 </p>
                 <p className="mt-4 font-light text-base">
                   <strong>Third party providers:</strong> We use certain
@@ -439,9 +440,9 @@ export default function PrivacyPolicy() {
                   events like installation of the layers app or subscription to
                   layers premium services with certain advertisement networks
                   like Reddit. We do this to avoid showing you layers ads if
-                  you’ve already downloaded or are subscribed to layers premium.
-                  Appsflyer does not have access to any of the personal health
-                  data you track in the app. You can read more about how
+                  you&apos;ve already downloaded or are subscribed to layers
+                  premium. Appsflyer does not have access to any of the personal
+                  health data you track in the app. You can read more about how
                   Appsflyer handles data in their{" "}
                   <a
                     href="https://www.appsflyer.com/legal/services-privacy-policy/"
@@ -513,7 +514,7 @@ export default function PrivacyPolicy() {
                   website, you can decline the use of non-essential cookies in
                   the pop-up notification. If you consent to the non-essential
                   cookies, you may withdraw your consent again at any time in
-                  your browser’s cookie settings.
+                  your browser&apos;s cookie settings.
                 </p>
                 <p className="mt-4 font-light text-base">
                   All personal data collected for website analytics is deleted
@@ -530,14 +531,14 @@ export default function PrivacyPolicy() {
                   such communications.
                 </p>
                 <p className="mt-4 font-light text-base">
-                  If you’ve registered for a newsletter service of layers
+                  If you&apos;ve registered for a newsletter service of layers
                   without being a layers app user with an account, we will
                   process your information provided in the registration on
                   layersjournal.app. This may include an email address, which is
-                  needed to send you the newsletters you’ve subscribed to.
+                  needed to send you the newsletters you&apos;ve subscribed to.
                 </p>
                 <p className="mt-4 font-light text-base">
-                  If you’re a layers app user with an account, layers will
+                  If you&apos;re a layers app user with an account, layers will
                   process the email address you provided with your account
                   registration to send you newsletters, as well as occasional
                   emails asking about feedback.
@@ -711,20 +712,21 @@ export default function PrivacyPolicy() {
                   data is stored on servers located in the European Union.
                 </p>
                 <p className="mt-4 font-light text-base">
-                  When you create your layers password, it’s stored using
+                  When you create your layers password, it&apos;s stored using
                   one-way encryption with both “hashing” and “salting”
                   techniques. This means your password is combined with a random
-                  string of characters and then scrambled up so it’s unreadable.
-                  Not even layers staff have access to your password. Doing this
-                  ensures extra protection for your password. Note that if you
-                  use social login to create your account (see Section 3.1.3),
-                  layers does not receive your original password.
+                  string of characters and then scrambled up so it&apos;s
+                  unreadable. Not even layers staff have access to your
+                  password. Doing this ensures extra protection for your
+                  password. Note that if you use social login to create your
+                  account (see Section 3.1.3), layers does not receive your
+                  original password.
                 </p>
                 <p className="mt-4 font-light text-base">
                   When your data is sent between your device and our layers
                   servers, we use hypertext transfer protocol secure (HTTPS).
                   This is a type of encrypted data transmission, which scrambles
-                  the information being sent so it’s unreadable. Doing this
+                  the information being sent so it&apos;s unreadable. Doing this
                   increases the security of your data transfer. HTTPS is the
                   same technology used to create secure connections for your web
                   browser and is indicated by a padlock icon in the URL bar of
@@ -764,8 +766,9 @@ export default function PrivacyPolicy() {
                   assured that the sensitive health data you track in the layers
                   app is never shared with or sold to advertisers. We do share a
                   minimal amount of technical data with advertising networks,
-                  for example, so that you won’t see a layers ad if you’ve
-                  already downloaded the app or subscribed to layers premium.
+                  for example, so that you won&apos;t see a layers ad if
+                  you&apos;ve already downloaded the app or subscribed to layers
+                  premium.
                 </p>
                 <p className="mt-4 font-light text-base">
                   Such third parties and services are listed below.
@@ -802,15 +805,16 @@ export default function PrivacyPolicy() {
                 <p className="mt-4 font-light text-base">
                   Google analyzes this information to offer reports to layers on
                   website usage and online usage of associated services. Under
-                  the terms of Google’s analytics service, Google may also
+                  the terms of Google&apos;s analytics service, Google may also
                   transfer this information to third parties, either when this
                   is required by law or when third parties are contracted by
                   Google to process this data. Google must not allow your IP
                   address to be linked to any other personal data. By opting in
-                  via the cookie banner on layers’ website, you consent to data
-                  being used and processed by Google as described above. You can
-                  withdraw consent for this use of your data at any time. Please
-                  note that this withdrawal only applies to future activities.
+                  via the cookie banner on layers&apos; website, you consent to
+                  data being used and processed by Google as described above.
+                  You can withdraw consent for this use of your data at any
+                  time. Please note that this withdrawal only applies to future
+                  activities.
                 </p>
               </div>
 
@@ -821,8 +825,8 @@ export default function PrivacyPolicy() {
                 <p className="mt-4 font-light text-base">
                   layers reserves the right to amend this Privacy Policy from
                   time to time to reflect changes in the law, our data
-                  collection and data use practices, the features of layers’
-                  services, or advances in technology.
+                  collection and data use practices, the features of
+                  layers&apos; services, or advances in technology.
                 </p>
                 <p className="mt-4 font-light text-base">
                   Please check this page periodically for changes and refer to
@@ -835,7 +839,7 @@ export default function PrivacyPolicy() {
 
               <div>
                 <h2 className="text-2xl font-semibold mb-4">
-                  9. Responsibility for layers’ data processing
+                  9. Responsibility for layers&apos; data processing
                 </h2>
                 <p className="mt-4 font-light text-base">
                   layers is made in Berlin, Germany, and the way we handle data
