@@ -22,7 +22,7 @@ export default function TermsOfService() {
             <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               layers: Terms of Service
             </h1>
-            <p className="italic mt-2">Last updated: July 29, 2024</p>
+            <p className="italic mt-2">Last updated: May 27, 2025</p>
             <div className="mt-6 space-y-6 text-lg leading-8 text-gray-800">
               <div>
                 <h2 className="text-xl font-semibold mt-4">
@@ -275,6 +275,17 @@ export default function TermsOfService() {
                   termination see § 11).
                 </p>
                 <p className="mt-4 font-light text-base">
+                  6.4. By using our app and making in-app purchases, you consent
+                  to our sharing of data regarding your usage and consumption of
+                  purchased content with Apple, as part of our efforts to resolve
+                  refund requests. This information may include details about how
+                  you have accessed and interacted with the purchased content. The
+                  purpose of sharing this data is to help Apple make an informed
+                  decision regarding refund requests. We ensure that such data
+                  sharing is done in compliance with Apple's policies and only as
+                  necessary to process your requests.
+                </p>               
+                <p className="mt-4 font-light text-base">
                   6.5. The Paid Services are generally available on a
                   subscription basis. Therefore, you will be charged once in the
                   duration period of your subscription (for instance per month
@@ -474,9 +485,8 @@ export default function TermsOfService() {
                   layers’ outputs are complete and accurate.
                 </p>
                 <p className="mt-4 font-light text-base">
-                  10.3. layers app provides reflection, mindfulness, mood/energy
-                  tracking, and journaling content which together with emotive
-                  influences analysis serves the users to improve their
+                  10.3. layers app provides reflections, mindfulness, mood/energy
+                  tracking, and coaching content which serves the users to improve their
                   well-being. layers is not a health care or medical provider,
                   nor should layers’ Services be considered medical or
                   psychotherapeutic advice. We expressly point out that any

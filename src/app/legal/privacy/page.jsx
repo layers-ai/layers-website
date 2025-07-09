@@ -22,7 +22,7 @@ export default function PrivacyPolicy() {
             <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               layers: Privacy Policy
             </h1>
-            <p className="italic mt-2">Last updated: July 29, 2024</p>
+            <p className="italic mt-2">Last updated: May 27, 2025</p>
             <div className="mt-6 space-y-6 text-xl leading-8 text-gray-800">
               <div>
                 <h2 className="text-2xl font-semibold mb-4">
@@ -33,8 +33,8 @@ export default function PrivacyPolicy() {
                   groundbreaking opportunity to empower people to take control
                   of their lives. The layers app gives people the ability to
                   enter data effortlessly through voice and helps them to
-                  understand themselves better based on the provided journal
-                  entries and other data, providing self-insight and
+                  understand themselves better based on the provided coaching
+                  session entries and other data, providing self-insight and
                   self-advocacy that’s powered by data processing.
                 </p>
                 <p className="mt-4 font-light text-base">
@@ -122,14 +122,13 @@ export default function PrivacyPolicy() {
                   not collect your precise location.
                 </p>
                 <p className="mt-4 font-light text-base">
-                  <strong>Journal data:</strong> In order to provide our service
-                  as a self-reflection app, we process journal data and other
+                  <strong>Coaching data:</strong> In order to provide our service
+                  as a self-reflection app, we process coaching data and other
                   sensitive data that you choose to enter in the layers app.
-                  Such journal data may include your daily journal entries, in
-                  which you might share details about your day, answers to
-                  specific questions or other entries about dreams. We only
-                  process the journal data you choose to share with the layers
-                  app.
+                  Such coaching data may include your regular coaching sessions, in
+                  which you might share details about your day or answers to
+                  specific questions. We only process the coaching data you 
+                  choose to share with the layers app.
                 </p>
               </div>
 
@@ -156,10 +155,10 @@ export default function PrivacyPolicy() {
                   To provide our service, we process the following:
                 </p>
                 <p className="mt-4 font-light text-base">
-                  <strong>Journal data:</strong> This is processed whenever you
-                  enter your personal data (e.g. journal entries) in the layers
+                  <strong>Coaching data:</strong> This is processed whenever you
+                  enter your personal data (e.g. coaching sessions) in the layers
                   app, in order to provide our core service as a self-reflection
-                  app. This includes both your journal entries and other
+                  app. This includes both your coaching sessions and other
                   personal data (e.g. answers to specific questions or quizzes)
                   that you choose to provide to the layers app.
                 </p>
@@ -276,11 +275,10 @@ export default function PrivacyPolicy() {
                 </p>
                 <p className="mt-4 font-light text-base">
                   <strong>OpenAI GPT:</strong> layers uses OpenAI GPT to provide
-                  users with custom insights and advice. We share journal
-                  entries and other journal data with OpenAI to generate custom
-                  insights such as activities or to generate summaries. We do
-                  not share any personal identifiable data such as emails or
-                  names with OpenAI.{" "}
+                  users with custom insights, to populate our memory system and to
+                  generate summaries. We share question and answer of user sessions
+                  with OpenAI. We do not share any personal identifiable data such
+                  as emails or names with OpenAI.{" "}
                   <strong>
                     OpenAI does not use any of the data shared for training
                     their models. Additionally, any data shared with OpenAI is
@@ -295,6 +293,27 @@ export default function PrivacyPolicy() {
                   countries and non-EU countries (see Section 4). The privacy
                   policy of these services can be found on their respective
                   websites.
+                </p>
+                <p className="mt-4 font-light text-base">
+                  <strong>AWS Bedrock Claude:</strong> layers uses AWS Bedrock Claude
+                  to support certain features in the app, such as generating the
+                  coaching sessions, generating summaries or populating our memory
+                  system. We share questions and answers of user sessions with
+                  AWS Bedrock. We do not share any personal identifiable data such
+                  as emails or names with AWS Bedrock.{" "}
+                  <strong>
+                    AWS Bedrock or Anthropic Claude do not use any of the data
+                    shared for training their models. Additionally, any data
+                    shared with AWS Bedrock is only processed but never stored on
+                    AWS Bedrock's servers.
+                  </strong>
+                </p>
+                <p className="mt-4 font-light text-base">
+                  All data processed through this service is handled in accordance
+                  with the General Data Protection Regulation (GDPR). The processing
+                  takes place exclusively on servers located within the European
+                  Union, ensuring that your personal data remains subject to EU
+                  data protection standards.
                 </p>
                 <p className="mt-4 font-light text-base">
                   <strong>Deepgram:</strong> layers uses Deepgram to transcribe
