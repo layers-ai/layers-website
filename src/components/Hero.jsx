@@ -9,9 +9,6 @@ export default function Hero() {
         <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
           <div className="flex">
             <div className="relative flex items-center gap-x-4 rounded-full px-4 py-1 text-sm leading-6 text-gray-600 ring-1 ring-savory-500/10 hover:ring-savory-500/20">
-              <span className="font-semibold text-savory-300 tracking-wide">
-                Private Beta
-              </span>
               {/*<span className="h-4 w-px bg-gray-900/10" aria-hidden="true" />
                <a href="#" className="flex items-center gap-x-1">
                 <span className="absolute inset-0" aria-hidden="true" />

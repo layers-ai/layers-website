@@ -282,7 +282,7 @@ export default function PrivacyPolicy() {
                   <strong>
                     OpenAI does not use any of the data shared for training
                     their models. Additionally, any data shared with OpenAI is
-                    only processed but never stored on OpenAI’s servers.
+                    only processed but never stored on OpenAI&apos;s servers.
                   </strong>
                 </p>
                 <p className="mt-4 font-light text-base">

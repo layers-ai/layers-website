@@ -269,8 +269,8 @@ export default function TermsOfService() {
                   separate contract with the respective third-party service
                   provider providing your app store, whose terms and conditions
                   may apply. Depending on the respective third-party service
-                  provider’s terms and conditions, you may need to exercise your
-                  rights of cancellation and revocation with these service
+                  provider&apos;s terms and conditions, you may need to exercise
+                  your rights of cancellation and revocation with these service
                   providers (for more details about contract duration and
                   termination see § 11).
                 </p>
@@ -620,7 +620,7 @@ export default function TermsOfService() {
                   availability is not technically feasible. We therefore do not
                   guarantee disruption-free operation or a specific level of
                   availability. In particular, we may restrict access without
-                  providing reasons – in whole or in part, temporarily or
+                  providing reasons - in whole or in part, temporarily or
                   permanently. In addition, no claims shall exist regarding the
                   maintenance of individual functionalities of the layers app.
                   We are entitled at any time to change or remove content,
