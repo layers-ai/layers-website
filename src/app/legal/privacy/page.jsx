@@ -95,8 +95,8 @@ export default function PrivacyPolicy() {
                 </h2>
                 <p className="mt-4 font-light text-base">
                   We process three types of data in order to provide our
-                  services on the layers app and the layersjournal.app website.
-                  All of our data is securely stored on servers located in the
+                  services on the layers app and the getlayers.app website. All
+                  of our data is securely stored on servers located in the
                   European Union (EU).
                 </p>
                 <p className="mt-4 font-light text-base">
@@ -122,13 +122,13 @@ export default function PrivacyPolicy() {
                   not collect your precise location.
                 </p>
                 <p className="mt-4 font-light text-base">
-                  <strong>Coaching data:</strong> In order to provide our service
-                  as a self-reflection app, we process coaching data and other
-                  sensitive data that you choose to enter in the layers app.
-                  Such coaching data may include your regular coaching sessions, in
-                  which you might share details about your day or answers to
-                  specific questions. We only process the coaching data you 
-                  choose to share with the layers app.
+                  <strong>Coaching data:</strong> In order to provide our
+                  service as a self-reflection app, we process coaching data and
+                  other sensitive data that you choose to enter in the layers
+                  app. Such coaching data may include your regular coaching
+                  sessions, in which you might share details about your day or
+                  answers to specific questions. We only process the coaching
+                  data you choose to share with the layers app.
                 </p>
               </div>
 
@@ -156,18 +156,18 @@ export default function PrivacyPolicy() {
                 </p>
                 <p className="mt-4 font-light text-base">
                   <strong>Coaching data:</strong> This is processed whenever you
-                  enter your personal data (e.g. coaching sessions) in the layers
-                  app, in order to provide our core service as a self-reflection
-                  app. This includes both your coaching sessions and other
-                  personal data (e.g. answers to specific questions or quizzes)
-                  that you choose to provide to the layers app.
+                  enter your personal data (e.g. coaching sessions) in the
+                  layers app, in order to provide our core service as a
+                  self-reflection app. This includes both your coaching sessions
+                  and other personal data (e.g. answers to specific questions or
+                  quizzes) that you choose to provide to the layers app.
                 </p>
                 <p className="mt-4 font-light text-base">
                   <strong>
                     Device data, event data, usage data, IP address:
                   </strong>{" "}
                   This is processed when you use the layers app or
-                  layersjournal.app, to understand how you interact with our
+                  getlayers.app, to understand how you interact with our
                   services and to technically improve performance.
                 </p>
                 <p className="mt-4 font-light text-base">
@@ -275,10 +275,10 @@ export default function PrivacyPolicy() {
                 </p>
                 <p className="mt-4 font-light text-base">
                   <strong>OpenAI GPT:</strong> layers uses OpenAI GPT to provide
-                  users with custom insights, to populate our memory system and to
-                  generate summaries. We share question and answer of user sessions
-                  with OpenAI. We do not share any personal identifiable data such
-                  as emails or names with OpenAI.{" "}
+                  users with custom insights, to populate our memory system and
+                  to generate summaries. We share question and answer of user
+                  sessions with OpenAI. We do not share any personal
+                  identifiable data such as emails or names with OpenAI.{" "}
                   <strong>
                     OpenAI does not use any of the data shared for training
                     their models. Additionally, any data shared with OpenAI is
@@ -295,25 +295,26 @@ export default function PrivacyPolicy() {
                   websites.
                 </p>
                 <p className="mt-4 font-light text-base">
-                  <strong>AWS Bedrock Claude:</strong> layers uses AWS Bedrock Claude
-                  to support certain features in the app, such as generating the
-                  coaching sessions, generating summaries or populating our memory
-                  system. We share questions and answers of user sessions with
-                  AWS Bedrock. We do not share any personal identifiable data such
-                  as emails or names with AWS Bedrock.{" "}
+                  <strong>AWS Bedrock Claude:</strong> layers uses AWS Bedrock
+                  Claude to support certain features in the app, such as
+                  generating the coaching sessions, generating summaries or
+                  populating our memory system. We share questions and answers
+                  of user sessions with AWS Bedrock. We do not share any
+                  personal identifiable data such as emails or names with AWS
+                  Bedrock.{" "}
                   <strong>
                     AWS Bedrock or Anthropic Claude do not use any of the data
                     shared for training their models. Additionally, any data
-                    shared with AWS Bedrock is only processed but never stored on
-                    AWS Bedrock's servers.
+                    shared with AWS Bedrock is only processed but never stored
+                    on AWS Bedrock's servers.
                   </strong>
                 </p>
                 <p className="mt-4 font-light text-base">
-                  All data processed through this service is handled in accordance
-                  with the General Data Protection Regulation (GDPR). The processing
-                  takes place exclusively on servers located within the European
-                  Union, ensuring that your personal data remains subject to EU
-                  data protection standards.
+                  All data processed through this service is handled in
+                  accordance with the General Data Protection Regulation (GDPR).
+                  The processing takes place exclusively on servers located
+                  within the European Union, ensuring that your personal data
+                  remains subject to EU data protection standards.
                 </p>
                 <p className="mt-4 font-light text-base">
                   <strong>Deepgram:</strong> layers uses Deepgram to transcribe
@@ -387,10 +388,10 @@ export default function PrivacyPolicy() {
                 <p className="mt-4 font-light text-base">
                   <strong>Vercel:</strong> layers uses Vercel to host the{" "}
                   <a
-                    href="http://layersjournal.app"
+                    href="http://getlayers.app"
                     className="text-savory-800 underline"
                   >
-                    layersjournal.app
+                    getlayers.app
                   </a>{" "}
                   website.
                 </p>
@@ -474,7 +475,7 @@ export default function PrivacyPolicy() {
                 </p>
 
                 <h3 className="text-xl font-semibold mt-4">
-                  3.3 To improve layersjournal.app with website analytics
+                  3.3 To improve getlayers.app with website analytics
                 </h3>
                 <p className="mt-4 font-light text-base">
                   To improve our website, we process usage data such as your IP
@@ -534,7 +535,7 @@ export default function PrivacyPolicy() {
                   If you&apos;ve registered for a newsletter service of layers
                   without being a layers app user with an account, we will
                   process your information provided in the registration on
-                  layersjournal.app. This may include an email address, which is
+                  getlayers.app. This may include an email address, which is
                   needed to send you the newsletters you&apos;ve subscribed to.
                 </p>
                 <p className="mt-4 font-light text-base">
@@ -741,11 +742,11 @@ export default function PrivacyPolicy() {
 
               <div>
                 <h2 className="text-2xl font-semibold mb-4">
-                  7. Cookies on layersjournal.app
+                  7. Cookies on getlayers.app
                 </h2>
                 <p className="mt-4 font-light text-base">
                   For the purpose of tracking the performances of our services
-                  and to improve layers, we use cookies on our layersjournal.app
+                  and to improve layers, we use cookies on our getlayers.app
                   website. For more information on this purpose and its legal
                   basis, please see Section 3.9.
                 </p>

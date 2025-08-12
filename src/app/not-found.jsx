@@ -38,7 +38,7 @@ export default function NotFound() {
         <footer className="self-end lg:col-span-2 lg:col-start-1 lg:row-start-3">
           <div className="border-t border-gray-100 bg-gray-50 py-10">
             <nav className="mx-auto flex w-full max-w-7xl items-center gap-x-4 px-6 text-base leading-7 text-gray-600 lg:px-8">
-              <a href="mailto:hello@layersjournal.app">Contact support</a>
+              <a href="mailto:hello@getlayers.app">Contact support</a>
               <svg
                 viewBox="0 0 2 2"
                 aria-hidden="true"

@@ -55,16 +55,16 @@ export const metadata = {
   title: "layers - Smart Voice Journaling App - Effortless Self-Reflection",
   description:
     "layers: A voice journal app that helps you understand yourself and lead a happy life. We make journaling easy and insightful. Download now and start your journey!",
-  metadataBase: new URL("https://layersjournal.app"),
+  metadataBase: new URL("https://getlayers.app"),
   openGraph: {
     title: "layers - Smart Voice Journaling App - Effortless Self-Reflection",
     description:
       "layers: A voice journal app that helps you understand yourself and lead a happy life. We make journaling easy and insightful. Download now and start your journey!",
-    url: "https://layersjournal.app",
+    url: "https://getlayers.app",
     siteName: "layers - Smart Journaling App - Effortless Self-Discovery",
     images: [
       {
-        url: "https://layersjournal.app/images/layers-ai-journaling-app-1200x630.jpg",
+        url: "https://getlayers.app/images/layers-ai-journaling-app-1200x630.jpg",
         width: 1200,
         height: 630,
       },
