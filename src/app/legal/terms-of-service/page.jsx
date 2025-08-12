@@ -35,10 +35,10 @@ export default function TermsOfService() {
                   &quot;layers app&quot;) including all services provided
                   through the layers app and the layers website{" "}
                   <a
-                    href="http://layersjournal.app/"
+                    href="http://getlayers.app/"
                     className="text-savory-800 underline"
                   >
-                    layersjournal.app
+                    getlayers.app
                   </a>{" "}
                   (&quot;layers services&quot;). The layers services are
                   operated by layers labs UG (haftungsbeschränkt), which is
@@ -49,10 +49,10 @@ export default function TermsOfService() {
                   1.2. In addition to these Terms, the{" "}
                   <strong>Privacy Policy</strong> available at{" "}
                   <a
-                    href="https://layersjournal.app/legal/privacy"
+                    href="https://getlayers.app/legal/privacy"
                     className="text-savory-800 underline"
                   >
-                    layersjournal.app/privacy
+                    getlayers.app/privacy
                   </a>{" "}
                   details your and our respective rights and obligations in
                   connection with applicable data protection laws, in particular
@@ -205,7 +205,7 @@ export default function TermsOfService() {
                   acceptance of these Terms and consent to data processing under
                   the terms of our{" "}
                   <a
-                    href="https://layersjournal.app/legal/privacy"
+                    href="https://getlayers.app/legal/privacy"
                     className="text-savory-800 underline"
                   >
                     Privacy Policy
@@ -278,14 +278,14 @@ export default function TermsOfService() {
                 <p className="mt-4 font-light text-base">
                   6.4. By using our app and making in-app purchases, you consent
                   to our sharing of data regarding your usage and consumption of
-                  purchased content with Apple, as part of our efforts to resolve
-                  refund requests. This information may include details about how
-                  you have accessed and interacted with the purchased content. The
-                  purpose of sharing this data is to help Apple make an informed
-                  decision regarding refund requests. We ensure that such data
-                  sharing is done in compliance with Apple's policies and only as
-                  necessary to process your requests.
-                </p>               
+                  purchased content with Apple, as part of our efforts to
+                  resolve refund requests. This information may include details
+                  about how you have accessed and interacted with the purchased
+                  content. The purpose of sharing this data is to help Apple
+                  make an informed decision regarding refund requests. We ensure
+                  that such data sharing is done in compliance with Apple's
+                  policies and only as necessary to process your requests.
+                </p>
                 <p className="mt-4 font-light text-base">
                   6.5. The Paid Services are generally available on a
                   subscription basis. Therefore, you will be charged once in the
@@ -447,7 +447,7 @@ export default function TermsOfService() {
                   process personal information for these purposes also, as set
                   out in detail in our{" "}
                   <a
-                    href="https://layersjournal.app/legal/privacy"
+                    href="https://getlayers.app/legal/privacy"
                     className="text-savory-800 underline"
                   >
                     Privacy Policy
@@ -486,20 +486,20 @@ export default function TermsOfService() {
                   layers&apos; outputs are complete and accurate.
                 </p>
                 <p className="mt-4 font-light text-base">
-                  10.3. layers app provides reflections, mindfulness, mood/energy
-                  tracking, and coaching content which serves the users to improve their
-                  well-being. layers is not a health care or medical provider,
-                  nor should layers&apos; Services be considered medical or
-                  psychotherapeutic advice. We expressly point out that any
-                  health-related recommendations provided in the context of the
-                  layers services are general in nature, and aimed at users who
-                  are generally healthy and physically and mentally fit. We give
-                  references to published research and other sources wherever
-                  possible, so that you can find out more and evaluate the
-                  information for yourself. If you choose to follow any such
-                  general recommendations, you do so at your own risk. If you
-                  have any doubt as to whether this is appropriate for you,
-                  please speak to your qualified healthcare provider.
+                  10.3. layers app provides reflections, mindfulness,
+                  mood/energy tracking, and coaching content which serves the
+                  users to improve their well-being. layers is not a health care
+                  or medical provider, nor should layers&apos; Services be
+                  considered medical or psychotherapeutic advice. We expressly
+                  point out that any health-related recommendations provided in
+                  the context of the layers services are general in nature, and
+                  aimed at users who are generally healthy and physically and
+                  mentally fit. We give references to published research and
+                  other sources wherever possible, so that you can find out more
+                  and evaluate the information for yourself. If you choose to
+                  follow any such general recommendations, you do so at your own
+                  risk. If you have any doubt as to whether this is appropriate
+                  for you, please speak to your qualified healthcare provider.
                 </p>
                 <p className="mt-4 font-light text-base">
                   10.4. Practices conducted with layers app are not a
