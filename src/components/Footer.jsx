@@ -33,7 +33,7 @@ const navigation = {
   social: [
     {
       name: "Instagram",
-      href: "https://www.instagram.com/layersjournalapp/",
+      href: "https://www.instagram.com/getlayers.app/",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
