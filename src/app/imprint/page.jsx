@@ -23,9 +23,9 @@ export default function Example() {
               <p>
                 layers labs UG (haftungsbeschränkt)
                 <br />
-                Maybachufer 11
+                Hohenfriedbergstr. 11a
                 <br />
-                12047 Berlin
+                10829 Berlin
                 <br />
                 Germany
                 <br />
